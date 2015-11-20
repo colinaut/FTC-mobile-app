@@ -1,0 +1,181 @@
+{
+  "version" : 0.2,
+  "guidelines" : [
+    {
+      "id" : 0,
+      "title" : "Bowel Obstruction",
+      "intro" : "Narrowing or obstruction in a portion of the fetal intestine. Most are caused by an atresia, or blockage at some point in the small intestine. A bowel obstruction is named by the place in the small intestine where it occurs: duodenal atresia, jejunal atresia, ileal atresia, or colonic atresia.",
+      "guide" : [
+        {
+          "content" : "Associated with",
+          "children" : [
+            {
+              "content" : "Down’s syndrome (1/3 of cases of duodenal atresia)",
+              "children" : []
+            },
+            {
+              "content" : "Malrotation",
+              "children" : []
+            },
+            {
+              "content" : "CHD (Down’s syndrome)",
+              "children" : []
+            },
+            {
+              "content" : "Cystic Fibrosis (10%)",
+              "children" : []
+            },
+            {
+              "content" : "Gastroschisis (jejunal-illeal atresias)",
+              "children" : []
+            },
+            {
+              "content" : "Maternal polyhydramnios",
+              "children" : []
+            }
+          ]
+        },
+        {
+          "content" : "Workup",
+          "children" : [
+            {
+              "content" : "Karyotype/Microarray (if aneuploidy suspected), or cell-free fetal DNA if patient is risk averse (can be done at any GA)",
+              "children" : []
+            },
+            {
+              "content" : "Ultrasound - Double bubble for duodenal atresia, Multiple dilated loops of bowel for jejunal/ileal atresia",
+              "children" : []
+            },
+            {
+              "content" : "ECHO (if Down Syndrome suspected)",
+              "children" : []
+            },
+            {
+              "content" : "Parental cystic fibrosis testing",
+              "children" : []
+            }
+          ]
+        },
+        {
+          "content" : "Fetal Intervention Options",
+          "children" : [
+            {
+              "content" : "No fetal intervention",
+              "children" : []
+            }
+          ]
+        },
+        {
+          "content" : "Follow-up",
+          "children" : [
+            {
+              "content" : "Monthly ultrasound",
+              "children" : []
+            },
+            {
+              "content" : "NST q week > 32 week",
+              "children" : []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id" : 1,
+      "title" : "Congenital Diaphragmatic Hernia",
+      "intro" : "Malformation of the posterolateral diaphragm, through which the abdominal viscera migrate into the fetal chest impairing lung development. The result is varying degrees of pulmonary hypoplasia",
+      "guide" : [
+        {
+          "content" : "Associated with",
+          "children" : [
+            {
+              "content" : "Chromosomal abnormalities",
+              "children" : []
+            },
+            {
+              "content" : "Cardiac defects",
+              "children" : []
+            },
+            {
+              "content" : "Syndromes such as Fryn’s, Cornelia de Lane, and Multiple Pterygium",
+              "children" : []
+            }
+          ]
+        },
+        {
+          "content" : "Workup",
+          "children" : [
+            {
+              "content" : "Karyotype/Microarray (or cell-free fetal DNA if patient is risk averse)",
+              "children" : []
+            },
+            {
+              "content" : "Ultrasound",
+              "children" : []
+            },
+            {
+              "content" : "ECHO",
+              "children" : []
+            }
+          ]
+        },
+        {
+          "content" : "Fetal Intervention Options",
+          "children" : [
+            {
+              "content" : "Tracheal Balloon Occlusion can be offered if patient meets criteria listed below. TBO is performed b/w 26-28 weeks via u/s guided fetoscopy (fetal bronchoscopy) and again removed via a second fetoscopy (“unplugging”) between 32-34 weeks. During the ~6 weeks that the balloon is in situ, the patient must live in close proximity to a center that can delivery via EXIT procedure, and may need to relocate if she does not. Once the balloon has been successfully removed, delivery can be vaginal (usually planned induction) at 39 weeks if not in spontaneous labor earlier.",
+              "children" : []
+            },
+            {
+              "content" : "Criteria for tracheal balloon occlusion:",
+              "children" : [
+                {
+                  "content" : "If Liver up and the Lung to Head Ratio (LHR) b/w 24-28 weeks  < 1.0 (LHR: the R lung area to head circumference ratio is calculated by a ratio of R lung area (in square millimeters) to head circumference (in millimeters) to minimize lung size differences owing to gestational age)",
+                  "children" : []
+                },
+                {
+                  "content" : "Normal Karyotype",
+                  "children" : []
+                },
+                {
+                  "content" : "Less than 28 weeks’ gestation",
+                  "children" : []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content" : "Follow-up (no intervention)",
+          "children" : [
+            {
+              "content" : "Monthly ultrasound for growth/ monitor amniotic fluid level",
+              "children" : []
+            },
+            {
+              "content" : "LHR checked on each US if liver up",
+              "children" : []
+            }
+          ]
+        },
+        {
+          "content" : "Follow-up (with tracheal occlusion)",
+          "children" : [
+            {
+              "content" : "LHR weekly",
+              "children" : []
+            },
+            {
+              "content" : "MRI prior to unplugging",
+              "children" : []
+            },
+            {
+              "content" : "Steroids prior to unplugging",
+              "children" : []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
