@@ -1,0 +1,15 @@
+<ion-view view-title="Updates">
+  <ion-content class="updates" ng-init="init()">
+      <h1>News</h1>
+      <div class="list">
+          <div ng-repeat="entry in entries" class="list card">
+              <div class="item item-divider item-text-wrap">{{entry.title}}</div>
+              <div class="item item-body item-text-wrap">
+                <div ng-bind-html="entry.content"></div>
+                <div class="read-more-link"><a href="{{entry.link}}">Read More</a></div>
+              </div>
+
+          </div>
+      </div>
+  </ion-content>
+</ion-view>

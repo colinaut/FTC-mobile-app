@@ -1,0 +1,26 @@
+
+<ion-view view-title="{{guideline.title}}">
+
+  <ion-content class="padding guidelines">
+    <h1>{{guideline.title}}</h1>
+    <p>
+      {{guideline.intro}}
+    </p>
+    <ion-list>
+      <ion-item ng-repeat="group in guideline.guide" class="item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+        <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+        <strong>{{group.content}}</strong>
+        <ion-list>
+          <ion-item ng-repeat="list in group.children" class="item-accordion" ng-show="isGroupShown(group)">
+            {{list.content}}
+            <ion-list>
+              <ion-item ng-repeat="sublist in list.children" class="item-sublist">
+                {{sublist.content}}
+              </ion-item>
+            </ion-list>
+          </ion-item>
+        </ion-list>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
