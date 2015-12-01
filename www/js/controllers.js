@@ -1,5 +1,4 @@
-
-angular.module('myApp')
+app
 
 .controller('MasterController', function($scope, $data) {
 	$scope.items = $data.items;
@@ -30,6 +29,32 @@ angular.module('myApp')
     }
 
 })
+.controller('VideosCtrl', function($scope, Videogroups) {
+  /*$scope.videogroups = Videolist.all(); */
+
+
+  Videogroups.all().then(function(response){
+    $scope.videogroups = response;
+  });
+
+})
+.controller('VideosDetailCtrl', function($scope, $stateParams, Videogroups) {
+  Videogroups.get($stateParams.videogroupsId).then(function(response){
+    $scope.videogroup = response;
+  });
+
+  $scope.toggleGroup = function(group) {
+    if ($scope.isGroupShown(group)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+  };
+  $scope.isGroupShown = function(group) {
+    return $scope.shownGroup === group;
+  };
+
+})
 
 .factory('$data',function() {
 		var data = {};
@@ -58,4 +83,41 @@ angular.module('myApp')
 		];
 
 		return data;
+	})
+
+	.factory('Videogroups', function($http, CacheFactory) {
+
+	  // Set up cache is there isn't one.
+	  if (!CacheFactory.get('videosCache')) {
+	    CacheFactory.createCache('videosCache', {});
+	  }
+
+	  // Load cache
+	  var videosCache = CacheFactory.get('videosCache');
+
+	  // Get data from JSON using cache if present
+	  var videosData = function() {
+	    return $http.get('data/videos.json', { cache: videosCache }).then(function(response){
+	      return response.data.videos;
+	    });
+	  }
+
+	  return {
+	    all: function() {
+	      return videosData();
+	    },
+	    get: function(videogroupsId) {
+	      return videosData().then(function(response){
+	        for (var i = 0; i < response.length; i++) {
+	         if (response[i].id === parseInt(videogroupsId)) {
+	           return response[i];
+	         }
+	       }
+	      });
+	      return null;
+	    }
+	  };
+
+
+
 	});
