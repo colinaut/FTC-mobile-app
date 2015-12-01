@@ -66,9 +66,12 @@ app.filter('trusted', ['$sce', function ($sce) {
     .state('navigator.videos.group', {
       parent: 'navigator',
       url: '/videogroup/:index',
-      onEnter: ['$rootScope', function($rootScope, $stateParams) {
+      onEnter: ['$rootScope','$stateParams', function($rootScope, $stateParams) {
         $rootScope.myNavigator.pushPage('html/videogroup.html', {'index': $stateParams.index});
-      }]
+      }],
+      onExit: function($rootScope) {
+				$rootScope.myNavigator.popPage();
+			}
     })
 
 		// Tab 2 - SlidingMenu example - SlidingMenu init

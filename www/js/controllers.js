@@ -39,7 +39,7 @@ app
 
 })
 .controller('VideosDetailCtrl', function($scope, $stateParams, Videogroups) {
-  Videogroups.get($stateParams.videogroupsId).then(function(response){
+  Videogroups.get($stateParams.index).then(function(response){
     $scope.videogroup = response;
   });
 

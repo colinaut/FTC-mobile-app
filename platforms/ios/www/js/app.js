@@ -1,7 +1,12 @@
 
 var app = angular.module('myApp', ['onsen', 'ui.router']);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.filter('trusted', ['$sce', function ($sce) {
+    return function(url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+}])
+.config(function($stateProvider, $urlRouterProvider) {
 
 	// By default show Tab 1 - Navigator MasterDetail example
 	$urlRouterProvider.otherwise('/master');
@@ -18,6 +23,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
 					return $rootScope.myTabbar.loadPage('html/tab1.html');
 				}
 			}
+		})
+
+		// Tab 1 - MasterDetail example - List of items
+		.state('navigator.home', {
+			parent: 'navigator',
+			url: '/home',
+			onEnter: ['$rootScope', function($rootScope) {
+				$rootScope.myNavigator.resetToPage('html/home.html');
+			}]
 		})
 
 		// Tab 1 - MasterDetail example - List of items

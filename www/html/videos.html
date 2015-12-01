@@ -3,7 +3,7 @@
 		<div class="center">Videos</div>
 	</ons-toolbar>
   <ons-list ng-controller="VideosCtrl">
-		<ons-list-item modifier="chevron" class="item" ng-repeat="videogroup in videogroups"  >
+		<ons-list-item modifier="chevron" class="item" ng-repeat="videogroup in videogroups" ui-sref="navigator.videos.group({index: $index})">
 		<ons-row>
 			<ons-col width="60px">
 				<div class="item-thum"></div>
