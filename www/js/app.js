@@ -25,12 +25,12 @@ app.filter('trusted', ['$sce', function ($sce) {
 			}
 		})
 
-		// Tab 1 - MasterDetail example - List of items
-		.state('navigator.home', {
+		// News RSS feed
+		.state('navigator.news', {
 			parent: 'navigator',
-			url: '/home',
+			url: '/news',
 			onEnter: ['$rootScope', function($rootScope) {
-				$rootScope.myNavigator.resetToPage('html/home.html');
+				$rootScope.myNavigator.resetToPage('html/news.html');
 			}]
 		})
 
@@ -54,6 +54,26 @@ app.filter('trusted', ['$sce', function ($sce) {
 				$rootScope.myNavigator.popPage();
 			}
 		})
+    // Guidelines
+		.state('navigator.guidelines', {
+			parent: 'navigator',
+			url: '/guidelines',
+			onEnter: ['$rootScope', function($rootScope) {
+				$rootScope.myNavigator.resetToPage('html/guidelines.html');
+			}]
+		})
+
+		// Guidelines Detail
+		.state('navigator.guidelines.detail', {
+			parent: 'navigator.guidelines',
+			url: '/guidelines/:index',
+			onEnter: ['$rootScope','$stateParams', function($rootScope,$stateParams) {
+				$rootScope.myNavigator.pushPage('html/guideline-detail.html', {'index': $stateParams.index});
+			}],
+			onExit: function($rootScope) {
+				$rootScope.myNavigator.popPage();
+			}
+		})
     // List of Video Groups
     .state('navigator.videos', {
       parent: 'navigator',
@@ -64,7 +84,7 @@ app.filter('trusted', ['$sce', function ($sce) {
     })
     // Detail of Video Group
     .state('navigator.videos.group', {
-      parent: 'navigator',
+      parent: 'navigator.videos',
       url: '/videogroup/:index',
       onEnter: ['$rootScope','$stateParams', function($rootScope, $stateParams) {
         $rootScope.myNavigator.pushPage('html/videogroup.html', {'index': $stateParams.index});
