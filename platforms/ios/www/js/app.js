@@ -1,5 +1,5 @@
 
-var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache']);
+var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache', 'ngSanitize','ngRoute','ngResource']);
 
 app.filter('trusted', ['$sce', function ($sce) {
     return function(url) {
@@ -130,6 +130,14 @@ app.filter('trusted', ['$sce', function ($sce) {
 			url: '/page2',
 			onEnter: ['$rootScope', function($rootScope) {
 				$rootScope.myMenu.setMainPage('html/page2.html', {closeMenu: true});
+			}]
+		})
+    // Guidelines
+		.state('navigator.blog', {
+			parent: 'navigator',
+			url: '/blog',
+			onEnter: ['$rootScope', function($rootScope) {
+				$rootScope.myNavigator.resetToPage('html/blog.html');
 			}]
 		})
 	;

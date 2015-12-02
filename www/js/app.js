@@ -132,6 +132,7 @@ app.filter('trusted', ['$sce', function ($sce) {
 				$rootScope.myMenu.setMainPage('html/page2.html', {closeMenu: true});
 			}]
 		})
+
 	;
 
 });

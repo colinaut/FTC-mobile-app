@@ -47,19 +47,19 @@ app
     $scope.init = function() {
 
       $http.get("http://ajax.googleapis.com/ajax/services/feed/load", { params: { "v": "1.0", "q": "http://fetus.ucsfmedicalcenter.org/feed/" } })
-        .success(function(data) {
-                $scope.rssTitle = data.responseData.feed.title;
-                $scope.rssUrl = data.responseData.feed.feedUrl;
-                $scope.rssSiteUrl = data.responseData.feed.link;
-                $scope.entries = data.responseData.feed.entries;
-                window.localStorage["entries"] = JSON.stringify(data.responseData.feed.entries);
-            })
-            .error(function(data) {
-                console.log("ERROR: " + data);
-                if(window.localStorage["entries"] !== undefined) {
-                    $scope.entries = JSON.parse(window.localStorage["entries"]);
-                }
-            });
+      .success(function(data) {
+          $scope.rssTitle = data.responseData.feed.title;
+          $scope.rssUrl = data.responseData.feed.feedUrl;
+          $scope.rssSiteUrl = data.responseData.feed.link;
+          $scope.entries = data.responseData.feed.entries;
+          window.localStorage["entries"] = JSON.stringify(data.responseData.feed.entries);
+      })
+      .error(function(data) {
+          console.log("ERROR: " + data);
+          if(window.localStorage["entries"] !== undefined) {
+              $scope.entries = JSON.parse(window.localStorage["entries"]);
+          }
+      });
     }
 
 })
@@ -192,4 +192,34 @@ app
 
 	  }
 
-	});
+	})
+	.controller('BlogCtrl', function ($scope, BlogList) {
+	        $scope.feeds = BlogList.get();
+	    })
+	.factory('FeedLoader', function ($resource) {
+	    console.log("Creating FeedLoader...");
+	    return $resource('http://ajax.googleapis.com/ajax/services/feed/load', {}, {
+	        fetch: { method: 'JSONP', params: {v: '1.0', callback: 'JSON_CALLBACK'} }
+	    });
+	})
+	.service('BlogList', function ($rootScope, FeedLoader) {
+	    var feeds = [];
+	    console.log("loading feeds...");
+	    this.get = function() {
+	        var feedSources = [
+	            {title: 'Mashable', url: 'http://feeds.mashable.com/Mashable'},
+	            {title: 'TechCrunch', url: 'http://feeds.feedburner.com/TechCrunch/'}
+	        ];
+	        if (feeds.length === 0) {
+	            for (var i=0; i<feedSources.length; i++) {
+	                FeedLoader.fetch({q: feedSources[i].url, num: 10}, {}, function (data) {
+	                    var feed = data.responseData.feed;
+	                    console.log("DATA FROM FEEDS: ", data)
+	                    feeds.push(feed);
+	                });
+	            }
+	        }
+	        return feeds;
+	    };
+	})
+	;
