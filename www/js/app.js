@@ -9,7 +9,7 @@ app.filter('trusted', ['$sce', function ($sce) {
 .config(function($stateProvider, $urlRouterProvider) {
 
 	// By default show Tab 1 - Navigator MasterDetail example
-	$urlRouterProvider.otherwise('/master');
+	$urlRouterProvider.otherwise('/news');
 
 	$stateProvider
 

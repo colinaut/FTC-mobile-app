@@ -1,5 +1,4 @@
-
-angular.module('myApp')
+app
 
 .controller('MasterController', function($scope, $data) {
 	$scope.items = $data.items;
@@ -7,6 +6,40 @@ angular.module('myApp')
 
 .controller('DetailController', function($scope, $data) {
 	$scope.item = $data.items[$scope.myNavigator.getCurrentPage().options.index];
+})
+
+.controller('GuidelinesCtrl', function($scope, Guidelines, $http) {
+  // With the new view caching in Ionic, Controllers are only called
+  // when they are recreated or on app start, instead of every page change.
+  // To listen for when this page is active (for example, to refresh data),
+  // listen for the $ionicView.enter event:
+  //
+  //$scope.$on('$ionicView.enter', function(e) {
+  //});
+  Guidelines.all().then(function(response){
+    $scope.guidelines = response;
+  });
+
+})
+
+.controller('GuidelineDetailCtrl', function($scope, $stateParams, Guidelines) {
+  Guidelines.get($stateParams.index).then(function(response){
+    $scope.guideline = response;
+  });
+  /*
+   * if given group is the selected group, deselect it
+   * else, select the given group
+   */
+  $scope.toggleGroup = function(group) {
+    if ($scope.isGroupShown(group)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+  };
+  $scope.isGroupShown = function(group) {
+    return $scope.shownGroup === group;
+  };
 })
 
 .controller("NewsCtrl", function($http, $scope) {
@@ -28,6 +61,32 @@ angular.module('myApp')
                 }
             });
     }
+
+})
+.controller('VideosCtrl', function($scope, Videogroups) {
+  /*$scope.videogroups = Videolist.all(); */
+
+
+  Videogroups.all().then(function(response){
+    $scope.videogroups = response;
+  });
+
+})
+.controller('VideosDetailCtrl', function($scope, $stateParams, Videogroups) {
+  Videogroups.get($stateParams.index).then(function(response){
+    $scope.videogroup = response;
+  });
+
+  $scope.toggleGroup = function(group) {
+    if ($scope.isGroupShown(group)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+  };
+  $scope.isGroupShown = function(group) {
+    return $scope.shownGroup === group;
+  };
 
 })
 
@@ -58,4 +117,79 @@ angular.module('myApp')
 		];
 
 		return data;
+	})
+
+	.factory('Videogroups', function($http, CacheFactory) {
+
+	  // Set up cache is there isn't one.
+	  if (!CacheFactory.get('videosCache')) {
+	    CacheFactory.createCache('videosCache', {});
+	  }
+
+	  // Load cache
+	  var videosCache = CacheFactory.get('videosCache');
+
+	  // Get data from JSON using cache if present
+	  var videosData = function() {
+	    return $http.get('data/videos.json', { cache: videosCache }).then(function(response){
+	      return response.data.videos;
+	    });
+	  }
+
+	  return {
+	    all: function() {
+	      return videosData();
+	    },
+	    get: function(videogroupsId) {
+	      return videosData().then(function(response){
+	        for (var i = 0; i < response.length; i++) {
+	         if (response[i].id === parseInt(videogroupsId)) {
+	           return response[i];
+	         }
+	       }
+	      });
+	      return null;
+	    }
+	  };
+
+	})
+	.factory('Guidelines', function($http, CacheFactory) {
+
+	  // Create cache if there isn't one.
+	  if (!CacheFactory.get('guidelinesCache')) {
+	    // or CacheFactory('bookCache', { ... });
+	    CacheFactory.createCache('guidelinesCache', {});
+	  }
+	  // Get cache
+	  var guidelinesCache = CacheFactory.get('guidelinesCache');
+
+	  // Get data from JSON using cache if present
+	  var guidelinesData = function() {
+	    return $http.get('data/guidelines.json', { cache: guidelinesCache }).then(function(response){
+	      return response.data.guidelines;
+	    });
+	  }
+
+	  return {
+	    all: function() {
+	      return guidelinesData();
+	    },
+
+	    get: function(guidelinesId) {
+	      var guidelines
+
+	      return guidelinesData().then(function(response){
+	        for (var i = 0; i < response.length; i++) {
+	         if (response[i].id === parseInt(guidelinesId)) {
+	           return response[i];
+	         }
+	       }
+	      });
+
+	      return null;
+
+	    }
+
+	  }
+
 	});
