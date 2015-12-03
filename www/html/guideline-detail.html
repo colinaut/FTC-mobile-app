@@ -1,4 +1,4 @@
-<ons-page ng-controller="GuidelineDetailCtrl">
+<ons-page ng-controller="GuidelineDetailCtrl" class="guideline-detail">
 
 	<ons-toolbar>
 		<div class="left">
@@ -9,9 +9,9 @@
 		</div>
 		<div class="center">{{guideline.title}}</div>
 	</ons-toolbar>
-  <p>
-    {{guideline.intro}}
-  </p>
+	<div class="intro">
+  	<p>{{guideline.intro}}</p>
+	</div>
 	<ons-list modifier="inset" style="margin-top: 10px">
 		<ons-list-item class="item" ng-repeat="group in guideline.guide" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
 					<header>
@@ -22,7 +22,7 @@
         		<ons-list-item class="item" ng-repeat="list in group.children" class="item-accordion" ng-show="isGroupShown(group)">
         		    {{list.content}}
                 <ons-list modifier="inset">
-              		<ons-list-item ng-repeat="sublist in list.children" class="item-sublist">
+              		<ons-list-item ng-repeat="sublist in list.children" class="item-sublist item">
               		    {{sublist.content}}
               		</ons-list-item>
                 </ons-list>

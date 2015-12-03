@@ -46,13 +46,13 @@ app
 
     $scope.init = function() {
 
-      $http.get("http://ajax.googleapis.com/ajax/services/feed/load", { params: { "v": "1.0", "q": "http://fetus.ucsfmedicalcenter.org/feed/" } })
+      $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys")
       .success(function(data) {
-          $scope.rssTitle = data.responseData.feed.title;
-          $scope.rssUrl = data.responseData.feed.feedUrl;
-          $scope.rssSiteUrl = data.responseData.feed.link;
-          $scope.entries = data.responseData.feed.entries;
-          window.localStorage["entries"] = JSON.stringify(data.responseData.feed.entries);
+				$scope.rssTitle = data.query.results.rss.channel.title;
+				$scope.rssUrl = "http://fetus.ucsfmedicalcenter.org/feed";
+				$scope.rssSiteUrl = data.responseData.rss.channel.link;
+				$scope.entries = data.query.results.rss.channel.item;
+          window.localStorage["entries"] = JSON.stringify(ddata.query.results.rss.channel.item);
       })
       .error(function(data) {
           console.log("ERROR: " + data);
@@ -63,6 +63,23 @@ app
     }
 
 })
+
+.controller('NewsCtrl-test', function($scope, $http) {
+    var url =
+		"https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
+
+    $http.get(url)
+      .success(function(data, status, headers, config) {
+				$scope.rssTitle = data.query.results.rss.channel.title;
+				$scope.rssUrl = "http://fetus.ucsfmedicalcenter.org/feed";
+				$scope.rssSiteUrl = data.responseData.rss.channel.link;
+				$scope.entries = data.query.results.rss.channel.item;
+      })
+      .error(function(data, status, headers, config) {
+        console.error('Error fetching feed:', data);
+      });
+  })
+
 .controller('VideosCtrl', function($scope, Videogroups) {
   /*$scope.videogroups = Videolist.all(); */
 
@@ -192,34 +209,5 @@ app
 
 	  }
 
-	})
-	.controller('BlogCtrl', function ($scope, BlogList) {
-	        $scope.feeds = BlogList.get();
-	    })
-	.factory('FeedLoader', function ($resource) {
-	    console.log("Creating FeedLoader...");
-	    return $resource('http://ajax.googleapis.com/ajax/services/feed/load', {}, {
-	        fetch: { method: 'JSONP', params: {v: '1.0', callback: 'JSON_CALLBACK'} }
-	    });
-	})
-	.service('BlogList', function ($rootScope, FeedLoader) {
-	    var feeds = [];
-	    console.log("loading feeds...");
-	    this.get = function() {
-	        var feedSources = [
-	            {title: 'Mashable', url: 'http://feeds.mashable.com/Mashable'},
-	            {title: 'TechCrunch', url: 'http://feeds.feedburner.com/TechCrunch/'}
-	        ];
-	        if (feeds.length === 0) {
-	            for (var i=0; i<feedSources.length; i++) {
-	                FeedLoader.fetch({q: feedSources[i].url, num: 10}, {}, function (data) {
-	                    var feed = data.responseData.feed;
-	                    console.log("DATA FROM FEEDS: ", data)
-	                    feeds.push(feed);
-	                });
-	            }
-	        }
-	        return feeds;
-	    };
 	})
 	;

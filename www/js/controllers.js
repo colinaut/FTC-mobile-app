@@ -46,13 +46,13 @@ app
 
     $scope.init = function() {
 
-      $http.get("http://ajax.googleapis.com/ajax/services/feed/load", { params: { "v": "1.0", "q": "http://fetus.ucsfmedicalcenter.org/feed/" } })
+      $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys")
       .success(function(data) {
-          $scope.rssTitle = data.responseData.feed.title;
-          $scope.rssUrl = data.responseData.feed.feedUrl;
-          $scope.rssSiteUrl = data.responseData.feed.link;
-          $scope.entries = data.responseData.feed.entries;
-          window.localStorage["entries"] = JSON.stringify(data.responseData.feed.entries);
+				$scope.rssTitle = data.query.results.rss.channel.title;
+				$scope.rssUrl = "http://fetus.ucsfmedicalcenter.org/feed";
+				$scope.rssSiteUrl = data.query.results.rss.channel.link;
+				$scope.entries = data.query.results.rss.channel.item;
+          window.localStorage["entries"] = JSON.stringify(data.query.results.rss.channel.item);
       })
       .error(function(data) {
           console.log("ERROR: " + data);
@@ -63,6 +63,7 @@ app
     }
 
 })
+
 .controller('VideosCtrl', function($scope, Videogroups) {
   /*$scope.videogroups = Videolist.all(); */
 
