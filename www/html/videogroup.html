@@ -1,20 +1,23 @@
-<ons-page ng-controller="VideosDetailCtrl">
-
+<ons-page ng-controller="VideosDetailCtrl" class="videos">
 	<ons-toolbar>
-		<div class="left">
-			<ons-toolbar-button class="toolbar-button--quiet" ui-sref="^">
-				<ons-icon class="ion-ios-arrow-back ons-back-button__icon"></ons-icon>
-				Back
-			</ons-toolbar-button>
+		<div class="left"><img src="img/ftc-logo.png" class="logo" height="44" width="210"/></div>
+	 	<div class="right">
+		 <a href="tel:18007933887" class="contact-btn"><i class="icon ion-ios-telephone button"></i><span class="phone-number">1-800-RX-FETUS</span></a>
 		</div>
-		<div class="center">{{videogroup.type}}</div>
 	</ons-toolbar>
+	<header class="page-header">
+		<ons-toolbar-button class="toolbar-button--quiet back-button" ui-sref="^">
+			<ons-icon class="ion-ios-arrow-back ons-back-button__icon"></ons-icon>Back
+		</ons-toolbar-button>
+		<h1>{{videogroup.type}}</h1>
+	</header>
+
 
 	<ons-list modifier="inset" style="margin-top: 10px">
 		<ons-list-item class="item" ng-repeat="video in videogroup.videolist">
-					<header>
+					<!-- <header>
 						<span class="item-title">{{video.title}}</span>
-					</header>
+					</header> -->
 					<div class="video-container">
 	          <iframe width="420" height="315" src="{{video.url | trusted}}" frameborder="0" allowfullscreen></iframe>
 	        </div>

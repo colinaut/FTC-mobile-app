@@ -18,7 +18,11 @@
   width: 50px;
 }
 .item-title {
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 .item-desc {
   color: #666666;
@@ -92,15 +96,32 @@
   vertical-align: top;
   width: 16px;
 }
-/* Guidelines */
-.guideline-detail .list,
-.guideline-detail .list__item {
-  border: 0;
+/* Lists */
+.list,
+.list__item {
   line-height: 130%;
   min-height: inherit;
+  padding-right: 0;
 }
-.guideline-detail .intro {
-  padding: 0 20px;
+.list--inset {
+  border: 0 !important;
+  font-size: 16px;
+}
+.list--inset .list--inset {
+  margin-right: 8px;
+}
+.intro {
+  padding: 12px 15px 0;
+  font-size: 16px;
+}
+.intro p:first-child {
+  margin-top: 0px;
+}
+.guideline-detail .list__item header {
+  color: #326297;
+}
+.guideline-detail .list__item.active header {
+  color: #326297;
 }
 /* Header */
 .navigation-bar {
@@ -176,10 +197,77 @@ ons-toolbar + .page__background + .page__content {
 }
 /* Additions */
 .page-header {
-  padding: 10px 10px 10px;
+  padding: 6px 60px;
+  background: #158fa0;
+  border-top: 2px solid #057F90;
+  position: relative;
 }
 .page-header h1 {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .01em;
   margin: 0;
+  text-align: center;
+  color: #FFF;
+  font-weight: 500;
+}
+.page-header .back-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 0 3px 4px;
+  display: block;
+  line-height: 18px;
+}
+.page-header .back-button .toolbar-button {
+  font-size: 13px;
+  color: #124277;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0;
+}
+.page-header .back-button .toolbar-button span {
+  font-family: open_sans_condensedbold;
+  position: relative;
+  top: -1px;
+}
+.page-header .back-button .toolbar-button .ons-back-button__icon {
+  font-size: 18px;
+  margin: 0;
+  width: 12px;
+}
+/* Videos */
+.videos .item {
+  margin: 0;
+  background: transparent;
+  border: 0;
+  padding: 15px 0;
+}
+.videos .item h2 {
+  margin-bottom: 10px;
+}
+.videos .list__item {
+  padding: 5px;
+  background: #eee;
+  margin-bottom: 10px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* News */
+.news .list .item-title {
+  font-size: 16px;
 }

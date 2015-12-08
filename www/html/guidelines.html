@@ -6,13 +6,11 @@
 		</div>
 	</ons-toolbar>
 	<header class="page-header"><h1>Guidelines</h1></header>
+
+
   <ons-list ng-controller="GuidelinesCtrl">
 		<ons-list-item modifier="chevron" class="item" ng-repeat="guideline in guidelines" ui-sref="navigator.guidelines.detail({index: $index})">
-
-				<header>
-					<span class="item-title">{{guideline.title}}</span>
-				</header>
-
+				<h2 class="item-title">{{guideline.title}}</h2>
 		</ons-list-item>
 	</ons-list>
 </ons-page>

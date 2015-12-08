@@ -2,6 +2,9 @@
 @color0: #999999; // Appears 3 times
 @color1: #cccccc; // Appears 2 times
 @orange: #f57d4b;
+@ftc-teal: #158FA0;
+@ftc-navy: #326297;
+@ftc-light-blue: rgba(212,235,255,1);
 
 // Width variables (appears count calculates by raw css)
 @width0: 16px; // Appears 2 times
@@ -29,7 +32,11 @@
 	width: 50px;
 }
 .item-title {
-	font-weight: 500;
+	font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 .item-desc {
 	color: #666666;
@@ -100,24 +107,47 @@
 	width: @width0;
 }
 
-/* Guidelines */
+/* Lists */
+
+
+.list, .list__item {
+  //border: 0 !important;
+  //border-color: transparent !important;
+  line-height: 130%;
+  min-height: inherit;
+  padding-right: 0;
+}
+
+.list--inset {
+  border: 0 !important;
+  font-size: 16px;
+  .list--inset {
+    margin-right: 8px;
+  }
+}
+.intro {
+  padding: 12px 15px 0;
+  font-size: 16px;
+  p:first-child {
+    margin-top: 0px;
+  }
+}
+.inset {}
 
 .guideline-detail {
-  .list, .list__item {
-    border: 0;
-    line-height: 130%;
-    min-height: inherit;
+  .list__item header {
+    color: @ftc-navy;
   }
-  .intro {
-    padding: 0 20px;
+  .list__item.active header {
+    color: @ftc-navy;
   }
 }
 
 /* Header */
 
 .navigation-bar {
-  background: -webkit-linear-gradient(left, rgba(212,235,255,1) 0%, rgba(255,255,255,1) 100%);
-  background: linear-gradient(to right, rgba(212,235,255,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(left, @ftc-light-blue 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, @ftc-light-blue 0%, rgba(255,255,255,1) 100%);
   .logo {
     margin: 0 0 0 5px;
   }
@@ -206,10 +236,83 @@ ons-toolbar + .page__background + .page__content {
 
 /* Additions */
 .page-header {
-	padding: 10px 10px 10px;
+	padding: 6px 60px;
+  background: @ftc-teal;
+  border-top: 2px solid #057F90;
+  position: relative;
 	h1 {
-		font-size: 24px;
-		font-weight: 300;
+		font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .01em;
 		margin: 0;
+    text-align: center;
+    color: #FFF;
+    font-weight: 500;
+    //font-family: open_sans_condensedbold;
 	}
+}
+//Revised back button
+.page-header .back-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 0 3px 4px;
+  display: block;
+  line-height: 18px;
+  .toolbar-button {
+    font-size: 13px;
+    color: #124277;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 0;
+    span {
+      font-family: open_sans_condensedbold;
+      position: relative;
+      top: -1px;
+    }
+    .ons-back-button__icon {
+      font-size: 18px;
+      margin: 0;
+      width: 12px;
+    }
+  }
+}
+
+/* Videos */
+
+.videos {
+  .item {
+    margin: 0;
+    background: transparent;
+    border: 0;
+    padding: 15px 0;
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .list__item {
+    padding: 5px;
+    background: #eee;
+    margin-bottom: 10px;
+  }
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0;
+  overflow: hidden;
+  iframe, object, embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      //border: 15px solid #DEE8F7;
+    }
+}
+
+/* News */
+
+.news .list .item-title {
+  font-size: 16px;
 }

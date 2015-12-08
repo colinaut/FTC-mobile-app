@@ -6,7 +6,12 @@
 		</div>
 	</ons-toolbar>
 
-	<header class="page-header"><h1>{{guideline.title}}</h1></header>
+	<header class="page-header">
+		<ons-toolbar-button class="toolbar-button--quiet back-button" ui-sref="^">
+			<ons-icon class="ion-ios-arrow-back ons-back-button__icon"></ons-icon>Back
+		</ons-toolbar-button>
+		<h1>{{guideline.title}}</h1>
+	</header>
 
 	<div class="intro">
   	<p>{{guideline.intro}}</p>

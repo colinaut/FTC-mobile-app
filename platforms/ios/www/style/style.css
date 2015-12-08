@@ -18,7 +18,11 @@
   width: 50px;
 }
 .item-title {
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 .item-desc {
   color: #666666;
@@ -106,10 +110,9 @@
 .navigation-bar {
   background: -webkit-linear-gradient(left, #d4ebff 0%, #ffffff 100%);
   background: linear-gradient(to right, #d4ebff 0%, #ffffff 100%);
-  padding: 5px 0;
 }
 .navigation-bar .logo {
-  margin: 3px 0 0 5px;
+  margin: 0 0 0 5px;
 }
 .navigation-bar .contact-btn {
   text-decoration: none;
@@ -122,6 +125,7 @@
   font-family: open_sans_condensedbold, "San Francisco", Helvetica, sans-serif;
   font-size: 11px;
   font-weight: 700;
+  line-height: 16px;
 }
 .navigation-bar .icon {
   display: block;
@@ -136,18 +140,75 @@
   padding: 0 !important;
   margin-left: -1px;
 }
+/* Resize top bar */
 .navigation-bar {
   height: 60px;
+  padding-top: 8px;
 }
-.navigation-bar ~ .page__content {
+.page__status-bar-fill + .page__background + .page__content {
+  padding-top: 20px;
+}
+ons-toolbar + .page__background + .page__content {
+  margin-top: -1px;
   top: 60px;
+}
+.navigation-bar--material + .page__background + .page__content {
+  top: 56px;
+}
+.page__status-bar-fill + ons-toolbar {
+  height: 80px;
+}
+.page__status-bar-fill + ons-toolbar[modifier~="material"] {
+  height: 76px;
+}
+.page__status-bar-fill + ons-toolbar > .center,
+.page__status-bar-fill + ons-toolbar > .left,
+.page__status-bar-fill + ons-toolbar > .right {
+  padding-top: 20px;
+}
+.page__status-bar-fill + ons-toolbar[modifier~="material"] > .center,
+.page__status-bar-fill + ons-toolbar[modifier~="material"] > .left,
+.page__status-bar-fill + ons-toolbar[modifier~="material"] > .right {
+  height: 76px;
+}
+.page__status-bar-fill + ons-toolbar + .page__background + .page__content {
+  top: 80px;
+  padding-top: 0px;
+}
+.page__status-bar-fill + ons-toolbar[modifier~="material"] + .page__background + .page__content {
+  top: 76px;
 }
 /* Additions */
 .page-header {
-  padding: 10px 10px 10px;
+  padding: 6px;
+  background: #158fa0;
+  border-top: 2px solid #057F90;
 }
 .page-header h1 {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: .01em;
   margin: 0;
+  text-align: center;
+  color: #FFF;
+}
+.toolbar-button,
+.toolbar-button--outline,
+.toolbar-button--quiet {
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  line-height: 18px;
+  float: left;
+}
+.ons-back-button__icon {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+}
+.toolbar-button span {
+  position: relative;
+  top: 1px;
 }
