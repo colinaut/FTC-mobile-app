@@ -1,11 +1,23 @@
 // Color variables (appears count calculates by raw css)
 @color0: #999999; // Appears 3 times
 @color1: #cccccc; // Appears 2 times
+@orange: #f57d4b;
 
 // Width variables (appears count calculates by raw css)
 @width0: 16px; // Appears 2 times
 
+@font-face {
+    font-family: 'open_sans_condensedbold';
+    src: url('../fonts/OpenSans-CondBold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-CondBold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-CondBold-webfont.svg#open_sans_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+.page__background {
+	background: #fff;
+}
 .item {
 	line-height: 1;
 	padding: 10px;
@@ -17,7 +29,6 @@
 	width: 50px;
 }
 .item-title {
-	font-size: 15px;
 	font-weight: 500;
 }
 .item-desc {
@@ -100,4 +111,105 @@
   .intro {
     padding: 0 20px;
   }
+}
+
+/* Header */
+
+.navigation-bar {
+  background: -webkit-linear-gradient(left, rgba(212,235,255,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(212,235,255,1) 0%, rgba(255,255,255,1) 100%);
+  .logo {
+    margin: 0 0 0 5px;
+  }
+	.contact-btn {
+		text-decoration: none;
+		display: block;
+		text-align: center;
+	}
+  .phone-number {
+    color: @orange;
+    display: block;
+    font-family: open_sans_condensedbold, "San Francisco", Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+  .icon {
+    display: block;
+    width: 36px;
+		height: 34px;
+    margin: 0 auto;
+    padding: 0 6px;
+		background-color: @orange;
+    &::before {
+      font-size:32px !important;
+      padding: 0 !important;
+      margin-left: -1px;
+    }
+  }
+}
+/* Resize top bar */
+
+@navbar-height: 60px; //original is 44px
+@navbar-padding: 8px;
+
+.navigation-bar {
+  height: @navbar-height;
+  padding-top: @navbar-padding;
+}
+
+.page__status-bar-fill + .page__background + .page__content {
+  padding-top: 20px;
+}
+
+ons-toolbar + .page__background + .page__content {
+  margin-top: -1px;
+  top: @navbar-height;
+}
+
+.navigation-bar--material + .page__background + .page__content {
+  top: 56px;
+}
+
+.page__status-bar-fill + ons-toolbar { //this should be when there is a status bar
+  height: @navbar-height + 20px;
+}
+
+.page__status-bar-fill + ons-toolbar[modifier~="material"] { //not sure what this is
+  height: 76px;
+}
+
+.page__status-bar-fill + ons-toolbar > .center,
+.page__status-bar-fill + ons-toolbar > .left,
+.page__status-bar-fill + ons-toolbar > .right {
+  padding-top: 20px;
+}
+
+.page__status-bar-fill + ons-toolbar[modifier~="material"] > .center,
+.page__status-bar-fill + ons-toolbar[modifier~="material"] > .left,
+.page__status-bar-fill + ons-toolbar[modifier~="material"] > .right {
+  height: 76px;
+}
+
+
+.page__status-bar-fill + ons-toolbar + .page__background + .page__content {
+  top: @navbar-height + 20px;
+  padding-top: 0px;
+}
+
+.page__status-bar-fill + ons-toolbar[modifier~="material"] + .page__background + .page__content {
+  top: 76px;
+}
+
+
+
+
+/* Additions */
+.page-header {
+	padding: 10px 10px 10px;
+	h1 {
+		font-size: 24px;
+		font-weight: 300;
+		margin: 0;
+	}
 }

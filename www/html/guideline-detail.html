@@ -1,14 +1,13 @@
 <ons-page ng-controller="GuidelineDetailCtrl" class="guideline-detail">
-
 	<ons-toolbar>
-		<div class="left">
-			<ons-toolbar-button class="toolbar-button--quiet" ui-sref="^">
-				<ons-icon class="ion-ios-arrow-back ons-back-button__icon"></ons-icon>
-				Back
-			</ons-toolbar-button>
+		<div class="left"><img src="img/ftc-logo.png" class="logo" height="44" width="210"/></div>
+	 	<div class="right">
+		 <a href="tel:18007933887" class="contact-btn"><i class="icon ion-ios-telephone button"></i><span class="phone-number">1-800-RX-FETUS</span></a>
 		</div>
-		<div class="center">{{guideline.title}}</div>
 	</ons-toolbar>
+
+	<header class="page-header"><h1>{{guideline.title}}</h1></header>
+
 	<div class="intro">
   	<p>{{guideline.intro}}</p>
 	</div>

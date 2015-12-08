@@ -50,9 +50,9 @@ app
       .success(function(data) {
 				$scope.rssTitle = data.query.results.rss.channel.title;
 				$scope.rssUrl = "http://fetus.ucsfmedicalcenter.org/feed";
-				$scope.rssSiteUrl = data.responseData.rss.channel.link;
+				$scope.rssSiteUrl = data.query.results.rss.channel.link;
 				$scope.entries = data.query.results.rss.channel.item;
-          window.localStorage["entries"] = JSON.stringify(ddata.query.results.rss.channel.item);
+          window.localStorage["entries"] = JSON.stringify(data.query.results.rss.channel.item);
       })
       .error(function(data) {
           console.log("ERROR: " + data);
@@ -63,22 +63,6 @@ app
     }
 
 })
-
-.controller('NewsCtrl-test', function($scope, $http) {
-    var url =
-		"https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
-
-    $http.get(url)
-      .success(function(data, status, headers, config) {
-				$scope.rssTitle = data.query.results.rss.channel.title;
-				$scope.rssUrl = "http://fetus.ucsfmedicalcenter.org/feed";
-				$scope.rssSiteUrl = data.responseData.rss.channel.link;
-				$scope.entries = data.query.results.rss.channel.item;
-      })
-      .error(function(data, status, headers, config) {
-        console.error('Error fetching feed:', data);
-      });
-  })
 
 .controller('VideosCtrl', function($scope, Videogroups) {
   /*$scope.videogroups = Videolist.all(); */

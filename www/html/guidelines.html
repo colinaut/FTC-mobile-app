@@ -1,7 +1,11 @@
 <ons-page>
 	<ons-toolbar>
-		<div class="center">Guidelines</div>
+		<div class="left"><img src="img/ftc-logo.png" class="logo" height="44" width="210"/></div>
+	 	<div class="right">
+		 <a href="tel:18007933887" class="contact-btn"><i class="icon ion-ios-telephone button"></i><span class="phone-number">1-800-RX-FETUS</span></a>
+		</div>
 	</ons-toolbar>
+	<header class="page-header"><h1>Guidelines</h1></header>
   <ons-list ng-controller="GuidelinesCtrl">
 		<ons-list-item modifier="chevron" class="item" ng-repeat="guideline in guidelines" ui-sref="navigator.guidelines.detail({index: $index})">
 
