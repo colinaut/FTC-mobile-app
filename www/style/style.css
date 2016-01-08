@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.main-content {
+  padding: 10px;
+}
 .page__background {
   background: #fff;
 }
@@ -102,6 +105,10 @@
   line-height: 130%;
   min-height: inherit;
   padding-right: 0;
+  overflow: hidden;
+}
+.list__item--chevron {
+  padding-right: 35px;
 }
 .list--inset {
   border: 0 !important;
@@ -117,16 +124,42 @@
 .intro p:first-child {
   margin-top: 0px;
 }
-.guideline-detail .list__item header {
-  color: #326297;
+/* Tab bar */
+.tab-bar {
+  background: #f3f3f9;
+  border-top: 1px solid #ccc;
 }
-.guideline-detail .list__item.active header {
-  color: #326297;
+.tab-bar__button {
+  color: #888;
+  line-height: 10px;
+}
+.tab-bar__button .ons-icon:before {
+  font-size: 30px;
+}
+.tab-bar__button span {
+  display: block;
+  font-size: 9px;
+}
+:checked + .tab-bar__button {
+  color: #09b;
+}
+:checked + .tab-bar__button .ion-ios-paper-outline:before {
+  content: "\f472";
+}
+:checked + .tab-bar__button .ion-ios-medkit-outline:before {
+  content: "\f45e";
+}
+:checked + .tab-bar__button .ion-ios-film-outline:before {
+  content: "\f42b";
+}
+:checked + .tab-bar__button .ion-ios-location-outline:before {
+  content: "\f456";
 }
 /* Header */
 .navigation-bar {
   background: -webkit-linear-gradient(left, #d4ebff 0%, #ffffff 100%);
   background: linear-gradient(to right, #d4ebff 0%, #ffffff 100%);
+  border-bottom: 1px solid #326297;
 }
 .navigation-bar .logo {
   margin: 0 0 0 5px;
@@ -195,6 +228,13 @@ ons-toolbar + .page__background + .page__content {
 .page__status-bar-fill + ons-toolbar[modifier~="material"] + .page__background + .page__content {
   top: 76px;
 }
+/* Guidelines */
+.guideline-detail .list__item header {
+  color: #326297;
+}
+.guideline-detail .list__item.active header {
+  color: #326297;
+}
 /* Additions */
 .page-header {
   padding: 6px 60px;
@@ -237,6 +277,9 @@ ons-toolbar + .page__background + .page__content {
   width: 12px;
 }
 /* Videos */
+.videos .list {
+  border-radius: 0;
+}
 .videos .item {
   margin: 0;
   background: transparent;
@@ -244,7 +287,9 @@ ons-toolbar + .page__background + .page__content {
   padding: 15px 0;
 }
 .videos .item h2 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: center;
 }
 .videos .list__item {
   padding: 5px;
@@ -270,4 +315,69 @@ ons-toolbar + .page__background + .page__content {
 /* News */
 .news .list .item-title {
   font-size: 16px;
+  line-height: 135%;
+  font-weight: 500;
+  color: #326297;
+}
+.news .list__item {
+  padding-right: 10px;
+}
+.news .entry-content {
+  font-size: 15px;
+  line-height: 135%;
+}
+.news .entry-content .field-type-image {
+  width: 33.33%;
+  float: left;
+  margin: 0 20px 5px 0;
+}
+.news .entry-content .field-type-image img {
+  width: 100%;
+  height: auto;
+}
+.news .read-more-link a {
+  background: #326297;
+  color: #fff;
+  border-radius: 3px;
+  display: block;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 10em;
+  margin: 10px auto;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/* Contact Page */
+.ucsf-benioff-logo {
+  margin: 0.8em 5px 0.2em;
+  display: block;
+}
+.address,
+.contact-info {
+  padding: 0 5px 10px;
+}
+.address h3,
+.contact-info h3 {
+  color: #158fa0;
+  margin: 0.8em 0 0.2em;
+}
+.address p,
+.contact-info p {
+  margin: 0 0 0.2em;
+}
+.address .google-maps-link,
+.contact-info .google-maps-link {
+  float: right;
+  height: auto;
+}
+.address .google-maps-link img,
+.contact-info .google-maps-link img {
+  display: block;
+}
+.note {
+  font-size: 90%;
+  color: #888;
 }

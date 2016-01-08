@@ -7,19 +7,10 @@
 	</ons-toolbar>
 	<header class="page-header"><h1>Updates</h1></header>
 	<ons-list ng-controller="NewsCtrl" ng-init="init()">
-		<ons-list-item modifier="chevron" class="item" ng-repeat="entry in entries"  >
-		<ons-row>
-			<ons-col width="60px">
-				<div class="item-thum"></div>
-			</ons-col>
-			<ons-col>
-
-				<h2 class="item-title">{{entry.title}}</h2>
-				<div class="entry-content" ng-bind-html="entry.content">{{entry.description}}</div>
-				<div class="read-more-link"><a href="{{entry.link}}">Read More</a></div>
-
-			</ons-col>
-		</ons-row>
+		<ons-list-item class="item" ng-repeat="entry in entries"  >
+			<h2 class="item-title">{{entry.title}}</h2>
+			<div class="entry-content" ng-bind-html="entry.description" updatelinks></div>
+			<!--<div class="read-more-link"><a href="#" ng-click="readmore(entry,event)">Read More</a></div>-->
 		</ons-list-item>
 	</ons-list>
 </ons-page>

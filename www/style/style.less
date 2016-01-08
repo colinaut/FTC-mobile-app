@@ -18,6 +18,9 @@
     font-style: normal;
 }
 
+.main-content {
+  padding: 10px;
+}
 .page__background {
 	background: #fff;
 }
@@ -116,6 +119,11 @@
   line-height: 130%;
   min-height: inherit;
   padding-right: 0;
+  overflow: hidden;
+}
+
+.list__item--chevron {
+  padding-right: 35px;
 }
 
 .list--inset {
@@ -134,13 +142,40 @@
 }
 .inset {}
 
-.guideline-detail {
-  .list__item header {
-    color: @ftc-navy;
+/* Tab bar */
+
+.tab-bar {
+  background: #f3f3f9;
+  border-top: 1px solid #ccc;
+}
+.tab-bar__button {
+  color: #888;
+  line-height: 10px;
+  .ons-icon {
+    &:before {
+      font-size: 30px;
+    }
   }
-  .list__item.active header {
-    color: @ftc-navy;
+  span {
+    display: block;
+    font-size: 9px;
   }
+}
+:checked + .tab-bar__button {
+  color:#09b;
+  .ion-ios-paper-outline:before {
+    content: "\f472"; //change to non-outline version
+  }
+  .ion-ios-medkit-outline:before {
+    content: "\f45e";
+  }
+  .ion-ios-film-outline:before {
+    content: "\f42b";
+  }
+  .ion-ios-location-outline:before {
+    content: "\f456";
+  }
+
 }
 
 /* Header */
@@ -148,6 +183,7 @@
 .navigation-bar {
   background: -webkit-linear-gradient(left, @ftc-light-blue 0%, rgba(255,255,255,1) 100%);
   background: linear-gradient(to right, @ftc-light-blue 0%, rgba(255,255,255,1) 100%);
+  border-bottom: 1px solid @ftc-navy;
   .logo {
     margin: 0 0 0 5px;
   }
@@ -233,6 +269,15 @@ ons-toolbar + .page__background + .page__content {
 
 
 
+/* Guidelines */
+.guideline-detail {
+  .list__item header {
+    color: @ftc-navy;
+  }
+  .list__item.active header {
+    color: @ftc-navy;
+  }
+}
 
 /* Additions */
 .page-header {
@@ -281,13 +326,18 @@ ons-toolbar + .page__background + .page__content {
 /* Videos */
 
 .videos {
+  .list {
+    border-radius: 0;
+  }
   .item {
     margin: 0;
     background: transparent;
     border: 0;
     padding: 15px 0;
     h2 {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      font-size: 14px;
+      text-align: center;
     }
   }
   .list__item {
@@ -313,6 +363,68 @@ ons-toolbar + .page__background + .page__content {
 
 /* News */
 
-.news .list .item-title {
-  font-size: 16px;
+.news {
+  .list .item-title {
+    font-size: 16px;
+    line-height: 135%;
+    font-weight: 500;
+    color: @ftc-navy;
+  }
+  .list__item {
+    padding-right: 10px;
+  }
+  .entry-content {
+    font-size: 15px;
+    line-height: 135%;
+    .field-type-image {
+      width: 33.33%;
+      float: left;
+      margin: 0 20px 5px 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .read-more-link a {
+    background: @ftc-navy;
+    color: #fff;
+    border-radius: 3px;
+    display: block;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    width: 10em;
+    margin: 10px auto;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+/* Contact Page */
+
+.ucsf-benioff-logo {
+  margin: 0.8em 5px 0.2em;
+  display: block;
+}
+.address, .contact-info {
+  padding: 0 5px 10px;
+  h3 {
+    color: @ftc-teal;
+    margin: 0.8em 0 0.2em;
+  }
+  p {margin: 0 0 0.2em;}
+  .google-maps-link {
+    float: right;
+    height: auto;
+    img {
+      display: block;
+    }
+  }
+}
+.note {
+  font-size: 90%;
+  color: #888;
 }

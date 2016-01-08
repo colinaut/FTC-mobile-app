@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
 	<title>Onsen UI router</title>
 
 	<script src="lib/angular/angular.min.js"></script>
 	<script src="lib/onsen/js/onsenui.min.js"></script>
 	<script src="lib/angular-cache.min.js"></script>
 	<script src="lib/angular-ui-router.min.js"></script>
+	<script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
 	<script src="js/app.js"></script>
-	<script src="js/controllers.js"></script>
+	<script src="js/controllers.js"></script> 
+	<script src="js/scripts.js"></script>
 
 	<link rel="stylesheet" href="style/onsenui.css">
 	<link rel="stylesheet" href="style/onsen-css-components.css">
@@ -21,16 +24,20 @@
 
 	<ons-tabbar var="myTabbar" animation="none">
 		<ons-tab ui-sref="navigator.news">
-			<ons-icon icon="ion-home"></ons-icon>
-			<span style="font-size: 14px">Updates</span>
+			<ons-icon icon="ion-ios-paper-outline"></ons-icon>
+			<span>Updates</span>
 		</ons-tab>
 		<ons-tab ui-sref="navigator.guidelines">
-			<ons-icon icon="ion-home"></ons-icon>
-			<span style="font-size: 14px">Guidelines</span>
+			<ons-icon icon="ion-ios-medkit-outline"></ons-icon>
+			<span>Guidelines</span>
 		</ons-tab>
 		<ons-tab ui-sref="navigator.videos">
-			<ons-icon icon="ion-home"></ons-icon>
-			<span style="font-size: 14px">Videos</span>
+			<ons-icon icon="ion-ios-film-outline"></ons-icon>
+			<span>Videos</span>
+		</ons-tab>
+		<ons-tab ui-sref="navigator.contact">
+			<ons-icon icon="ion-ios-location-outline"></ons-icon>
+			<span>Contact</span>
 		</ons-tab>
 
 	</ons-tabbar>

@@ -8,17 +8,17 @@
 	<header class="page-header"><h1>Videos</h1></header>
   <ons-list ng-controller="VideosCtrl">
 		<ons-list-item modifier="chevron" class="item" ng-repeat="videogroup in videogroups" ui-sref="navigator.videos.group({index: $index})">
-		<ons-row>
+		<!-- <ons-row>
 			<ons-col width="60px">
 				<div class="item-thum"></div>
 			</ons-col>
-			<ons-col>
+			<ons-col> -->
 				<header>
 					<span class="item-title">{{videogroup.type}}</span>
 				</header>
 
-			</ons-col>
-		</ons-row>
+			<!-- </ons-col>
+		</ons-row> -->
 		</ons-list-item>
 	</ons-list>
 </ons-page>

@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.main-content {
+  padding: 10px;
+}
 .page__background {
   background: #fff;
 }
@@ -96,20 +99,67 @@
   vertical-align: top;
   width: 16px;
 }
-/* Guidelines */
-.guideline-detail .list,
-.guideline-detail .list__item {
-  border: 0;
+/* Lists */
+.list,
+.list__item {
   line-height: 130%;
   min-height: inherit;
+  padding-right: 0;
+  overflow: hidden;
 }
-.guideline-detail .intro {
-  padding: 0 20px;
+.list__item--chevron {
+  padding-right: 35px;
+}
+.list--inset {
+  border: 0 !important;
+  font-size: 16px;
+}
+.list--inset .list--inset {
+  margin-right: 8px;
+}
+.intro {
+  padding: 12px 15px 0;
+  font-size: 16px;
+}
+.intro p:first-child {
+  margin-top: 0px;
+}
+/* Tab bar */
+.tab-bar {
+  background: #f3f3f9;
+  border-top: 1px solid #ccc;
+}
+.tab-bar__button {
+  color: #888;
+  line-height: 10px;
+}
+.tab-bar__button .ons-icon:before {
+  font-size: 30px;
+}
+.tab-bar__button span {
+  display: block;
+  font-size: 9px;
+}
+:checked + .tab-bar__button {
+  color: #09b;
+}
+:checked + .tab-bar__button .ion-ios-paper-outline:before {
+  content: "\f472";
+}
+:checked + .tab-bar__button .ion-ios-medkit-outline:before {
+  content: "\f45e";
+}
+:checked + .tab-bar__button .ion-ios-film-outline:before {
+  content: "\f42b";
+}
+:checked + .tab-bar__button .ion-ios-location-outline:before {
+  content: "\f456";
 }
 /* Header */
 .navigation-bar {
   background: -webkit-linear-gradient(left, #d4ebff 0%, #ffffff 100%);
   background: linear-gradient(to right, #d4ebff 0%, #ffffff 100%);
+  border-bottom: 1px solid #326297;
 }
 .navigation-bar .logo {
   margin: 0 0 0 5px;
@@ -178,37 +228,156 @@ ons-toolbar + .page__background + .page__content {
 .page__status-bar-fill + ons-toolbar[modifier~="material"] + .page__background + .page__content {
   top: 76px;
 }
+/* Guidelines */
+.guideline-detail .list__item header {
+  color: #326297;
+}
+.guideline-detail .list__item.active header {
+  color: #326297;
+}
 /* Additions */
 .page-header {
-  padding: 6px;
+  padding: 6px 60px;
   background: #158fa0;
   border-top: 2px solid #057F90;
+  position: relative;
 }
 .page-header h1 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: .01em;
   margin: 0;
   text-align: center;
   color: #FFF;
+  font-weight: 500;
 }
-.toolbar-button,
-.toolbar-button--outline,
-.toolbar-button--quiet {
-  font-size: 12px;
-  color: #fff;
+.page-header .back-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 0 3px 4px;
+  display: block;
+  line-height: 18px;
+}
+.page-header .back-button .toolbar-button {
+  font-size: 13px;
+  color: #124277;
+  line-height: 18px;
   text-transform: uppercase;
-  font-weight: 700;
   padding: 0;
-  line-height: 18px;
-  float: left;
 }
-.ons-back-button__icon {
-  font-size: 18px;
-  line-height: 18px;
-  margin: 0;
-}
-.toolbar-button span {
+.page-header .back-button .toolbar-button span {
+  font-family: open_sans_condensedbold;
   position: relative;
-  top: 1px;
+  top: -1px;
+}
+.page-header .back-button .toolbar-button .ons-back-button__icon {
+  font-size: 18px;
+  margin: 0;
+  width: 12px;
+}
+/* Videos */
+.videos .list {
+  border-radius: 0;
+}
+.videos .item {
+  margin: 0;
+  background: transparent;
+  border: 0;
+  padding: 15px 0;
+}
+.videos .item h2 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+.videos .list__item {
+  padding: 5px;
+  background: #eee;
+  margin-bottom: 10px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* News */
+.news .list .item-title {
+  font-size: 16px;
+  line-height: 135%;
+  font-weight: 500;
+  color: #326297;
+}
+.news .list__item {
+  padding-right: 10px;
+}
+.news .entry-content {
+  font-size: 15px;
+  line-height: 135%;
+}
+.news .entry-content .field-type-image {
+  width: 33.33%;
+  float: left;
+  margin: 0 20px 5px 0;
+}
+.news .entry-content .field-type-image img {
+  width: 100%;
+  height: auto;
+}
+.news .read-more-link a {
+  background: #326297;
+  color: #fff;
+  border-radius: 3px;
+  display: block;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 10em;
+  margin: 10px auto;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/* Contact Page */
+.ucsf-benioff-logo {
+  margin: 0.8em 5px 0.2em;
+  display: block;
+}
+.address,
+.contact-info {
+  padding: 0 5px 10px;
+}
+.address h3,
+.contact-info h3 {
+  color: #158fa0;
+  margin: 0.8em 0 0.2em;
+}
+.address p,
+.contact-info p {
+  margin: 0 0 0.2em;
+}
+.address .google-maps-link,
+.contact-info .google-maps-link {
+  float: right;
+  height: auto;
+}
+.address .google-maps-link img,
+.contact-info .google-maps-link img {
+  display: block;
+}
+.note {
+  font-size: 90%;
+  color: #888;
 }
