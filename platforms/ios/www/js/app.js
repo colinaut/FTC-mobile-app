@@ -7,18 +7,13 @@ app
         return $sce.trustAsResourceUrl(url);
     };
 }])
-.filter('externalizeLinks' [function () {
-    return function() {
-      return ;
-    }
-}])
+
 .directive('updatelinks', function($timeout) {
     return {
         link: function(scope, element) {
             $timeout(function() {
                 element.find('a[href^="https://www.youtube.com"]').remove();
                 element.find('a').on("click", function(e){
-                  //console.log(angular.element(this).attr("target"));
                   window.open(angular.element(this).attr("href"), '_blank');
                   e.preventDefault();
                 });
@@ -26,14 +21,7 @@ app
         }
     };
 })
-.filter('convertLinks', function () {
-    return function(input) {
-      var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-      var content = input.replace(exp,'<a ng-click="alertLink(\'$1\')">$1</a>');
 
-      return content;
-    };
-  })
 .config(function($stateProvider, $urlRouterProvider) {
 
 	// By default show Tab 1 - Navigator MasterDetail example
@@ -62,26 +50,6 @@ app
 			}]
 		})
 
-		// Tab 1 - MasterDetail example - List of items
-		.state('navigator.master', {
-			parent: 'navigator',
-			url: '/master',
-			onEnter: ['$rootScope', function($rootScope) {
-				$rootScope.myNavigator.resetToPage('html/master.html');
-			}]
-		})
-
-		// Tab 1 - MasterDetail example - Item details
-		.state('navigator.master.detail', {
-			parent: 'navigator.master',
-			url: '/detail/:index',
-			onEnter: ['$rootScope','$stateParams', function($rootScope,$stateParams) {
-				$rootScope.myNavigator.pushPage('html/detail.html', {'index': $stateParams.index});
-			}],
-			onExit: function($rootScope) {
-				$rootScope.myNavigator.popPage();
-			}
-		})
     // Guidelines
 		.state('navigator.guidelines', {
 			parent: 'navigator',
@@ -102,6 +70,7 @@ app
 				$rootScope.myNavigator.popPage();
 			}
 		})
+
     // List of Video Groups
     .state('navigator.videos', {
       parent: 'navigator',
@@ -110,6 +79,7 @@ app
         $rootScope.myNavigator.resetToPage('html/videos.html');
       }]
     })
+
     // Detail of Video Group
     .state('navigator.videos.group', {
       parent: 'navigator.videos',
@@ -121,6 +91,8 @@ app
 				$rootScope.myNavigator.popPage();
 			}
     })
+
+    // Contact page
     .state('navigator.contact', {
 			parent: 'navigator',
 			url: '/contact',
@@ -129,44 +101,6 @@ app
 			}]
 		})
 
-		// Tab 2 - SlidingMenu example - SlidingMenu init
-		.state('sliding', {
-			abstract: true,
-			// url: '/sliding', // Optional url prefix
-			resolve: {
-				loaded: function($rootScope) {
-					$rootScope.myTabbar.setActiveTab(1);
-					return $rootScope.myTabbar.loadPage('html/tab2.html');
-				}
-			}
-		})
-
-		// Tab 2 - SlidingMenu example - Landing page
-		.state('sliding.main', {
-			parent: 'sliding',
-			url: '/main',
-			onEnter: ['$rootScope', function($rootScope) {
-				$rootScope.myMenu.setMainPage('html/main.html', {closeMenu: true});
-			}]
-		})
-
-		// Tab 2 - SlidingMenu example - Example page 1
-		.state('sliding.page1', {
-			parent: 'sliding',
-			url: '/page1',
-			onEnter: ['$rootScope', function($rootScope) {
-				$rootScope.myMenu.setMainPage('html/page1.html', {closeMenu: true});
-			}]
-		})
-
-		// Tab 2 - SlidingMenu example - Example page 2
-		.state('sliding.page2', {
-			parent: 'sliding',
-			url: '/page2',
-			onEnter: ['$rootScope', function($rootScope) {
-				$rootScope.myMenu.setMainPage('html/page2.html', {closeMenu: true});
-			}]
-		})
 
 	;
 
