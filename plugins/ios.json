@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
         }
     },
     "dependent_plugins": {}
