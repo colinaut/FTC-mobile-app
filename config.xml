@@ -41,6 +41,15 @@
     <icon height="40" platform="ios" src="res/ios/icon-40.png" width="40" />
     <icon height="80" platform="ios" src="res/ios/icon-40@2x.png" width="80" />
     <icon height="120" platform="ios" src="res/ios/icon-40@3x.png" width="120" />
+
+    <icon src="res/ios/ldpi.png" platform="android" qualifier="ldpi" />
+    <icon src="res/ios/mdpi.png" platform="android" qualifier="mdpi" />
+    <icon src="res/ios/hdpi.png" platform="android" qualifier="hdpi" />
+    <icon src="res/ios/xhdpi.png" platform="android" qualifier="xhdpi" />
+    <icon src="res/ios/xxhdpi.png" platform="android" qualifier="xxhdpi" />
+    <icon src="res/ios/fr-xxhdpi.png" platform="android" qualifier="fr-xxhdpi" />
+    <icon src="res/ios/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+
     <splash src="res/splash.png" />
     <splash height="480" platform="ios" src="res/ios/Default.png" width="320" />
     <splash height="960" platform="ios" src="res/ios/Default@2x.png" width="640" />
