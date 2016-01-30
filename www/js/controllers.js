@@ -124,7 +124,7 @@ app
 	  };
 
 	})
-	.factory('Guidelines', function($http, CacheFactory) {
+	.factory('Guidelines-', function($http, CacheFactory) {
 
 	  // Create cache if there isn't one.
 	  if (!CacheFactory.get('guidelinesCache')) {
@@ -141,7 +141,65 @@ app
 	    });
 	  }
 
+		var guidelinesSiteData = function() {
+			return $http.get('http://colinaut.com/test/guidelines.json').then(function(response){
+	      console.log("sitedata: " + response.data.version);
+				return response.data.guidelines;
+
+	    });
+		}
+
 	  return {
+	    all: function() {
+	      return guidelinesSiteData();
+	    },
+
+	    get: function(guidelinesId) {
+	      var guidelines
+
+	      return guidelinesSiteData().then(function(response){
+					return response[parseInt(guidelinesId)];
+	      });
+
+	      return null;
+
+	    }
+
+	  }
+
+	})
+
+	.factory('Guidelines', function($http, CacheFactory) {
+
+		// Create cache if there isn't one.
+		if (!CacheFactory.get('guidelinesCache')) {
+			// or CacheFactory('bookCache', { ... });
+			CacheFactory.createCache('guidelinesCache', {});
+		}
+		// Get cache
+		var guidelinesCache = CacheFactory.get('guidelinesCache');
+
+		// Get data from JSON using cache if present
+		var guidelinesData = function() {
+			var tempdata, tempdatasite;
+			return $http.get('data/guidelines.json').then(function(response){
+				tempdata = response.data;
+				return $http.get('http://colinaut.com/test/guidelines.json').then(function(response2){
+					tempdatasite = response2.data;
+					console.log("sitejsondata: " + tempdatasite.version);
+					console.log("localjsondata: " + tempdata.version);
+					if (tempdatasite.version > tempdata.version) {
+						return tempdatasite.guidelines;
+					} else {
+						return tempdata.guidelines;
+					}
+				});
+			});
+
+
+		}
+
+		return {
 	    all: function() {
 	      return guidelinesData();
 	    },

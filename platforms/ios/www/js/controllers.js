@@ -141,15 +141,23 @@ app
 	    });
 	  }
 
+		var guidelinesSiteData = function() {
+			return $http.get('http://fetus.ucsfmedicalcenter.org/sites/fetus.ucsfmedicalcenter.org/files/wysiwyg/guidelines.json').then(function(response){
+	      return response.data.guidelines;
+	    });
+		}
+
+// http://fetus.ucsfmedicalcenter.org/sites/fetus.ucsfmedicalcenter.org/files/wysiwyg/guidelines.json
+
 	  return {
 	    all: function() {
-	      return guidelinesData();
+	      return guidelinesSiteData();
 	    },
 
 	    get: function(guidelinesId) {
 	      var guidelines
 
-	      return guidelinesData().then(function(response){
+	      return guidelinesSiteData().then(function(response){
 					return response[parseInt(guidelinesId)];
 	      });
 
