@@ -15,6 +15,9 @@
         },
         "cordova-plugin-media": {
             "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
+        },
+        "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
+            "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
         }
     },
     "dependent_plugins": {

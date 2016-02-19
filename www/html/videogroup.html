@@ -16,10 +16,10 @@
 	<ons-list modifier="inset" style="margin-top: 10px">
 		<ons-list-item class="item" ng-repeat="video in videogroup.videolist">
 					<header>
-						<h2 class="item-title">{{video.title}}</h2>
+						<h2 class="item-title"><a href="#" ng-click="YoutubeVideoPlayer.openVideo('7mDXqGTT0Uo')">{{video.title}}</a></h2>
 					</header>
 					<div class="video-container">
-	          <iframe width="420" height="315" src="{{video.url | trusted}}" frameborder="0" allowfullscreen></iframe>
+	          <!-- <iframe width="420" height="315" src="{{video.url | trusted}}" frameborder="0" allowfullscreen></iframe> -->
 	        </div>
 		</ons-list-item>
 	</ons-list>
