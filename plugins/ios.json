@@ -12,7 +12,14 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
+        }
+    }
 }

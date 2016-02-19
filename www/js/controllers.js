@@ -181,27 +181,22 @@ app
 
 		// Get data from JSON using cache if present
 		var guidelinesData = function() {
-			var tempdata, tempdatasite;
-			return $http.get('data/guidelines.json').then(function(response){
-				tempdata = response.data;
-				return $http.get('http://colinaut.com/test/guidelines.json').then(function(response2){
-					tempdatasite = response2.data;
-					console.log("sitejsondata: " + tempdatasite.version);
-					console.log("localjsondata: " + tempdata.version);
-					if (tempdatasite.version > tempdata.version) {
-						return tempdatasite.guidelines;
-					} else {
-						return tempdata.guidelines;
-					}
+			var datatemp;
+			return $http.get('http://colinaut.com/test/guidelines.json').then(function(response){
+				datatemp = response.data.guidelines;
+				return datatemp;
+			}, function(response) {
+				return $http.get('data/guidelines.json').then(function(response){
+					datatemp = response.data.guidelines;
+					return datatemp;
 				});
 			});
-
 
 		}
 
 		return {
 	    all: function() {
-	      return guidelinesData();
+				return guidelinesData();
 	    },
 
 	    get: function(guidelinesId) {

@@ -124,7 +124,7 @@ app
 	  };
 
 	})
-	.factory('Guidelines', function($http, CacheFactory) {
+	.factory('Guidelines-', function($http, CacheFactory) {
 
 	  // Create cache if there isn't one.
 	  if (!CacheFactory.get('guidelinesCache')) {
@@ -142,12 +142,12 @@ app
 	  }
 
 		var guidelinesSiteData = function() {
-			return $http.get('http://fetus.ucsfmedicalcenter.org/sites/fetus.ucsfmedicalcenter.org/files/wysiwyg/guidelines.json').then(function(response){
-	      return response.data.guidelines;
+			return $http.get('http://colinaut.com/test/guidelines.json').then(function(response){
+	      console.log("sitedata: " + response.data.version);
+				return response.data.guidelines;
+
 	    });
 		}
-
-// http://fetus.ucsfmedicalcenter.org/sites/fetus.ucsfmedicalcenter.org/files/wysiwyg/guidelines.json
 
 	  return {
 	    all: function() {
@@ -158,6 +158,51 @@ app
 	      var guidelines
 
 	      return guidelinesSiteData().then(function(response){
+					return response[parseInt(guidelinesId)];
+	      });
+
+	      return null;
+
+	    }
+
+	  }
+
+	})
+
+	.factory('Guidelines', function($http, CacheFactory) {
+
+		// Create cache if there isn't one.
+		if (!CacheFactory.get('guidelinesCache')) {
+			// or CacheFactory('bookCache', { ... });
+			CacheFactory.createCache('guidelinesCache', {});
+		}
+		// Get cache
+		var guidelinesCache = CacheFactory.get('guidelinesCache');
+
+		// Get data from JSON using cache if present
+		var guidelinesData = function() {
+			var datatemp;
+			return $http.get('http://colinaut.com/test/guidelines.json').then(function(response){
+				datatemp = response.data.guidelines;
+				return datatemp;
+			}, function(response) {
+				return $http.get('data/guidelines.json').then(function(response){
+					datatemp = response.data.guidelines;
+					return datatemp;
+				});
+			});
+
+		}
+
+		return {
+	    all: function() {
+				return guidelinesData();
+	    },
+
+	    get: function(guidelinesId) {
+	      var guidelines
+
+	      return guidelinesData().then(function(response){
 					return response[parseInt(guidelinesId)];
 	      });
 
