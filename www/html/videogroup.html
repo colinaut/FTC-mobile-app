@@ -16,7 +16,7 @@
 	<ons-list modifier="inset" style="margin-top: 10px">
 		<ons-list-item class="item" ng-repeat="video in videogroup.videolist">
 					<header>
-						<h2 class="item-title">{{video.title}}</h2>
+						<h2 class="item-title" ng-click="playVideo(video.id)">{{video.title}}</h2>
 					</header>
 					<div class="video-container">
 	          <!-- <iframe width="420" height="315" src="{{video.url | trusted}}" frameborder="0" allowfullscreen></iframe> -->
