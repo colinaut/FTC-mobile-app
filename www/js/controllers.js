@@ -79,8 +79,9 @@ app
 .controller('VideosDetailCtrl', function($scope, $stateParams, Videogroups) {
   Videogroups.get($stateParams.index).then(function(response){
     $scope.videogroup = response;
-		$scope.playVideo = function(id) {
-			YoutubeVideoPlayer.openVideo(id);
+		$scope.playVideo = function(vidid) {
+			//alert("hi: " + vidid);
+			YoutubeVideoPlayer.openVideo(vidid);
 		}
   });
 })

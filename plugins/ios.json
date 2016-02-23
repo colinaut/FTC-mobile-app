@@ -7,22 +7,24 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-inappbrowser": {
+        "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
             "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
         },
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
         },
         "cordova-plugin-media": {
             "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
         },
-        "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "edu.ucsf.fetus.ftcmobileapp"
-        }
-    }
+    "dependent_plugins": {}
 }

@@ -79,19 +79,11 @@ app
 .controller('VideosDetailCtrl', function($scope, $stateParams, Videogroups) {
   Videogroups.get($stateParams.index).then(function(response){
     $scope.videogroup = response;
+		$scope.playVideo = function(vidid) {
+			//alert("hi: " + vidid);
+			YoutubeVideoPlayer.openVideo(vidid);
+		}
   });
-
-  $scope.toggleGroup = function(group) {
-    if ($scope.isGroupShown(group)) {
-      $scope.shownGroup = null;
-    } else {
-      $scope.shownGroup = group;
-    }
-  };
-  $scope.isGroupShown = function(group) {
-    return $scope.shownGroup === group;
-  };
-
 })
 
 	.factory('Videogroups', function($http, CacheFactory) {

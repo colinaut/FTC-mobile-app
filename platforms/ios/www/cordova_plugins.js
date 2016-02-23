@@ -1,12 +1,19 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "pluginId": "cordova-plugin-inappbrowser",
+        "file": "plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/www/YoutubeVideoPlayer.js",
+        "id": "com.bunkerpalace.cordova.YoutubeVideoPlayer.YoutubeVideoPlayer",
+        "pluginId": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
         "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
+            "YoutubeVideoPlayer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device/www/device.js",
+        "id": "cordova-plugin-device.device",
+        "pluginId": "cordova-plugin-device",
+        "clobbers": [
+            "device"
         ]
     },
     {
@@ -183,6 +190,15 @@ module.exports = [
         "runs": true
     },
     {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-media/www/MediaError.js",
         "id": "cordova-plugin-media.MediaError",
         "pluginId": "cordova-plugin-media",
@@ -197,24 +213,17 @@ module.exports = [
         "clobbers": [
             "window.Media"
         ]
-    },
-    {
-        "file": "plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/www/YoutubeVideoPlayer.js",
-        "id": "com.bunkerpalace.cordova.YoutubeVideoPlayer.YoutubeVideoPlayer",
-        "pluginId": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
-        "clobbers": [
-            "YoutubeVideoPlayer"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-inappbrowser": "1.1.2-dev",
-    "cordova-plugin-whitelist": "1.2.1",
+    "com.bunkerpalace.cordova.YoutubeVideoPlayer": "1.0.1",
+    "cordova-plugin-device": "1.1.1",
     "cordova-plugin-file": "4.1.1",
+    "cordova-plugin-inappbrowser": "1.1.2-dev",
     "cordova-plugin-media": "2.2.0",
-    "com.bunkerpalace.cordova.YoutubeVideoPlayer": "1.0.1"
+    "cordova-plugin-whitelist": "1.2.1"
 }
 // BOTTOM OF METADATA
 });

@@ -10,7 +10,6 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -24,10 +23,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-
     <icon src="res/icon.png" />
     <splash src="res/splash.png" />
-
     <platform name="ios">
         <icon height="60" src="res/ios/icon-60.png" width="60" />
         <icon height="120" src="res/ios/icon-60@2x.png" width="120" />
@@ -44,7 +41,6 @@
         <icon height="40" src="res/ios/icon-40.png" width="40" />
         <icon height="80" src="res/ios/icon-40@2x.png" width="80" />
         <icon height="120" src="res/ios/icon-40@3x.png" width="120" />
-
         <splash height="480" src="res/ios/Default.png" width="320" />
         <splash height="960" src="res/ios/Default@2x.png" width="640" />
         <splash height="1136" src="res/ios/Default-568h@2x.png" width="640" />
@@ -57,25 +53,25 @@
         <splash height="1536" src="res/ios/Default-Landscape@2x.png" width="2048" />
     </platform>
     <platform name="android">
-        <icon src="res/android/ldpi.png" density="ldpi" />
-        <icon src="res/android/mdpi.png" density="mdpi" />
-        <icon src="res/android/hdpi.png" density="hdpi" />
-        <icon src="res/android/xhdpi.png" density="xhdpi" />
-        <icon src="res/android/xxhdpi.png" density="xxhdpi" />
-        <icon src="res/android/fr-xxhdpi.png" density="fr-xxhdpi" />
-        <icon src="res/android/xxxhdpi.png" density="xxxhdpi" />
-
-        <splash src="res/android/ldpi-splash.png" density="ldpi" />
-        <splash src="res/android/mdpi-splash.png" density="mdpi" />
-        <splash src="res/android/hdpi-splash.png" density="hdpi" />
-        <splash src="res/android/xhdpi-splash.png" density="xhdpi" />
-        <splash src="res/android/xxhdpi-splash.png" density="xxhdpi" />
-        <splash src="res/android/xxxhdpi-splash.png" density="xxxhdpi" />
+        <icon density="ldpi" src="res/android/ldpi.png" />
+        <icon density="mdpi" src="res/android/mdpi.png" />
+        <icon density="hdpi" src="res/android/hdpi.png" />
+        <icon density="xhdpi" src="res/android/xhdpi.png" />
+        <icon density="xxhdpi" src="res/android/xxhdpi.png" />
+        <icon density="fr-xxhdpi" src="res/android/fr-xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/android/xxxhdpi.png" />
+        <splash density="ldpi" src="res/android/ldpi-splash.png" />
+        <splash density="mdpi" src="res/android/mdpi-splash.png" />
+        <splash density="hdpi" src="res/android/hdpi-splash.png" />
+        <splash density="xhdpi" src="res/android/xhdpi-splash.png" />
+        <splash density="xxhdpi" src="res/android/xxhdpi-splash.png" />
+        <splash density="xxxhdpi" src="res/android/xxxhdpi-splash.png" />
     </platform>
-
-
-
-
-    <engine name="ios" spec="~3.9.2" />
     <engine name="android" spec="~4.1.1" />
+    <engine name="ios" spec="~3.9.2" />
+    <plugin name="cordova-plugin-inappbrowser" spec="https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-media" spec="~2.2.0" />
+    <plugin name="com.bunkerpalace.cordova.YoutubeVideoPlayer" spec="https://github.com/Glitchbone/CordovaYoutubeVideoPlayer.git" />
+    <plugin name="cordova-plugin-device" spec="~1.1.1" />
 </widget>
