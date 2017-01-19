@@ -58,6 +58,10 @@ app
 		$scope.intro = response.intro;
   });
 
+	ImgCache.$promise.then(function() {
+				ImgCache.cacheFile('...');
+		});
+
 })
 
 .controller('TeamDetailCtrl', function($scope, $stateParams, Data) {
@@ -65,9 +69,7 @@ app
     $scope.specialty = response;
   });
 
-	$scope.changeLength = function() {
-	    $scope.textLength = 9999;
-	}
+	//$scope.hidden = true;
 })
 
 .factory('Data', function($http, CacheFactory) {

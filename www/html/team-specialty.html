@@ -11,16 +11,14 @@
 		</ons-toolbar-button>
 		<h1>{{specialty.title}}</h1>
 	</header>
-	<div class="intro">
-  	<p>{{specialty.intro}}</p>
-	</div>
+	<div class="intro" ng-bind-html="specialty.intro | nl2p"></div>
   <ons-list>
-		<ons-list-item class="item" ng-repeat="member in specialty.list">
+		<ons-list-item class="item member" ng-repeat="member in specialty.list" ng-init="hide=true">
 
 				<header>
 					<span class="item-title">{{member.name}}</span>
 				</header>
-				<div class="member-content">
+				<div class="member-content" ng-class="{ less: hide }" ng-click="hide = !hide">
 					<figure>
 						<img ng-src="{{member.image}}" />
 					</figure>
@@ -29,10 +27,11 @@
 							<span>{{title.content}}</span>
 						</ons-list-item>
 					</ons-list>
-					<div class="bio">
-						<p ng-text-truncate="member.bio" ng-tt-words-threshold="15"> </p>
+					<div class="bio" ng-bind-html="member.bio | nl2p">
 					</div>
 				</div>
+				<a class="view-more" ng-click="hide = !hide">{{hide ? 'View Full Bio' : 'View Less'}}</a>
 		</ons-list-item>
 	</ons-list>
+
 </ons-page>

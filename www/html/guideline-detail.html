@@ -13,9 +13,7 @@
 		<h1>{{guideline.title}}</h1>
 	</header>
 
-	<div class="intro">
-  	<p>{{guideline.intro}}</p>
-	</div>
+	<div class="intro" ng-bind-html="guideline.intro | nl2p"></div>
 	<ons-list modifier="inset" style="margin-top: 10px">
 		<ons-list-item class="item" ng-repeat="group in guideline.guide" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
 					<header>

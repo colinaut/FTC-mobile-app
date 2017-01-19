@@ -112,14 +112,21 @@
 }
 .list--inset {
   border: 0 !important;
-  font-size: 16px;
+  font-size: 15px;
 }
 .list--inset .list--inset {
   margin-right: 8px;
 }
+.list--inset .list--inset .ons-list-item-inner {
+  padding: 5px 10px;
+}
 .intro {
   padding: 12px 10px 0;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 130%;
+}
+.intro p {
+  margin: 8px 0;
 }
 .intro p:first-child {
   margin-top: 0px;
@@ -386,33 +393,65 @@ ons-toolbar + .page__background + .page__content {
   color: #888;
 }
 /* Team page */
+.member {
+  padding-right: 10px;
+}
 .member-content {
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem;
+  margin-top: 3px;
   font-size: 14px;
   line-height: 140%;
+  border: 1px solid #ddd;
+  border-radius: 2px 2px 2px 0px;
+  background: #f4f6f8;
 }
 .member-content figure {
   float: left;
   width: 25%;
   margin: 0 10px 10px 0;
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
 }
 .member-content figure img {
   width: 100%;
   height: auto;
   display: block;
 }
+.member-content.less {
+  height: 90px;
+  overflow: hidden;
+}
 .list.titles {
   border: 0;
   font-size: 13px;
+  background: none;
 }
 .list.titles .list__item {
   border: 0;
   padding: 0;
   margin-bottom: 5px;
+  background: none;
 }
 .bio {
   font-size: 13px;
+  border-top: 1px solid #ddd;
+}
+.bio p {
+  margin: 8px 0;
+}
+.view-more {
+  background: #999999;
+  color: #fff;
+  padding: 1px 6px 2px ;
+  float: left;
+  margin: 0 0 10px;
+  border-radius: 0 0 3px 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 130%;
+  font-weight: 700;
+}
+.view-more:hover {
+  background: #326297;
 }
 .btn-link {
   color: #158FA0;

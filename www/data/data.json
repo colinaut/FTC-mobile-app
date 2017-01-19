@@ -949,7 +949,7 @@
             "content": "Fetal Intervention Options",
             "children": [
               {
-                "content": "Tracheal Balloon Occlusion (TBO) can be offered if patient meets criteria listed below. TBO is performed during 26-28 weeks gestation via u/s guided fetoscopy (fetal bronchoscopy) and again removed via a second fetoscopy (âunpluggingâ) between 32-34 weeks. Once the balloon has been successfully removed, delivery can be vaginal (usually planned induction) at 39 weeks if not in spontaneous labor earlier. If spontanious delivery occurs prior to removal of the balloon an EXIT procedure, a surgical delivery much like a caesarean section, may be required. During the ~6 weeks that the balloon is in situ, the patient must live in close proximity to a center that can delivery via EXIT procedure, and may need to relocate if she does not.",
+                "content": "Tracheal Balloon Occlusion (TBO) can be offered if patient meets criteria listed below. TBO is performed during 26-28 weeks gestation via u/s guided fetoscopy (fetal bronchoscopy) and again removed via a second fetoscopy (unplugging) between 32-34 weeks. Once the balloon has been successfully removed, delivery can be vaginal (usually planned induction) at 39 weeks if not in spontaneous labor earlier. If spontanious delivery occurs prior to removal of the balloon an EXIT procedure, a surgical delivery much like a caesarean section, may be required. During the ~6 weeks that the balloon is in situ, the patient must live in close proximity to a center that can delivery via EXIT procedure, and may need to relocate if she does not.",
                 "children": []
               },
               {
@@ -1016,7 +1016,7 @@
             "content": "Workup",
             "children": [
               {
-                "content": "Karyotype, Â± Microarray CGH (Cell-free fetal DNA if risk averse)",
+                "content": "Karyotype, ± Microarray CGH (Cell-free fetal DNA if risk averse)",
                 "children": []
               },
               {
@@ -1817,11 +1817,11 @@
             "content": "Severity Stages",
             "children": [
               {
-                "content": "Stage I. DVPâs <2cm and >8cm, visible bladder in donor",
+                "content": "Stage I. DVP's <2cm and >8cm, visible bladder in donor",
                 "children": []
               },
               {
-                "content": "Stage II. DVPâs <2 and >8 no bladder in donor",
+                "content": "Stage II. DVP's <2 and >8 no bladder in donor",
                 "children": []
               },
               {

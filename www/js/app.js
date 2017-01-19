@@ -1,5 +1,10 @@
 
-var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache', 'ngSanitize', 'ngTextTruncate']);
+var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache', 'ngSanitize']);
+
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    ImgCache.$init();
+}
 
 app
 .filter('trusted', ['$sce', function ($sce) {
@@ -7,6 +12,13 @@ app
         return $sce.trustAsResourceUrl(url);
     };
 }])
+
+.filter('nl2p', function () {
+    return function(text){
+        text = String(text).trim();
+        return (text.length > 0 ? '<p>' + text.replace(/[\r\n]+/g, '</p><p>') + '</p>' : null);
+    }
+})
 
 .directive('updatelinks', function($timeout) {
     return {
