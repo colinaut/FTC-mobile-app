@@ -42,25 +42,17 @@ app
   };
 })
 
-.controller("NewsCtrl", function($http, $scope) {
+.controller("NewsCtrl", function($http, News, $scope) {
+	News.all().then(function(response){
+		$scope.rssTitle = response.title;
+		$scope.rssUrl = "http://fetus.ucsfmedicalcenter.org/feed";
+		$scope.rssSiteUrl = response.link;
+		$scope.entries = response.item;
+  });
 
-    $scope.init = function() {
 
-      $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys")
-      .success(function(data) {
-				$scope.rssTitle = data.query.results.rss.channel.title;
-				$scope.rssUrl = "http://fetus.ucsfmedicalcenter.org/feed";
-				$scope.rssSiteUrl = data.query.results.rss.channel.link;
-				$scope.entries = data.query.results.rss.channel.item;
-          window.localStorage["entries"] = JSON.stringify(data.query.results.rss.channel.item);
-      })
-      .error(function(data) {
-          console.log("ERROR: " + data);
-          if(window.localStorage["entries"] !== undefined) {
-              $scope.entries = JSON.parse(window.localStorage["entries"]);
-          }
-      });
-    }
+
+
 		$scope.readmore = function(entry,event) {
 			window.open(entry.link, '_blank');
 		}
@@ -102,6 +94,21 @@ app
       return response.data.videos.list;
     });
   }
+	var videosData = function() {
+		var datatemp;
+		return $http.get('https://jsonblob.com/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(
+			function(response){
+				datatemp = response.data.videos.list;
+				return datatemp;
+			},
+			function(response) {
+				return $http.get('data/data.json').then(function(response){
+					datatemp = response.data.videos.list;
+					return datatemp;
+				}
+			);
+		});
+	}
 
   return {
     all: function() {
@@ -166,14 +173,17 @@ app
 	// Get data from JSON using cache if present
 	var guidelinesData = function() {
 		var datatemp;
-		return $http.get('https://jsonblob.com/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(function(response){
-			datatemp = response.data.guidelines.list;
-			return datatemp;
-		}, function(response) {
-			return $http.get('data/data.json').then(function(response){
+		return $http.get('https://jsonblob.com/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(
+			function(response){
 				datatemp = response.data.guidelines.list;
 				return datatemp;
-			});
+			},
+			function(response) {
+				return $http.get('data/data.json').then(function(response){
+					datatemp = response.data.guidelines.list;
+					return datatemp;
+				}
+			);
 		});
 	}
 
@@ -195,5 +205,35 @@ app
 
   }
 
+})
+
+
+.factory('News', function($http, CacheFactory) {
+
+	// Create cache if there isn't one.
+	if (!CacheFactory.get('newsCache')) {
+		// or CacheFactory('bookCache', { ... });
+		CacheFactory.createCache('newsCache', {});
+	}
+	// Get cache
+	var newsCache = CacheFactory.get('newsCache');
+
+	// Get data from JSON using cache if present
+	var newsData = function() {
+		var datatemp;
+		return $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys").then(
+			function(response){
+				datatemp = response.query.results.rss.channel;
+				return datatemp;
+			}
+			)
+		};
+
+
+	return {
+    all: function() {
+			return newsData();
+    }
+  }
 })
 ;
