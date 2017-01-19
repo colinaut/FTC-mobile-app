@@ -9,7 +9,7 @@
         "list": [
           {
             "name": "Hanmin Lee, M.D.",
-            "image": "hanmin_lee.jpg",
+            "image": "/img/team/hanmin_lee.jpg",
             "title": [
               {
                 "content": "Surgeon in Chief, UCSF Benioff Children's Hospital"
@@ -26,7 +26,8 @@
               {
                 "content": "Director, Fetal Treatment Center"
               }
-            ]
+            ],
+            "bio": "Dr. Hanmin Lee is Professor of Surgery, Surgeon in Chief of the UCSF Benioff Children's Hospital, Chief of UCSF Pediatric Surgery, and Director of the Fetal Treatment Center at UCSF. He is the second director in the 25+ year history of the Fetal Treatment Center, replacing Dr. Michael Harrison who continues to add his creative energies as Director Emeritus. Dr. Lee was an undergraduate at Johns Hopkins University who completed both medical school and general surgery residency at New York University. He did two years of postdoctoral research training under the mentorship of Dr. Jay Vacanti at Harvard Medical School, and two years of pediatric surgery fellowship at Emory University Medical Center before being recruited to a tenure-track faculty position in the Department of Surgery at UCSF in 2000.\nDr. Lee and his surgery associates confine their surgical practice exclusively to children. The group has a special interest in fetal surgery, in repair of complex defects involving the chest, lung, abdomen, bowel, and bladder, and surgical care of children from birth through adolescence. Dr. Lee and his associates, The Bay Area Pediatric Surgeons, do consultations and provide surgical care at Moffitt/Long Hospitals UCSF, California Pacific Medical Center, and Kaiser Permanente, San Francisco and Oakland.  They see patients regularly in their office hours and provide multidisciplinary clinics for fetal anomalies in their fetal treatment center. Additionally, they see patients with complex congenital anomalies that have been corrected by surgery in their Long-term Infant-to-adult Followup and Evaluation clinic (LIFE Clinic).\nDr. Lee's clinical interests include neonatal surgery, fetal surgery, minimally invasive surgery and biliary surgery. His basic science research interests include tissue engineering, proteomic assessment of fetal-maternal diseases, and integration of emerging technologies into clinical surgery. He has published numerous clinical and basic science articles in these fields. He is well-recognized as a leader in fetal surgery and pediatric minimally invasive surgery, having given numerous national and international talk. Additionally, he is on  the editorial board of the pediatric endoscopic journal and in teaching fetal surgery and  advanced pediatric laparoscopic courses. He has been a principal investigator or co-investigator on a number of fetal surgery and minimally invasive surgical trials, and is currently a co-investigator on a number of clinical trials including fetal surgery for myelomeningocele (spina bifida) and is leading a multi-institutional effort to investigate the role of maternal steroid administration for fetuses with large congenital cystic adenomatoid malformations.\nDr. Lee, his wife Barbara and their children, live in San Francisco and enjoy the multitude of outdoor activities and restaurants available in the Bay Area."
           }
         ]
       }
