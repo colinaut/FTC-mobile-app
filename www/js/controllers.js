@@ -223,8 +223,12 @@ app
 		var datatemp;
 		return $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys").then(
 			function(response){
-				datatemp = response.query.results.rss.channel;
+				console.log(response);
+				datatemp = response.data.query.results.rss.channel;
+				console.log("hi");
+
 				return datatemp;
+
 			}
 			)
 		};
