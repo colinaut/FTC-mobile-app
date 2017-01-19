@@ -682,7 +682,7 @@
                     "content": "Monthly ultrasound",
                     "children": []
                 }, {
-                    "content": "NST q week > 32 weeks",
+                    "content": "NST q week &gt; 32 weeks",
                     "children": []
                 }]
             }]
@@ -721,7 +721,7 @@
                 }, {
                     "content": "Criteria for tracheal balloon occlusion:",
                     "children": [{
-                        "content": "If liver up and the Lung to Head Ratio (LHR) during  24-28 weeks is  < 1.0 (LHR: the R lung area to head circumference ratio is calculated by a ratio of R lung area (in square millimeters) to head circumference (in millimeters) to minimize lung size differences owing to gestational age)",
+                        "content": "If liver up and the Lung to Head Ratio (LHR) during  24-28 weeks is &lt; 1.0 (LHR: the R lung area to head circumference ratio is calculated by a ratio of R lung area (in square millimeters) to head circumference (in millimeters) to minimize lung size differences owing to gestational age)",
                         "children": []
                     }, {
                         "content": "Normal Karyotype",
@@ -783,7 +783,7 @@
             }, {
                 "content": "Follow-up",
                 "children": [{
-                    "content": "NST q week > 30 weeks",
+                    "content": "NST q week &gt; 30 weeks",
                     "children": []
                 }, {
                     "content": "Ultrasound monitoring at least once per month for hygroma growth",
@@ -830,7 +830,7 @@
                 }, {
                     "content": "Antenatal Testing",
                     "children": [{
-                        "content": "NST q week > 32 weeks"
+                        "content": "NST q week &gt; 32 weeks"
                     }, {
                         "content": "NST 2x/week if IUGR"
                     }]
@@ -880,10 +880,10 @@
                 "children": [{
                     "content": "Fetal Intervention should be considered if:",
                     "children": [{
-                        "content": "PUBS if MCA PSV >1.5 MoMs",
+                        "content": "PUBS if MCA PSV &gt;1.5 MoMs",
                         "children": []
                     }, {
-                        "content": "IUT to treat anemia if hct <30%",
+                        "content": "IUT to treat anemia if hct &lt;30%",
                         "children": []
                     }, {
                         "content": "Target hct is 40-50%",
@@ -899,7 +899,7 @@
                     "content": "Weekly hydrops checks",
                     "children": []
                 }, {
-                    "content": "Repeat IUT if necessary (higher MCA threshold after 1 IUT, usually >1.67 MoMs; MCA not reliable after 2 IUTs or after 35 weeks’ gestation – follow trend",
+                    "content": "Repeat IUT if necessary (higher MCA threshold after 1 IUT, usually &gt;1.67 MoMs; MCA not reliable after 2 IUTs or after 35 weeks’ gestation – follow trend",
                     "children": []
                 }, {
                     "content": "Betamethasone administration if beyond viability and at risk for delivery",
@@ -948,7 +948,7 @@
                     }, {
                         "content": "Maternal blood type and antibody screen"
                     }, {
-                        "content": "MCV, consider DNA testing for alpha thalassemia if <80 fL"
+                        "content": "MCV, consider DNA testing for alpha thalassemia if &lt;80 fL"
                     }]
                 }, {
                     "content": "Karyotype or cell free DNA screen (highest risk of non-immune causes includes aneuploidy)",
@@ -1045,10 +1045,10 @@
                     "content": "Shunt placement (or needle drainage) if macrocystic with evidence of effusion",
                     "children": []
                 }, {
-                    "content": "Prenatal steroids if CVR (CCAM Volume Ratio)  > 1.6 CVR = (length x width x height x 0.52) divided by the head circumference (as this controls for gestational age)",
+                    "content": "Prenatal steroids if CVR (CCAM Volume Ratio)  &gt; 1.6 CVR = (length x width x height x 0.52) divided by the head circumference (as this controls for gestational age)",
                     "children": []
                 }, {
-                    "content": "Open resection if fetus hydropic, < 28 weeks (rare)",
+                    "content": "Open resection if fetus hydropic, &lt; 28 weeks (rare)",
                     "children": []
                 }]
             }, {
@@ -1090,7 +1090,7 @@
             }, {
                 "content": "Fetal Intervention Options",
                 "children": [{
-                    "content": "Open resection if fetus hydropic, < 28 weeks",
+                    "content": "Open resection if fetus hydropic, &lt; 28 weeks",
                     "children": []
                 }, {
                     "content": "Shunt placement (or needle drainage) if large pleural effusion",
@@ -1107,7 +1107,7 @@
                     "content": "Ultrasound prn after 28 weeks",
                     "children": []
                 }, {
-                    "content": "NST q week > 30 weeks (small lesions – 32-34 weeks)",
+                    "content": "NST q week &gt; 30 weeks (small lesions – 32-34 weeks)",
                     "children": []
                 }]
             }]
@@ -1167,7 +1167,7 @@
                     }, {
                         "content": "Maternal contraindications to surgery or anesthesia"
                     }, {
-                        "content": "Body Mass Index > 35"
+                        "content": "Body Mass Index &gt; 35"
                     }, {
                         "content": "Kyphosis (curve in the spine) in the fetus ≥ 30º"
                     }, {
@@ -1175,7 +1175,7 @@
                     }, {
                         "content": "Current or planned cerclage or documented history of incompetent cervix"
                     }, {
-                        "content": "Short cervix (< 20 mm)"
+                        "content": "Short cervix (&lt; 20 mm)"
                     }, {
                         "content": "Preterm labor in the current pregnancy"
                     }, {
@@ -1200,7 +1200,7 @@
                     "content": "Planned c-section delivery at 39 weeks ",
                     "children": []
                 }, {
-                    "content": "NST weekly >32 weeks",
+                    "content": "NST weekly &gt;32 weeks",
                     "children": []
                 }]
             }, {
@@ -1218,7 +1218,7 @@
             }]
         }, {
             "title": "Omphalocele",
-            "intro": "A central abdominal wall defect that permits herniation of the abdominal viscera into the umbilical cord.  A membrane that is made out of Wharton’s jelly, covers the viscera. The defect can be small (<3cm) to large (extending from the xiphoid to the pubis). If there is  liver  herniation into the membrane , a c-section delivery may be necessary.",
+            "intro": "A central abdominal wall defect that permits herniation of the abdominal viscera into the umbilical cord.  A membrane that is made out of Wharton’s jelly, covers the viscera. The defect can be small (&lt;3cm) to large (extending from the xiphoid to the pubis). If there is  liver  herniation into the membrane , a c-section delivery may be necessary.",
             "guide": [{
                 "content": "Associated with",
                 "children": [{
@@ -1303,7 +1303,7 @@
             }, {
                 "content": "Follow-up",
                 "children": [{
-                    "content": "If no surgical intervention, NST 2x/week > 30 weeks",
+                    "content": "If no surgical intervention, NST 2x/week &gt; 30 weeks",
                     "children": []
                 }, {
                     "content": "BPP 2x/week 26-30 weeks",
@@ -1316,10 +1316,10 @@
             "guide": [{
                 "content": "Severity Stages",
                 "children": [{
-                    "content": "Stage I. DVP’s <2cm and >8cm, visible bladder in donor",
+                    "content": "Stage I. DVP’s &lt;2cm and &gt;8cm, visible bladder in donor",
                     "children": []
                 }, {
-                    "content": "Stage II. DVP’s <2 and >8 no bladder in donor",
+                    "content": "Stage II. DVP’s &lt;2 and &gt;8 no bladder in donor",
                     "children": []
                 }, {
                     "content": "Stage III. Echocardiographic or Doppler abnormalities in either fetus (exception: absent/reversed diastolic flow in UA Doppler in the presence of an AA clearly identified on ultrasound; follow ductus venosus instead for these cases)",
@@ -1348,14 +1348,14 @@
                 "children": [{
                     "content": "Consider laser ablation",
                     "children": [{
-                        "content": "< 26 weeks gestation"
+                        "content": "&lt; 26 weeks gestation"
                     }, {
                         "content": "Stage II-IV"
                     }]
                 }, {
                     "content": "Consider radiofrequency ablation (RFA)",
                     "children": [{
-                        "content": "< 24 weeks gestation"
+                        "content": "&lt; 24 weeks gestation"
                     }, {
                         "content": "Particularly if structural anomalies seen "
                     }, {
