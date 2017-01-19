@@ -24,7 +24,7 @@
 					</figure>
 					<ons-list class="titles">
 						<ons-list-item ng-repeat="title in member.title">
-							<span>{{title.content}}</span>
+							{{title}}
 						</ons-list-item>
 					</ons-list>
 					<div class="bio" ng-bind-html="member.bio | nl2p">
