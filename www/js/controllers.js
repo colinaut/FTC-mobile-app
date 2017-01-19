@@ -116,7 +116,7 @@ app
   };
 
 })
-.factory('Guidelines-', function($http, CacheFactory) {
+.factory('Guidelines-old', function($http, CacheFactory) {
 
   // Create cache if there isn't one.
   if (!CacheFactory.get('guidelinesCache')) {
@@ -166,16 +166,15 @@ app
 	// Get data from JSON using cache if present
 	var guidelinesData = function() {
 		var datatemp;
-		return $http.get('http://colinaut.com/test/guidelines.json').then(function(response){
-			datatemp = response.data.guidelines;
+		return $http.get('https://jsonblob.com/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(function(response){
+			datatemp = response.data.guidelines.list;
 			return datatemp;
 		}, function(response) {
-			return $http.get('data/guidelines.json').then(function(response){
-				datatemp = response.data.guidelines;
+			return $http.get('data/data.json').then(function(response){
+				datatemp = response.data.guidelines.list;
 				return datatemp;
 			});
 		});
-
 	}
 
 	return {
