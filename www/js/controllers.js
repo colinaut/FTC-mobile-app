@@ -65,16 +65,9 @@ app
     $scope.specialty = response;
   });
 
-  $scope.toggleGroup = function(group) {
-    if ($scope.isGroupShown(group)) {
-      $scope.shownGroup = null;
-    } else {
-      $scope.shownGroup = group;
-    }
-  };
-  $scope.isGroupShown = function(group) {
-    return $scope.shownGroup === group;
-  };
+	$scope.changeLength = function() {
+	    $scope.textLength = 9999;
+	}
 })
 
 .factory('Data', function($http, CacheFactory) {

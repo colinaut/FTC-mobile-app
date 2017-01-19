@@ -118,7 +118,7 @@
   margin-right: 8px;
 }
 .intro {
-  padding: 12px 15px 0;
+  padding: 12px 10px 0;
   font-size: 16px;
 }
 .intro p:first-child {
@@ -384,4 +384,37 @@ ons-toolbar + .page__background + .page__content {
 .note {
   font-size: 90%;
   color: #888;
+}
+/* Team page */
+.member-content {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 14px;
+  line-height: 140%;
+}
+.member-content figure {
+  float: left;
+  width: 25%;
+  margin: 0 10px 10px 0;
+  border: 1px solid #aaa;
+}
+.member-content figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.list.titles {
+  border: 0;
+  font-size: 13px;
+}
+.list.titles .list__item {
+  border: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.bio {
+  font-size: 13px;
+}
+.btn-link {
+  color: #158FA0;
+  cursor: pointer;
 }

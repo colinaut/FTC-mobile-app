@@ -1,5 +1,5 @@
 
-var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache', 'ngSanitize']);
+var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache', 'ngSanitize', 'ngTextTruncate']);
 
 app
 .filter('trusted', ['$sce', function ($sce) {
@@ -106,7 +106,7 @@ app
 			parent: 'navigator.team',
 			url: '/team/:index',
 			onEnter: ['$rootScope','$stateParams', function($rootScope,$stateParams) {
-				$rootScope.myNavigator.pushPage('html/team-specialty.html', {'index': $stateParams.index});
+				$rootScope.myNavigator.pushPage("html/team-specialty.html", {'index': $stateParams.index});
 			}],
 			onExit: function($rootScope) {
 				$rootScope.myNavigator.popPage();

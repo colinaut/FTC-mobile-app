@@ -20,10 +20,19 @@
 				<header>
 					<span class="item-title">{{member.name}}</span>
 				</header>
-				<div class="bio">
-					{{member.bio}}
+				<div class="member-content">
+					<figure>
+						<img ng-src="{{member.image}}" />
+					</figure>
+					<ons-list class="titles">
+						<ons-list-item ng-repeat="title in member.title">
+							<span>{{title.content}}</span>
+						</ons-list-item>
+					</ons-list>
+					<div class="bio">
+						<p ng-text-truncate="member.bio" ng-tt-words-threshold="15"> </p>
+					</div>
 				</div>
-
 		</ons-list-item>
 	</ons-list>
 </ons-page>
