@@ -9,8 +9,8 @@
 
 
   <ons-list ng-controller="TeamCtrl">
-		<ons-list-item modifier="chevron" class="item" ng-repeat="member in team" ui-sref="navigator.team.detail({index: $index})">
-				<h2 class="item-title">{{team.title}}</h2>
+		<ons-list-item modifier="chevron" class="item" ng-repeat="specialty in team" ui-sref="navigator.team.detail({index: $index})">
+				<h2 class="item-title">{{specialty.title}}</h2>
 		</ons-list-item>
 	</ons-list>
 </ons-page>

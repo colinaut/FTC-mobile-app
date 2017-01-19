@@ -1,1480 +1,2086 @@
 {
-    "videos": {
-        "version": 0.3,
-        "list": [
-            {
-                "id": 0,
-                "type": "Fetal Surgery",
-                "videolist": [{
-                    "title": "Open Fetal Surgery",
-                    "url": "https://www.youtube.com/embed/7mDXqGTT0Uo",
-                    "id": "7mDXqGTT0Uo"
-                }]
-            },
-            {
-                "id": 1,
-                "type": "Fetal Firsts",
-                "videolist": [{
-                    "title": "Fetal Surgery Beginnings",
-                    "url": "https://www.youtube.com/embed/Z7vlvVBrHkI",
-                    "id": "Z7vlvVBrHkI"
-                }, {
-                    "title": "The Patients, Our Heroes",
-                    "url": "https://www.youtube.com/embed/",
-                    "id": "RjHIVQX4vE4"
-                }]
-            }, {
-                "id": 2,
-                "type": "Monochorionic Twins",
-                "videolist": [{
-                    "title": "Monochorionic Twins",
-                    "url": "https://www.youtube.com/embed/inOuDIBi6l8",
-                    "id": "inOuDIBi6l8"
-                }, {
-                    "title": "Monochorionic Twins (in Spanish)",
-                    "url": "https://www.youtube.com/embed/YGzIgzbW8y8",
-                    "id": "YGzIgzbW8y8"
-                }, {
-                    "title": "Monochorionic Twins (in Mandarin)",
-                    "url": "https://www.youtube.com/embed/QM2akYZv2js",
-                    "id": "QM2akYZv2js"
-                }, {
-                    "title": "Monochorionic vs Dichronic Twin Pregnancy",
-                    "url": "https://www.youtube.com/embed/ILsYPHAocgY",
-                    "id": "ILsYPHAocgY"
-                }]
-            }, {
-                "id": 3,
-                "type": "Ventriculomegaly",
-                "videolist": [{
-                    "title": "What is Ventriculomegaly?",
-                    "url": "https://www.youtube.com/embed/R55mgeCLWLw",
-                    "id": "R55mgeCLWLw"
-                }, {
-                    "title": "Range of Outcomes",
-                    "url": "https://www.youtube.com/embed/vAOOWA4FODA",
-                    "id": "vAOOWA4FODA"
-                }, {
-                    "title": "Longterm Outcome",
-                    "url": "https://www.youtube.com/embed/p2-EbOlnQC0",
-                    "id": "p2-EbOlnQC0"
-                }, {
-                    "title": "Will my child need a VP Shunt?",
-                    "url": "https://www.youtube.com/embed/dHTg86mPxyo",
-                    "id": "dHTg86mPxyo"
-                }, {
-                    "title": "Hydrocephalus and VP Shunt",
-                    "url": "https://www.youtube.com/embed/MkNm-v41d2o",
-                    "id": "MkNm-v41d2o"
-                }]
-            }, {
-                "id": 4,
-                "type": "Urinary Tract Obstruction",
-                "videolist": [{
-                    "title": "What is Urinary Tract Obstruction?",
-                    "url": "https://www.youtube.com/embed/CA8z_KqAjmg",
-                    "id": "CA8z_KqAjmg"
-                }, {
-                    "title": "Long Term Outcome",
-                    "url": "https://www.youtube.com/embed/VAnWs-zl9Xs",
-                    "id": "VAnWs-zl9Xs"
-                }, {
-                    "title": "Severity",
-                    "url": "https://www.youtube.com/embed/x1uRMc4Uz5E",
-                    "id": "x1uRMc4Uz5E"
-                }, {
-                    "title": "Choices for Pregnancy",
-                    "url": "https://www.youtube.com/embed/M9PmAtRAQ9U",
-                    "id": "M9PmAtRAQ9U"
-                }, {
-                    "title": "Fetal Intervention",
-                    "url": "https://www.youtube.com/embed/rY-RDUesKcU",
-                    "id": "rY-RDUesKcU"
-                }, {
-                    "title": "What Happens After Birth",
-                    "url": "https://www.youtube.com/embed/06qy38d-BsY",
-                    "id": "06qy38d-BsY"
-                }]
-            }, {
-                "id": 5,
-                "type": "Agenesis of the Corpus Callosum",
-                "videolist": [{
-                    "title": "What is Agenesis of the Corpus Callosum?",
-                    "url": "https://www.youtube.com/embed/ws3wFhhGNrE",
-                    "id": "ws3wFhhGNrE"
-                }, {
-                    "title": "Long Term Outcome",
-                    "url": "https://www.youtube.com/embed/CgG-h9FDhXQ",
-                    "id": "CgG-h9FDhXQ"
-                }, {
-                    "title": "Diagnosis During Pregnancy",
-                    "url": "https://www.youtube.com/embed/K7eXDTNgTXA",
-                    "id": "K7eXDTNgTXA"
-                }]
-            }, {
-                "id": 6,
-                "type": "Amniotic Band Syndrome",
-                "videolist": [{
-                    "title": "What is Amniotic Band Syndrome?",
-                    "url": "https://www.youtube.com/embed/PAWdUSj4jLk",
-                    "id": "PAWdUSj4jLk"
-                }, {
-                    "title": "Long Term Outcome",
-                    "url": "https://www.youtube.com/embed/Z4wjQS6aAp0",
-                    "id": "Z4wjQS6aAp0"
-                }, {
-                    "title": "Severity",
-                    "url": "https://www.youtube.com/embed/zO498ET3tFE",
-                    "id": "zO498ET3tFE"
-                }]
-            }, {
-                "id": 7,
-                "type": "Bowel Obstruction",
-                "videolist": [{
-                    "title": "Pregnancy with Bowel Obstruction",
-                    "url": "https://www.youtube.com/embed/JkYG0sIXp-Q",
-                    "id": ""
-                }, {
-                    "title": "Outcomes",
-                    "url": "https://www.youtube.com/embed/swOo_vmM7II",
-                    "id": ""
-                }, {
-                    "title": "After Birth",
-                    "url": "https://www.youtube.com/embed/cVBsh9G5kMA",
-                    "id": ""
-                }]
-            }, {
-                "id": 8,
-                "type": "CHAOS",
-                "videolist": [{
-                    "title": "Outcome",
-                    "url": "https://www.youtube.com/embed/LHM9V3tC8vw",
-                    "id": ""
-                }, {
-                    "title": "Severity",
-                    "url": "https://www.youtube.com/embed/Gr6PpOwXvrc",
-                    "id": ""
-                }, {
-                    "title": "Choices during pregnancy",
-                    "url": "https://www.youtube.com/embed/43mn5w8PfJ0",
-                    "id": ""
-                }, {
-                    "title": "Exit Procedure",
-                    "url": "https://www.youtube.com/embed/7GsiDGqe5NI",
-                    "id": ""
-                }, {
-                    "title": "What Happens After Birth?",
-                    "url": "https://www.youtube.com/embed/rb7CT2rZ_0o",
-                    "id": ""
-                }]
-            }, {
-                "id": 9,
-                "type": "CPAM",
-                "videolist": [{
-                    "title": "What is CPAM?",
-                    "url": "https://www.youtube.com/embed/-4jx-8h6Bf4",
-                    "id": ""
-                }, {
-                    "title": "Range of Outcomes",
-                    "url": "https://www.youtube.com/embed/E8_UHV-MEPQ",
-                    "id": ""
-                }, {
-                    "title": "Diagnosis",
-                    "url": "https://www.youtube.com/embed/roq8xVIlmXA",
-                    "id": ""
-                }, {
-                    "title": "Treatment Options",
-                    "url": "https://www.youtube.com/embed/QydJbS3EdBY",
-                    "id": ""
-                }, {
-                    "title": "Delivery with CPAM",
-                    "url": "https://www.youtube.com/embed/xDTtsogEbuQ",
-                    "id": ""
-                }]
-            }, {
-                "id": 10,
-                "type": "CDH",
-                "videolist": [{
-                    "title": "What is CDH?",
-                    "url": "https://www.youtube.com/embed/G-GgGt84vHs",
-                    "id": ""
-                }, {
-                    "title": "Range of Outcomes",
-                    "url": "https://www.youtube.com/embed/5YmxVQcKIxY",
-                    "id": ""
-                }, {
-                    "title": "Diagnosis",
-                    "url": "https://www.youtube.com/embed/sqzsctQYe9I",
-                    "id": ""
-                }, {
-                    "title": "Preganancy monitoring",
-                    "url": "https://www.youtube.com/embed/TA6yYzF3zZ0",
-                    "id": ""
-                }, {
-                    "title": "Fetal Intervention",
-                    "url": "https://www.youtube.com/embed/brHQJKZdPG0",
-                    "id": ""
-                }, {
-                    "title": "Fetal Balloon Tracheal Occlusion",
-                    "url": "https://www.youtube.com/embed/_ys_GlTH5V4",
-                    "id": ""
-                }, {
-                    "title": "Delivery with CDH",
-                    "url": "https://www.youtube.com/embed/Fkjs1SubgpY",
-                    "id": ""
-                }, {
-                    "title": "CDH Research",
-                    "url": "https://www.youtube.com/embed/gOcwZpkpitI",
-                    "id": ""
-                }]
-            }, {
-                "id": 11,
-                "type": "Congenital Heart Disease",
-                "videolist": [{
-                    "title": "What is Congenital Heart Disease",
-                    "url": "https://www.youtube.com/embed/41H4947EkpE",
-                    "id": ""
-                }, {
-                    "title": "What is dysrhythmia/arrhythmia?",
-                    "url": "https://www.youtube.com/embed/EeANysulhk8",
-                    "id": ""
-                }, {
-                    "title": "Range of Outcomes",
-                    "url": "https://www.youtube.com/embed/pjTkC_zojnE",
-                    "id": ""
-                }, {
-                    "title": "Determining Severity",
-                    "url": "https://www.youtube.com/embed/pRjsxXY_tK8",
-                    "id": ""
-                }, {
-                    "title": "Choices during pregnancy",
-                    "url": "https://www.youtube.com/embed/Y1ehQSIsdnU",
-                    "id": ""
-                }, {
-                    "title": "Fetal Treatment for Arrhythmias",
-                    "url": "https://www.youtube.com/embed/RBWzjicN8fY",
-                    "id": ""
-                }, {
-                    "title": "Fetal Surgery for Cardiac Disease",
-                    "url": "https://www.youtube.com/embed/DDEu_2pE-ts",
-                    "id": ""
-                }, {
-                    "title": "Delivery with Fetal Cardiac Disease",
-                    "url": "https://www.youtube.com/embed/Z-GpqmROEXg",
-                    "id": ""
-                }, {
-                    "title": "Follow Up Care with Fetal Cardiac Disease",
-                    "url": "https://www.youtube.com/embed/ciwSdntnLfc",
-                    "id": ""
-                }]
-            }, {
-                "id": 12,
-                "type": "Fetal Anemia",
-                "videolist": [{
-                    "title": "What is Fetal Anemia?",
-                    "url": "https://www.youtube.com/embed/jCdZU5zOK2g",
-                    "id": ""
-                }, {
-                    "title": "Treatment",
-                    "url": "https://www.youtube.com/embed/4x4E2EN6rM0",
-                    "id": ""
-                }, {
-                    "title": "Care in the ICN",
-                    "url": "https://www.youtube.com/embed/eVfJur28ttw",
-                    "id": ""
-                }]
-            }, {
-                "id": 13,
-                "type": "Fetal Thrombocytopenia",
-                "videolist": [{
-                    "title": "What is Fetal Thrombocytopenia?",
-                    "url": "https://www.youtube.com/embed/pnzY2hxV_EQ",
-                    "id": ""
-                }, {
-                    "title": "Treatment",
-                    "url": "https://www.youtube.com/embed/TyU6AA06Deo",
-                    "id": ""
-                }, {
-                    "title": "Care in the ICN",
-                    "url": "https://www.youtube.com/embed/4aLlx0N-SVs",
-                    "id": ""
-                }]
-            }, {
-                "id": 14,
-                "type": "Gastroschisis",
-                "videolist": [{
-                    "title": "What is Gastroschisis?",
-                    "url": "https://www.youtube.com/embed/5rwWWp0mL40",
-                    "id": ""
-                }, {
-                    "title": "Long Term Outcome",
-                    "url": "https://www.youtube.com/embed/YXWgiH9dpIU",
-                    "id": ""
-                }, {
-                    "title": "Treatment Options & Monitoring",
-                    "url": "https://www.youtube.com/embed/GAX9BUcK5_M",
-                    "id": ""
-                }, {
-                    "title": "What Happens After Birth?",
-                    "url": "https://www.youtube.com/embed/oJNAKUNR9qk",
-                    "id": ""
-                }]
-            }, {
-                "id": 15,
-                "type": "Inherited Genetic Diseases: Stem Cell Treatments",
-                "videolist": [{
-                    "title": "Types of Treatable Genetic Diseases",
-                    "url": "https://www.youtube.com/embed/Rf4hKMV7IG4",
-                    "id": ""
-                }, {
-                    "title": "Diagnosis",
-                    "url": "https://www.youtube.com/embed/5E86pIrUqVU",
-                    "id": ""
-                }, {
-                    "title": "Treatment Options",
-                    "url": "https://www.youtube.com/embed/wbw0qirt8IQ",
-                    "id": ""
-                }]
-            }, {
-                "id": 16,
-                "type": "Omphalocele",
-                "videolist": [{
-                    "title": "What is Omphalocele?",
-                    "url": "https://www.youtube.com/embed/BzKGlUSAVSQ",
-                    "id": ""
-                }, {
-                    "title": "Outcomes",
-                    "url": "https://www.youtube.com/embed/YXWgiH9dpIU",
-                    "id": ""
-                }, {
-                    "title": "Treatment & Delivery",
-                    "url": "https://www.youtube.com/embed/AnYs_-ISdW0",
-                    "id": ""
-                }, {
-                    "title": "Care After Birth",
-                    "url": "https://www.youtube.com/embed/JIS1Fuo_kco",
-                    "id": ""
-                }]
-            }, {
-                "id": 17,
-                "type": "Pulmonary Sequestration",
-                "videolist": [{
-                    "title": "What is Pulmonary Sequestration?",
-                    "url": "https://www.youtube.com/embed/33eCQlCLuGQ",
-                    "id": ""
-                }, {
-                    "title": "Range of Outcomes",
-                    "url": "https://www.youtube.com/embed/boCImgu3_uU",
-                    "id": ""
-                }, {
-                    "title": "Diagnosis via Sonogram",
-                    "url": "https://www.youtube.com/embed/JwPnYvrLEfA",
-                    "id": ""
-                }, {
-                    "title": "Fetal Intervention",
-                    "url": "https://www.youtube.com/embed/oVVZjKMNYU0",
-                    "id": ""
-                }]
-            }, {
-                "id": 18,
-                "type": "Sacrococcygeal Teratoma (SCT)",
-                "videolist": [{
-                    "title": "What is SCT?",
-                    "url": "https://www.youtube.com/embed/-xXCoSsGe1c",
-                    "id": ""
-                }, {
-                    "title": "Long Term Outcome",
-                    "url": "https://www.youtube.com/embed/KwETLvZLTXQ",
-                    "id": ""
-                }, {
-                    "title": "Diagnosis",
-                    "url": "https://www.youtube.com/embed/G7383Mr9UcM",
-                    "id": ""
-                }, {
-                    "title": "Treatment Options",
-                    "url": "https://www.youtube.com/embed/FahfIZZbEKo",
-                    "id": ""
-                }]
-            }, {
-                "id": 19,
-                "type": "Spina Bifida (Myelomeningocele)",
-                "videolist": [{
-                    "title": "What is Spina Bifida?",
-                    "url": "https://www.youtube.com/embed/6SncXyJgRBs",
-                    "id": ""
-                }, {
-                    "title": "Diagnosis",
-                    "url": "https://www.youtube.com/embed/YlutDYzJvMY",
-                    "id": ""
-                }, {
-                    "title": "Care During Pregnancy",
-                    "url": "https://www.youtube.com/embed/MRyN5ZLUtXs",
-                    "id": ""
-                }, {
-                    "title": "Range of Outcomes",
-                    "url": "https://www.youtube.com/embed/NeVv8S4U5fE",
-                    "id": ""
-                }, {
-                    "title": "Complications of Spina Bifida",
-                    "url": "https://www.youtube.com/embed/zXnfEAL5U3w",
-                    "id": ""
-                }, {
-                    "title": "Effects on the Developing Brain",
-                    "url": "https://www.youtube.com/embed/wlhOjKlGCVY",
-                    "id": ""
-                }, {
-                    "title": "Fetal Surgery",
-                    "url": "https://www.youtube.com/embed/W3uXiA18tpg",
-                    "id": ""
-                }, {
-                    "title": "Benefits of Fetal Surgery",
-                    "url": "https://www.youtube.com/embed/hfyphZlau9o",
-                    "id": ""
-                }, {
-                    "title": "Monitoring Pregnancy After Surgery",
-                    "url": "https://www.youtube.com/embed/iFrMz_XJQ8Y",
-                    "id": ""
-                }, {
-                    "title": "Delivery with Spina Bifida",
-                    "url": "https://www.youtube.com/embed/OJAsvNtOvOE",
-                    "id": ""
-                }, {
-                    "title": "Treatment After Birth",
-                    "url": "https://www.youtube.com/embed/EUyrj6LZLQs",
-                    "id": ""
-                }, {
-                    "title": "UCSF Spina Bifida Clinic",
-                    "url": "https://www.youtube.com/embed/rR0p_QwCPnk",
-                    "id": ""
-                }, {
-                    "title": "Taking Your Child Home",
-                    "url": "https://www.youtube.com/embed/MxnYdgJJ_kg",
-                    "id": ""
-                }, {
-                    "title": "Will My Child Need a VP Shunt?",
-                    "url": "https://www.youtube.com/embed/EcFWbuZOy2k",
-                    "id": ""
-                }]
-            }, {
-                "id": 20,
-                "type": "TRAP Sequence or Acardiac Twin",
-                "videolist": [{
-                    "title": "What is TRAP Sequence?",
-                    "url": "https://www.youtube.com/embed/Jzb2vuyLrFM",
-                    "id": ""
-                }, {
-                    "title": "Range of Outcomes",
-                    "url": "https://www.youtube.com/embed/FvM8Z-SWuEI",
-                    "id": ""
-                }, {
-                    "title": "Fetal Intervention",
-                    "url": "https://www.youtube.com/embed/InU62Cy_jbk",
-                    "id": ""
-                }]
-            }, {
-                "id": 21,
-                "type": "Twin Pregnancy Complications",
-                "videolist": [{
-                    "title": "Twin Pregnancy Complications",
-                    "url": "https://www.youtube.com/embed/InU62Cy_jbk",
-                    "id": ""
-                }, {
-                    "title": "What is TTTS?",
-                    "url": "https://www.youtube.com/embed/9ntesjaw98c",
-                    "id": ""
-                }, {
-                    "title": "What is TRAP Sequence?",
-                    "url": "https://www.youtube.com/embed/Jzb2vuyLrFM",
-                    "id": ""
-                }]
-            }, {
-                "id": 22,
-                "type": " Twin to Twin Transfusion Syndrome (TTTS)",
-                "videolist": [{
-                    "title": "What is TTTS?",
-                    "url": "https://www.youtube.com/embed/9ntesjaw98c",
-                    "id": ""
-                }, {
-                    "title": "Range of Outcomes",
-                    "url": "https://www.youtube.com/embed/zz_EbhABplE",
-                    "id": ""
-                }, {
-                    "title": "Diagnosis",
-                    "url": "https://www.youtube.com/embed/MaYp6LALaPg",
-                    "id": ""
-                }, {
-                    "title": "Care During Pregnancy",
-                    "url": "https://www.youtube.com/embed/wNBHSfJHq_4",
-                    "id": ""
-                }, {
-                    "title": "Is Treatment Before Birth Required?",
-                    "url": "https://www.youtube.com/embed/3eztjfO3DI0",
-                    "id": ""
-                }, {
-                    "title": "Is Laser Surgery the Best Option?",
-                    "url": "https://www.youtube.com/embed/I3zVieVFxVM",
-                    "id": ""
-                }]
-            }, {
-                "id": 23,
-                "type": "Unequal Placental Sharing",
-                "videolist": [{
-                    "title": "What is Unequal Placental Sharing?",
-                    "url": "https://www.youtube.com/embed/6xzBIibyFXE",
-                    "id": ""
-                }, {
-                    "title": "Unequal Placental Sharing Presentation",
-                    "url": "https://www.youtube.com/embed/xVFevyuBmN8",
-                    "id": ""
-                }, {
-                    "title": "Severity",
-                    "url": "https://www.youtube.com/embed/i61rdomnaOc",
-                    "id": ""
-                }, {
-                    "title": "Treatment Options",
-                    "url": "https://www.youtube.com/embed/rOH7urC9t2w",
-                    "id": ""
-                }]
-            }
+  "videos": {
+    "version": 0.3,
+    "list": [
+      {
+        "id": 0,
+        "type": "Fetal Surgery",
+        "videolist": [
+          {
+            "title": "Open Fetal Surgery",
+            "url": "https://www.youtube.com/embed/7mDXqGTT0Uo",
+            "id": "7mDXqGTT0Uo"
+          }
         ]
-    },
-    "guidelines": {
-        "version": 0.3,
-        "list": [{
-            "title": "Alpha Thalassemia Major (ATM)",
-            "intro": "Alpha-Thalassemia is a hereditary blood disorder caused by mutations in the alpha chain of hemoglobin that can present along a range of severity. It is an autosomal recessive disease, resulting from DNA sequence deletions on chromosome 16; the most common is the Southeast Asian deletion (-SEA). Since there are 4 alleles coding for the alpha-globin protein, the disease can present as a spectrum. The homozygous form (-/-), often referred to as Hb Bart’s or Alpha-Thalassemia Major, results in the absence of all alpha-globin production. Unaffected chains accumulate and form tetramers that are unable to transport oxygen, ultimately leading to hypoxia and non-immune fetal hydrops. In utero transfusion of red blood cells can be life saving for fetuses with this disease. ",
-            "guide": [{
-                "content": "Associated with",
-                "children": [{
-                    "content": "Fetal anemia",
-                    "children": []
-                }, {
-                    "content": "Fetal cardiac failure",
-                    "children": []
-                }, {
-                    "content": "Non-immune fetal hydrops",
-                    "children": []
-                }, {
-                    "content": "Hypoxia-induced anomalies ",
-                    "children": [{
-                        "content": "Hypospadias"
-                    }, {
-                        "content": "Digit and limb anomalies"
-                    }, {
-                        "content": "Microcephaly"
-                    }, {
-                        "content": "Hydrocephaly"
-                    }, {
-                        "content": "Lung hypoplasia"
-                    }, {
-                        "content": "Cardiac defects"
-                    }, {
-                        "content": "Neurocognitive injury"
-                    }]
-                }, {
-                    "content": "Maternal hypertension",
-                    "children": []
-                }, {
-                    "content": "Preeclampsia",
-                    "children": []
-                }, {
-                    "content": "Mirror Syndrome",
-                    "children": []
-                }, {
-                    "content": "Preterm labor",
-                    "children": []
-                }, {
-                    "content": "Antepartum hemorrhage",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Fetal Ultrasound (US)",
-                    "children": [{
-                        "content": "Middle Cerebral Artery (MCA) Doppler"
-                    }, {
-                        "content": "Cardio-Thoracic Ratio (CTR)"
-                    }]
-                }, {
-                    "content": "Fetal Echocardiogram",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }, {
-                    "content": "Amniocentesis or Chorionic Villus Sampling (CVS)",
-                    "children": []
-                }, {
-                    "content": "Carrier screening for at-risk parents",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "In Utero Transfusion (IUT)",
-                    "children": [{
-                        "content": "IUT for ATM beginning at 18 weeks’ gestation. This treatment is repeated every few weeks until birth. "
-                    }, {
-                        "content": "RBC transfusion volume will be determined based on standard publicized volumes for Rh alloimmunization, and may be modified for ATM given the hydropic state of the fetus."
-                    }]
-                }, {
-                    "content": "The UCSF Fetal Treatment Center is applying for permission from the FDA to perform in utero hematopoietic stem cell transplantation to treat ATM in the future."
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "Lifelong serial RBC transfusions and iron chelation therapy.",
-                    "children": []
-                }, {
-                    "content": "Bone marrow transplantation (BMT)",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Bowel Obstruction",
-            "intro": "Narrowing or obstruction in a portion of the fetal intestine. Most are caused by an atresia, or stenosis, at some point in the intestine. A bowel obstruction is named according to the location within the  intestine: duodenal atresia, jejunal atresia, ileal atresia, or colonic atresia.",
-            "guide": [{
-                "content": "Associated with",
-                "children": [{
-                    "content": "Trisomy 21 (Down syndrome) (1/3 of cases with duodenal atresia)",
-                    "children": []
-                }, {
-                    "content": "Malrotation",
-                    "children": []
-                }, {
-                    "content": "Congenital heart disease",
-                    "children": []
-                }, {
-                    "content": "Cystic Fibrosis (10%)",
-                    "children": []
-                }, {
-                    "content": "Gastroschisis (jejunal-illeal atresias)",
-                    "children": []
-                }, {
-                    "content": "Maternal polyhydramnios",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype/Microarray (if aneuploidy suspected), or cell-free fetal DNA if patient is risk averse (can be done at any GA)",
-                    "children": []
-                }, {
-                    "content": "Ultrasound - Double bubble for duodenal atresia, multiple dilated loops of bowel for bowel atresia/stenosis",
-                    "children": []
-                }, {
-                    "content": "ECHO (if Down Syndrome suspected)",
-                    "children": []
-                }, {
-                    "content": "Parental cystic fibrosis testing",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "None",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "Monthly ultrasound",
-                    "children": []
-                }, {
-                    "content": "NST q week &gt; 32 weeks",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Congenital Diaphragmatic Hernia",
-            "intro": "Malformation of the posterolateral diaphragm, through which the abdominal viscera migrate into the fetal chest impairing lung development. The result is varying degrees of pulmonary hypoplasia.",
-            "guide": [{
-                "content": "Associated with",
-                "children": [{
-                    "content": "Chromosomal abnormalities",
-                    "children": []
-                }, {
-                    "content": "Cardiac defects",
-                    "children": []
-                }, {
-                    "content": "Syndromes such as Fryns, Cornelia de Lange, and Multiple Pterygium",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype/Microarray (or cell-free fetal DNA if patient is risk averse)",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Tracheal Balloon Occlusion (TBO) can be offered if patient meets criteria listed below. TBO is performed during 26-28 weeks gestation via u/s guided fetoscopy (fetal bronchoscopy) and again removed via a second fetoscopy (“unplugging”) between 32-34 weeks. Once the balloon has been successfully removed, delivery can be vaginal (usually planned induction) at 39 weeks if not in spontaneous labor earlier. If spontanious delivery occurs prior to removal of the balloon an EXIT procedure, a surgical delivery much like a caesarean section, may be required. During the ~6 weeks that the balloon is in situ, the patient must live in close proximity to a center that can delivery via EXIT procedure, and may need to relocate if she does not.",
-                    "children": []
-                }, {
-                    "content": "Criteria for tracheal balloon occlusion:",
-                    "children": [{
-                        "content": "If liver up and the Lung to Head Ratio (LHR) during  24-28 weeks is &lt; 1.0 (LHR: the R lung area to head circumference ratio is calculated by a ratio of R lung area (in square millimeters) to head circumference (in millimeters) to minimize lung size differences owing to gestational age)",
-                        "children": []
-                    }, {
-                        "content": "Normal Karyotype",
-                        "children": []
-                    }]
-                }]
-            }, {
-                "content": "Follow-up (no intervention)",
-                "children": [{
-                    "content": "Monthly ultrasound for growth/ monitor amniotic fluid level",
-                    "children": []
-                }, {
-                    "content": "LHR checked on each US if liver up",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up (with tracheal balloon occlusion)",
-                "children": [{
-                    "content": "LHR weekly",
-                    "children": []
-                }, {
-                    "content": "MRI prior to unplugging",
-                    "children": []
-                }, {
-                    "content": "Steroids prior to unplugging",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Cystic Hygroma",
-            "intro": "Cystic hygromas are congenital mulitloculated lesions that can range in presentation from increased nuchal translucency to thin-walled cystic masses that may become larger than the fetal head. The cysts may result from a lymphatic abnormality, possibly one caused by absent or inefficient connections between the lymphatic and venous systems.  These can arise anywhere in the body but are most often located in the neck and axilla.",
-            "guide": [{
-                "content": "Associated with",
-                "children": [{
-                    "content": "Abnormal karyotype (50%)",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype, ± Microarray CGH (Cell-free fetal DNA if risk averse)",
-                    "children": []
-                }, {
-                    "content": "Consider Spinal Muscular Atrophy (SMA)",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "EXIT procedure if concerned about patency of airway for neck lesions",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "NST q week &gt; 30 weeks",
-                    "children": []
-                }, {
-                    "content": "Ultrasound monitoring at least once per month for hygroma growth",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Gastroschisis",
-            "intro": "A small abdominal wall defect to the right of a normally positioned umbilical cord, which permits herniation of intestine (and sometimes other abdominal contents) to float-freely in the amniotic fluid.",
-            "guide": [{
-                "content": "Associated with",
-                "children": [{
-                    "content": "Intestinal atresias thought to be secondary to a vascular accident affecting the blood supply to the intestine",
-                    "children": []
-                }, {
-                    "content": "Elevated maternal MSAFP",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype may be helpful if there are other associated anomalies or there is an unusual anatomical presentation of gastroschisis. ",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO is not required unless there is any other associated finding",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "None",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "Monthly ultrasound to monitor growth, bowel appearance and amniotic fluid level",
-                    "children": [{
-                        "content": "IF IUGR or oligohydramnios develops, q14 day US for growth"
-                    }]
-                }, {
-                    "content": "Antenatal Testing",
-                    "children": [{
-                        "content": "NST q week &gt; 32 weeks"
-                    }, {
-                        "content": "NST 2x/week if IUGR"
-                    }]
-                }]
-            }, {
-                "content": "Delivery Planning",
-                "children": [{
-                    "content": "Plan induction of labor at 37-38 weeks gestation if testing is reassuring otherwise? deliver as clinically indicated?",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Hydrops: Immune",
-            "intro": "Immune Hydrops is a hemolytic disease resulting from isoimmunization of the mother to fetal antigens; this leads to fetal anemia and hydrops. Hydrops is specified as a fetus with abnormal accumulation of fluid in 2 or more fetal compartments, including ascites, pleural effusion, pericardial effusion, and skin edema. Hydrops may also be associated with polyhydramnios and placental edema. Hydrops is an end-stage process for numerous fetal diseases, and the exact mechanism is not always known. ",
-            "guide": [{
-                "content": "Causes",
-                "children": [{
-                    "content": "Maternal Rh(D) alloimmunization",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Ultrasound with MCA PSV Dopplers",
-                    "children": []
-                }, {
-                    "content": "Bloodwork",
-                    "children": [{
-                        "content": "Maternal blood type"
-                    }, {
-                        "content": "Antibody screen and titer"
-                    }, {
-                        "content": "Paternal blood type and genotype"
-                    }]
-                }, {
-                    "content": "Viral Studies",
-                    "children": []
-                }, {
-                    "content": "Karyotype (if invasive testing, e.g. PUBS, is performed)",
-                    "children": []
-                }, {
-                    "content": "MRI (not needed)",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Fetal Intervention should be considered if:",
-                    "children": [{
-                        "content": "PUBS if MCA PSV &gt;1.5 MoMs",
-                        "children": []
-                    }, {
-                        "content": "IUT to treat anemia if hct &lt;30%",
-                        "children": []
-                    }, {
-                        "content": "Target hct is 40-50%",
-                        "children": []
-                    }]
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "Ultrasound with MCA PSV Dopplers (usually weekly to every other week), limited US to rule out hydrops ",
-                    "children": []
-                }, {
-                    "content": "Weekly hydrops checks",
-                    "children": []
-                }, {
-                    "content": "Repeat IUT if necessary (higher MCA threshold after 1 IUT, usually &gt;1.67 MoMs; MCA not reliable after 2 IUTs or after 35 weeks’ gestation – follow trend",
-                    "children": []
-                }, {
-                    "content": "Betamethasone administration if beyond viability and at risk for delivery",
-                    "children": []
-                }, {
-                    "content": "Deliver at 38-39 wks",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Hydrops: Nonimmune",
-            "intro": "Nonimmune Hydrops identifies those cases in which the fetal disorder was caused by factors other than isoimmunization. Hydrops is specified as a fetus with abnormal accumulation of fluid in 2 or more fetal compartments, including ascites, pleural effusion, pericardial effusion, and skin edema. Hydrops may also be associated with polyhydramnios and placental edema. Hydrops is an end-stage process for numerous fetal diseases, and the exact mechanism is not always known. ",
-            "guide": [{
-                "content": "Causes",
-                "children": [{
-                    "content": "Cardiovascular (fetal arrhythmias)",
-                    "children": []
-                }, {
-                    "content": "Genetic abnormalities (aneuploidy)",
-                    "children": []
-                }, {
-                    "content": "Intrathoracic malformations  (primary hydrothorax)",
-                    "children": []
-                }, {
-                    "content": "Hematological disorders (alpha thalassemia)",
-                    "children": []
-                }, {
-                    "content": "Infectious conditions",
-                    "children": []
-                }, {
-                    "content": "Idiopathic forms",
-                    "children": []
-                }, {
-                    "content": "Mono/di twin complications (stage IV TTTS, TRAP sequence)",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Ultrasound with MCA PSV Dopplers",
-                    "children": []
-                }, {
-                    "content": "Bloodwork",
-                    "children": [{
-                        "content": "Viral Studies: Parvovirus, CMV, Toxo, syphilis"
-                    }, {
-                        "content": "Maternal blood type and antibody screen"
-                    }, {
-                        "content": "MCV, consider DNA testing for alpha thalassemia if &lt;80 fL"
-                    }]
-                }, {
-                    "content": "Karyotype or cell free DNA screen (highest risk of non-immune causes includes aneuploidy)",
-                    "children": []
-                }, {
-                    "content": "Maternal testing for G6PD, pyruvate kinase deficiency, lysosomal storage diseases",
-                    "children": []
-                }, {
-                    "content": "Prolonged EFM if arrthymia suspected",
-                    "children": []
-                }, {
-                    "content": "MRI (not needed)",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Treatment of underlying cause",
-                    "children": []
-                }, {
-                    "content": "IUT if Parvo suspected or if anemia detected, depending on cause/prognosis",
-                    "children": []
-                }, {
-                    "content": "Maternal medical management for fetal arrthymias (Digoxin, Sotalol, Flecainide)",
-                    "children": []
-                }, {
-                    "content": "Open fetal surgery for large, vascular tumors (SCT, cervical, pericardial)",
-                    "children": []
-                }, {
-                    "content": "Laser surgery for Stage IV TTTS",
-                    "children": []
-                }, {
-                    "content": "Radiofrequency ablation for TRAP",
-                    "children": []
-                }, {
-                    "content": "Thoracoamniotic shunt placement for primary hydrothorax",
-                    "children": []
-                }, {
-                    "content": "Betamethasone for CPAM (12mg q24h x 2)",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "Ultrasound (follow hydrops, +/- Dopplers) up to 2x/week",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }, {
-                    "content": "Betamethasone administration if at viability and at risk for delivery",
-                    "children": []
-                }, {
-                    "content": "Observe for mirror syndrome",
-                    "children": []
-                }, {
-                    "content": "Mode and timing of delivery should be individualized",
-                    "children": []
-                }, {
-                    "content": "Most require delivery at tertiary center",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Lung Lesions: CPAM",
-            "intro": "Hamartomatous lesion characterized by a mass of interconnected and disorganized cysts. Involvement is usually unilobar, with a slight predilection for the lower lobes- left and right sides are affected equally. Multiple lesions are concerning for pleuro pulmonary blastoma (PPB), a rare childhood cancer.",
-            "guide": [{
-                "content": "Types",
-                "children": [{
-                    "content": "Microcystic: solid appearing on US with increased echogenicity",
-                    "children": []
-                }, {
-                    "content": "Macrocystic: cysts visible on US",
-                    "children": []
-                }, {
-                    "content": "Mixed: lesions may be mixed with both microcystic and macrocystic elements",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype (not required)",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Shunt placement (or needle drainage) if macrocystic with evidence of effusion",
-                    "children": []
-                }, {
-                    "content": "Prenatal steroids if CVR (CCAM Volume Ratio)  &gt; 1.6 CVR = (length x width x height x 0.52) divided by the head circumference (as this controls for gestational age)",
-                    "children": []
-                }, {
-                    "content": "Open resection if fetus hydropic, &lt; 28 weeks (rare)",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "If large lesion, ultrasound weekly for hydrops surveillance and lesion growth until 28 wks",
-                    "children": [{
-                        "content": "Check CVR and MTR with each ultrasound"
-                    }]
-                }, {
-                    "content": "NST q week 28-30 weeks (small lesions 32-34 weeks)",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Lung Lesions: Pulmonary Sequestration",
-            "intro": "Cystic bronchopulmonary forgut malformation. Well-defined echodense, homogeneous or microcystic mass in the lower chest or in the abdomen. Malformation receives its blood supply from an aberrant systemic arterial vessel off the aorta. There is no bronchial communication.",
-            "guide": [{
-                "content": "Types",
-                "children": [{
-                    "content": "Intralobar: resides within the visceral pleura of the normal lung",
-                    "children": []
-                }, {
-                    "content": "Extralobar: contained by its own visceral pleura",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype (not required)",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Open resection if fetus hydropic, &lt; 28 weeks",
-                    "children": []
-                }, {
-                    "content": "Shunt placement (or needle drainage) if large pleural effusion",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "If large lesion, ultrasound weekly until 28wks",
-                    "children": [{
-                        "content": "Check CVR and MTR with each ultrasound"
-                    }]
-                }, {
-                    "content": "Ultrasound prn after 28 weeks",
-                    "children": []
-                }, {
-                    "content": "NST q week &gt; 30 weeks (small lesions – 32-34 weeks)",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Myelomeningocele (Spina Bifida)",
-            "intro": "A neural tube defect called myelomeningocele (MM) occurs when the spinal cord/neural elements are exposed through the opening of the spine. Myelomeningocele is the most severe form of spina bifida.  It is most common in lower portion of the spine from the upper lumbar to the upper sacral areas.  The result is varying degree of impairment in the central nervous system, the urologic system, and musculoskeletal system of the child.\t",
-            "guide": [{
-                "content": "Associated with",
-                "children": [{
-                    "content": "Folic Acid deficiency",
-                    "children": []
-                }, {
-                    "content": "Elevated AFP",
-                    "children": []
-                }, {
-                    "content": "Certain anticonvulsant medications",
-                    "children": []
-                }, {
-                    "content": "Family History of NTD",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype (required to be considered for open fetal surgery); cell-free fetal DNA not a substitute",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }, {
-                    "content": "MRI: if considering fetal intervention",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Most cases surgically repaired after birth",
-                    "children": []
-                }, {
-                    "content": "Prenatal repair inclusion criteria:",
-                    "children": [{
-                        "content": "Myelomeningocele defect must start between T1-S1 (may extend below S1)"
-                    }, {
-                        "content": "Chiari II malformation diagnosed by MRI"
-                    }, {
-                        "content": "Normal fetal karyotype (amniocentesis)"
-                    }, {
-                        "content": "Gestational age at referral between 19 to 26 weeks"
-                    }]
-                }, {
-                    "content": "Prenatal repair exclusion criteria:",
-                    "children": [{
-                        "content": "Multifetal pregnancy (twins, triplets, etc"
-                    }, {
-                        "content": "Maternal contraindications to surgery or anesthesia"
-                    }, {
-                        "content": "Body Mass Index &gt; 35"
-                    }, {
-                        "content": "Kyphosis (curve in the spine) in the fetus ≥ 30º"
-                    }, {
-                        "content": "Other fetal problem not related to the spina bifida"
-                    }, {
-                        "content": "Current or planned cerclage or documented history of incompetent cervix"
-                    }, {
-                        "content": "Short cervix (&lt; 20 mm)"
-                    }, {
-                        "content": "Preterm labor in the current pregnancy"
-                    }, {
-                        "content": "Placenta previa or placental abruption"
-                    }, {
-                        "content": "Maternal-fetal isoimmuization"
-                    }, {
-                        "content": "Uterine abnormality"
-                    }, {
-                        "content": "Inability to comply with travel or follow-up requirements"
-                    }]
-                }]
-            }, {
-                "content": "Follow-up with postnatal repair",
-                "children": [{
-                    "content": "Monthly ultrasound",
-                    "children": []
-                }, {
-                    "content": "Consult with Neurosurgery",
-                    "children": []
-                }, {
-                    "content": "Planned c-section delivery at 39 weeks ",
-                    "children": []
-                }, {
-                    "content": "NST weekly &gt;32 weeks",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up with prenatal repair",
-                "children": [{
-                    "content": "2-3 weeks post-op stay at UCSF housing facility with outpatient follow up ",
-                    "children": []
-                }, {
-                    "content": "Once cleared to return home, weekly follow up at accepting MFM group",
-                    "children": []
-                }, {
-                    "content": "Refer to detailed post-op management guidelines following MMC repair upon discharge",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Omphalocele",
-            "intro": "A central abdominal wall defect that permits herniation of the abdominal viscera into the umbilical cord.  A membrane that is made out of Wharton’s jelly, covers the viscera. The defect can be small (&lt;3cm) to large (extending from the xiphoid to the pubis). If there is  liver  herniation into the membrane , a c-section delivery may be necessary.",
-            "guide": [{
-                "content": "Associated with",
-                "children": [{
-                    "content": "Elevated maternal MSAFP",
-                    "children": []
-                }, {
-                    "content": "Chromosomal abnormalities",
-                    "children": []
-                }, {
-                    "content": "Cardiac defects",
-                    "children": []
-                }, {
-                    "content": "Beckwith-Wiedemann syndrome",
-                    "children": []
-                }, {
-                    "content": "Genitourinary malformations",
-                    "children": []
-                }, {
-                    "content": "Pulmonary hypoplasia/hypertension",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype/microarray",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "None",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "Monthly ultrasound to monitor growth, lesion appearance and amniotic fluid level",
-                    "children": []
-                }, {
-                    "content": "Antenatal Testing",
-                    "children": [{
-                        "content": "NST q week 28-32 weeks"
-                    }]
-                }]
-            }, {
-                "content": "Delivery Planning",
-                "children": [{
-                    "content": "If liver in sac, plan c-section delivery",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "TRAP Sequence",
-            "intro": "Monochronic twin pregnancy with one normal twin and one abnormal twin including some or all of the following: Absent cardiac activity, Acardia (or a rudimentary heart), Absent head and upper limbs, Cystic hygroma, Diffuse lymphangectasia, Rudimentary limbs, Reversed arterial blood flow in the umbilical cord of the acardiac twin leading to output failure in the normal twin.",
-            "guide": [{
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype (not required)",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }, {
-                    "content": "MRI (not required)",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "If TRAP is large (50% size of normal fetus) or if normal fetus in high output state or hydropic: radiofrequency ablation procedure after 16 weeks’ gestation",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "If no surgical intervention, NST 2x/week &gt; 30 weeks",
-                    "children": []
-                }, {
-                    "content": "BPP 2x/week 26-30 weeks",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Twin-Twin Transfusion Syndrome (TTTS)",
-            "intro": "TTTS is a serious, progressive disorder that affects up to 10% of monochorionic twins. The twins do not have malformations, but one transfuses the other through blood vessel connections (A-V) in the placenta. In this situation, an artery from the donor twin enters the placental substance to exchange oxygen and nutrients. Unfortunately, the corresponding vein returns \"by mistake\" to the other twin (the recipient) via this arterio-venous connection. ",
-            "guide": [{
-                "content": "Severity Stages",
-                "children": [{
-                    "content": "Stage I. DVP’s &lt;2cm and &gt;8cm, visible bladder in donor",
-                    "children": []
-                }, {
-                    "content": "Stage II. DVP’s &lt;2 and &gt;8 no bladder in donor",
-                    "children": []
-                }, {
-                    "content": "Stage III. Echocardiographic or Doppler abnormalities in either fetus (exception: absent/reversed diastolic flow in UA Doppler in the presence of an AA clearly identified on ultrasound; follow ductus venosus instead for these cases)",
-                    "children": []
-                }, {
-                    "content": "Stage IV. Hydrops in either twin",
-                    "children": []
-                }, {
-                    "content": "Stage V. Fetal demise of either twin",
-                    "children": []
-                }]
-            }, {
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype (not required prior to intervention; recommend against invasive testing in close proximity to potential laser intervention)",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Consider laser ablation",
-                    "children": [{
-                        "content": "&lt; 26 weeks gestation"
-                    }, {
-                        "content": "Stage II-IV"
-                    }]
-                }, {
-                    "content": "Consider radiofrequency ablation (RFA)",
-                    "children": [{
-                        "content": "&lt; 24 weeks gestation"
-                    }, {
-                        "content": "Particularly if structural anomalies seen "
-                    }, {
-                        "content": " Severe growth discordance/early selective IUGR"
-                    }]
-                }]
-            }, {
-                "content": "Follow-up for laser surgery",
-                "children": [{
-                    "content": "Ultrasound and ECHO before hospital discharge",
-                    "children": []
-                }, {
-                    "content": "Post-op follow up in 7-10 days",
-                    "children": [{
-                        "content": "If stable, f/u q2 weeks (including growth, due to dichorionization) for remainder of pregnancy. "
-                    }]
-                }]
-            }, {
-                "content": "Follow-up if does not meet criteria for laser surgery",
-                "children": [{
-                    "content": "Ultrasound follow-up w/Dopplers 1-2x/ week",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up for RFA",
-                "children": [{
-                    "content": "Ultrasound prior to discharge",
-                    "children": []
-                }, {
-                    "content": "Echo if any pump twin cardiac disease was seen preop",
-                    "children": []
-                }, {
-                    "content": "Utrasound on post-op day 7-10",
-                    "children": []
-                }, {
-                    "content": "Follow up in two weeks and then monthly for singleton growth",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Unequal Placental Sharing",
-            "intro": "Monochorionic twin pregnancies in which there is a difference in size of the twins and in the amniotic fluid levels. Both twins have visible bladders.  In this circumstance the twins do not have an equal share of the placenta. This can lead to the smaller twin having intrauterine growth retardation and abnormal dopplers.",
-            "guide": [{
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype (not required)",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }, {
-                    "content": "MRI (not required)",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Radiofrequency ablation",
-                    "children": []
-                }, {
-                    "content": "Laser surgery to separate circulations if parents do not desire RFA (may require amnioinfusion)",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "If no surgical intervention, weekly ultrasound with Dopplers",
-                    "children": []
-                }, {
-                    "content": "NST’s if abnormal dopplers or IUGR",
-                    "children": []
-                }, {
-                    "content": "Prenatal steroids if selective IUGR, worsening/severe growth discordance or newly abnormal Dopplers",
-                    "children": []
-                }, {
-                    "content": "Hospitalization for continuous monitoring in the setting of abnormal NST’s",
-                    "children": []
-                }]
-            }]
-        }, {
-            "title": "Urinary Obstruction",
-            "intro": "Caused by a narrowing at some point in the urinary tract. This narrowing can slow down or stop the flow of urine, and in turn can interfere with the development of both the kidneys and the lungs.\nOutcome is related to the type of obstruction (location within the urinary tract), the severity of the obstruction, and the affect on renal function and amniotic fluid volume. \nFetuses with obstruction or abnormality of one kidney and  a normal remaining kidneywill do very well. One healthy kidney can support a normal life. \nSevere obstruction to both kidneys can be at the level of the bladder outlet (urethra), the bladder inlet (ureterovesical junction) or the kidney outlet (ureteropelvic junction). \nIf the obstruction prevents urine from draining  into the amniotic space around the fetus  oligohydramnios will occur leading to pulmonary hypoplasia. The resulting  small lungs may prove fatal  after birth. Urinaryobstruction also leads to kidney damage  and renal failure after birth.",
-            "guide": [{
-                "content": "Workup",
-                "children": [{
-                    "content": "Karyotype",
-                    "children": []
-                }, {
-                    "content": "Ultrasound",
-                    "children": []
-                }, {
-                    "content": "ECHO",
-                    "children": []
-                }, {
-                    "content": "MRI (not required)",
-                    "children": []
-                }, {
-                    "content": "Urine Electrolytes: bladder taps x 3 (every other day)",
-                    "children": []
-                }]
-            }, {
-                "content": "Fetal Intervention Options",
-                "children": [{
-                    "content": "Severe cases with evidence of progressive renal failure minimally invasive fetal surgery using a small (3-mm) fetoscope into the fetal bladder and disrupting the valves, opening the obstruction",
-                    "children": []
-                }]
-            }, {
-                "content": "Follow-up",
-                "children": [{
-                    "content": "If normal amniotic fluid, non-dilated bladder monthly ultrasound",
-                    "children": []
-                }, {
-                    "content": "If low amniotic fluid, normal electrolytes, consider fetal bladder cystoscopy or vesicoamniotic shunt",
-                    "children": []
-                }]
-            }]
-        }]
-    }
+      },
+      {
+        "id": 1,
+        "type": "Fetal Firsts",
+        "videolist": [
+          {
+            "title": "Fetal Surgery Beginnings",
+            "url": "https://www.youtube.com/embed/Z7vlvVBrHkI",
+            "id": "Z7vlvVBrHkI"
+          },
+          {
+            "title": "The Patients, Our Heroes",
+            "url": "https://www.youtube.com/embed/",
+            "id": "RjHIVQX4vE4"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "Monochorionic Twins",
+        "videolist": [
+          {
+            "title": "Monochorionic Twins",
+            "url": "https://www.youtube.com/embed/inOuDIBi6l8",
+            "id": "inOuDIBi6l8"
+          },
+          {
+            "title": "Monochorionic Twins (in Spanish)",
+            "url": "https://www.youtube.com/embed/YGzIgzbW8y8",
+            "id": "YGzIgzbW8y8"
+          },
+          {
+            "title": "Monochorionic Twins (in Mandarin)",
+            "url": "https://www.youtube.com/embed/QM2akYZv2js",
+            "id": "QM2akYZv2js"
+          },
+          {
+            "title": "Monochorionic vs Dichronic Twin Pregnancy",
+            "url": "https://www.youtube.com/embed/ILsYPHAocgY",
+            "id": "ILsYPHAocgY"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "type": "Ventriculomegaly",
+        "videolist": [
+          {
+            "title": "What is Ventriculomegaly?",
+            "url": "https://www.youtube.com/embed/R55mgeCLWLw",
+            "id": "R55mgeCLWLw"
+          },
+          {
+            "title": "Range of Outcomes",
+            "url": "https://www.youtube.com/embed/vAOOWA4FODA",
+            "id": "vAOOWA4FODA"
+          },
+          {
+            "title": "Longterm Outcome",
+            "url": "https://www.youtube.com/embed/p2-EbOlnQC0",
+            "id": "p2-EbOlnQC0"
+          },
+          {
+            "title": "Will my child need a VP Shunt?",
+            "url": "https://www.youtube.com/embed/dHTg86mPxyo",
+            "id": "dHTg86mPxyo"
+          },
+          {
+            "title": "Hydrocephalus and VP Shunt",
+            "url": "https://www.youtube.com/embed/MkNm-v41d2o",
+            "id": "MkNm-v41d2o"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "Urinary Tract Obstruction",
+        "videolist": [
+          {
+            "title": "What is Urinary Tract Obstruction?",
+            "url": "https://www.youtube.com/embed/CA8z_KqAjmg",
+            "id": "CA8z_KqAjmg"
+          },
+          {
+            "title": "Long Term Outcome",
+            "url": "https://www.youtube.com/embed/VAnWs-zl9Xs",
+            "id": "VAnWs-zl9Xs"
+          },
+          {
+            "title": "Severity",
+            "url": "https://www.youtube.com/embed/x1uRMc4Uz5E",
+            "id": "x1uRMc4Uz5E"
+          },
+          {
+            "title": "Choices for Pregnancy",
+            "url": "https://www.youtube.com/embed/M9PmAtRAQ9U",
+            "id": "M9PmAtRAQ9U"
+          },
+          {
+            "title": "Fetal Intervention",
+            "url": "https://www.youtube.com/embed/rY-RDUesKcU",
+            "id": "rY-RDUesKcU"
+          },
+          {
+            "title": "What Happens After Birth",
+            "url": "https://www.youtube.com/embed/06qy38d-BsY",
+            "id": "06qy38d-BsY"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "type": "Agenesis of the Corpus Callosum",
+        "videolist": [
+          {
+            "title": "What is Agenesis of the Corpus Callosum?",
+            "url": "https://www.youtube.com/embed/ws3wFhhGNrE",
+            "id": "ws3wFhhGNrE"
+          },
+          {
+            "title": "Long Term Outcome",
+            "url": "https://www.youtube.com/embed/CgG-h9FDhXQ",
+            "id": "CgG-h9FDhXQ"
+          },
+          {
+            "title": "Diagnosis During Pregnancy",
+            "url": "https://www.youtube.com/embed/K7eXDTNgTXA",
+            "id": "K7eXDTNgTXA"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "type": "Amniotic Band Syndrome",
+        "videolist": [
+          {
+            "title": "What is Amniotic Band Syndrome?",
+            "url": "https://www.youtube.com/embed/PAWdUSj4jLk",
+            "id": "PAWdUSj4jLk"
+          },
+          {
+            "title": "Long Term Outcome",
+            "url": "https://www.youtube.com/embed/Z4wjQS6aAp0",
+            "id": "Z4wjQS6aAp0"
+          },
+          {
+            "title": "Severity",
+            "url": "https://www.youtube.com/embed/zO498ET3tFE",
+            "id": "zO498ET3tFE"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "Bowel Obstruction",
+        "videolist": [
+          {
+            "title": "Pregnancy with Bowel Obstruction",
+            "url": "https://www.youtube.com/embed/JkYG0sIXp-Q",
+            "id": ""
+          },
+          {
+            "title": "Outcomes",
+            "url": "https://www.youtube.com/embed/swOo_vmM7II",
+            "id": ""
+          },
+          {
+            "title": "After Birth",
+            "url": "https://www.youtube.com/embed/cVBsh9G5kMA",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "type": "CHAOS",
+        "videolist": [
+          {
+            "title": "Outcome",
+            "url": "https://www.youtube.com/embed/LHM9V3tC8vw",
+            "id": ""
+          },
+          {
+            "title": "Severity",
+            "url": "https://www.youtube.com/embed/Gr6PpOwXvrc",
+            "id": ""
+          },
+          {
+            "title": "Choices during pregnancy",
+            "url": "https://www.youtube.com/embed/43mn5w8PfJ0",
+            "id": ""
+          },
+          {
+            "title": "Exit Procedure",
+            "url": "https://www.youtube.com/embed/7GsiDGqe5NI",
+            "id": ""
+          },
+          {
+            "title": "What Happens After Birth?",
+            "url": "https://www.youtube.com/embed/rb7CT2rZ_0o",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "type": "CPAM",
+        "videolist": [
+          {
+            "title": "What is CPAM?",
+            "url": "https://www.youtube.com/embed/-4jx-8h6Bf4",
+            "id": ""
+          },
+          {
+            "title": "Range of Outcomes",
+            "url": "https://www.youtube.com/embed/E8_UHV-MEPQ",
+            "id": ""
+          },
+          {
+            "title": "Diagnosis",
+            "url": "https://www.youtube.com/embed/roq8xVIlmXA",
+            "id": ""
+          },
+          {
+            "title": "Treatment Options",
+            "url": "https://www.youtube.com/embed/QydJbS3EdBY",
+            "id": ""
+          },
+          {
+            "title": "Delivery with CPAM",
+            "url": "https://www.youtube.com/embed/xDTtsogEbuQ",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "type": "CDH",
+        "videolist": [
+          {
+            "title": "What is CDH?",
+            "url": "https://www.youtube.com/embed/G-GgGt84vHs",
+            "id": ""
+          },
+          {
+            "title": "Range of Outcomes",
+            "url": "https://www.youtube.com/embed/5YmxVQcKIxY",
+            "id": ""
+          },
+          {
+            "title": "Diagnosis",
+            "url": "https://www.youtube.com/embed/sqzsctQYe9I",
+            "id": ""
+          },
+          {
+            "title": "Preganancy monitoring",
+            "url": "https://www.youtube.com/embed/TA6yYzF3zZ0",
+            "id": ""
+          },
+          {
+            "title": "Fetal Intervention",
+            "url": "https://www.youtube.com/embed/brHQJKZdPG0",
+            "id": ""
+          },
+          {
+            "title": "Fetal Balloon Tracheal Occlusion",
+            "url": "https://www.youtube.com/embed/_ys_GlTH5V4",
+            "id": ""
+          },
+          {
+            "title": "Delivery with CDH",
+            "url": "https://www.youtube.com/embed/Fkjs1SubgpY",
+            "id": ""
+          },
+          {
+            "title": "CDH Research",
+            "url": "https://www.youtube.com/embed/gOcwZpkpitI",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "type": "Congenital Heart Disease",
+        "videolist": [
+          {
+            "title": "What is Congenital Heart Disease",
+            "url": "https://www.youtube.com/embed/41H4947EkpE",
+            "id": ""
+          },
+          {
+            "title": "What is dysrhythmia/arrhythmia?",
+            "url": "https://www.youtube.com/embed/EeANysulhk8",
+            "id": ""
+          },
+          {
+            "title": "Range of Outcomes",
+            "url": "https://www.youtube.com/embed/pjTkC_zojnE",
+            "id": ""
+          },
+          {
+            "title": "Determining Severity",
+            "url": "https://www.youtube.com/embed/pRjsxXY_tK8",
+            "id": ""
+          },
+          {
+            "title": "Choices during pregnancy",
+            "url": "https://www.youtube.com/embed/Y1ehQSIsdnU",
+            "id": ""
+          },
+          {
+            "title": "Fetal Treatment for Arrhythmias",
+            "url": "https://www.youtube.com/embed/RBWzjicN8fY",
+            "id": ""
+          },
+          {
+            "title": "Fetal Surgery for Cardiac Disease",
+            "url": "https://www.youtube.com/embed/DDEu_2pE-ts",
+            "id": ""
+          },
+          {
+            "title": "Delivery with Fetal Cardiac Disease",
+            "url": "https://www.youtube.com/embed/Z-GpqmROEXg",
+            "id": ""
+          },
+          {
+            "title": "Follow Up Care with Fetal Cardiac Disease",
+            "url": "https://www.youtube.com/embed/ciwSdntnLfc",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "type": "Fetal Anemia",
+        "videolist": [
+          {
+            "title": "What is Fetal Anemia?",
+            "url": "https://www.youtube.com/embed/jCdZU5zOK2g",
+            "id": ""
+          },
+          {
+            "title": "Treatment",
+            "url": "https://www.youtube.com/embed/4x4E2EN6rM0",
+            "id": ""
+          },
+          {
+            "title": "Care in the ICN",
+            "url": "https://www.youtube.com/embed/eVfJur28ttw",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "type": "Fetal Thrombocytopenia",
+        "videolist": [
+          {
+            "title": "What is Fetal Thrombocytopenia?",
+            "url": "https://www.youtube.com/embed/pnzY2hxV_EQ",
+            "id": ""
+          },
+          {
+            "title": "Treatment",
+            "url": "https://www.youtube.com/embed/TyU6AA06Deo",
+            "id": ""
+          },
+          {
+            "title": "Care in the ICN",
+            "url": "https://www.youtube.com/embed/4aLlx0N-SVs",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "type": "Gastroschisis",
+        "videolist": [
+          {
+            "title": "What is Gastroschisis?",
+            "url": "https://www.youtube.com/embed/5rwWWp0mL40",
+            "id": ""
+          },
+          {
+            "title": "Long Term Outcome",
+            "url": "https://www.youtube.com/embed/YXWgiH9dpIU",
+            "id": ""
+          },
+          {
+            "title": "Treatment Options & Monitoring",
+            "url": "https://www.youtube.com/embed/GAX9BUcK5_M",
+            "id": ""
+          },
+          {
+            "title": "What Happens After Birth?",
+            "url": "https://www.youtube.com/embed/oJNAKUNR9qk",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "type": "Inherited Genetic Diseases: Stem Cell Treatments",
+        "videolist": [
+          {
+            "title": "Types of Treatable Genetic Diseases",
+            "url": "https://www.youtube.com/embed/Rf4hKMV7IG4",
+            "id": ""
+          },
+          {
+            "title": "Diagnosis",
+            "url": "https://www.youtube.com/embed/5E86pIrUqVU",
+            "id": ""
+          },
+          {
+            "title": "Treatment Options",
+            "url": "https://www.youtube.com/embed/wbw0qirt8IQ",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "type": "Omphalocele",
+        "videolist": [
+          {
+            "title": "What is Omphalocele?",
+            "url": "https://www.youtube.com/embed/BzKGlUSAVSQ",
+            "id": ""
+          },
+          {
+            "title": "Outcomes",
+            "url": "https://www.youtube.com/embed/YXWgiH9dpIU",
+            "id": ""
+          },
+          {
+            "title": "Treatment & Delivery",
+            "url": "https://www.youtube.com/embed/AnYs_-ISdW0",
+            "id": ""
+          },
+          {
+            "title": "Care After Birth",
+            "url": "https://www.youtube.com/embed/JIS1Fuo_kco",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "type": "Pulmonary Sequestration",
+        "videolist": [
+          {
+            "title": "What is Pulmonary Sequestration?",
+            "url": "https://www.youtube.com/embed/33eCQlCLuGQ",
+            "id": ""
+          },
+          {
+            "title": "Range of Outcomes",
+            "url": "https://www.youtube.com/embed/boCImgu3_uU",
+            "id": ""
+          },
+          {
+            "title": "Diagnosis via Sonogram",
+            "url": "https://www.youtube.com/embed/JwPnYvrLEfA",
+            "id": ""
+          },
+          {
+            "title": "Fetal Intervention",
+            "url": "https://www.youtube.com/embed/oVVZjKMNYU0",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "type": "Sacrococcygeal Teratoma (SCT)",
+        "videolist": [
+          {
+            "title": "What is SCT?",
+            "url": "https://www.youtube.com/embed/-xXCoSsGe1c",
+            "id": ""
+          },
+          {
+            "title": "Long Term Outcome",
+            "url": "https://www.youtube.com/embed/KwETLvZLTXQ",
+            "id": ""
+          },
+          {
+            "title": "Diagnosis",
+            "url": "https://www.youtube.com/embed/G7383Mr9UcM",
+            "id": ""
+          },
+          {
+            "title": "Treatment Options",
+            "url": "https://www.youtube.com/embed/FahfIZZbEKo",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "type": "Spina Bifida (Myelomeningocele)",
+        "videolist": [
+          {
+            "title": "What is Spina Bifida?",
+            "url": "https://www.youtube.com/embed/6SncXyJgRBs",
+            "id": ""
+          },
+          {
+            "title": "Diagnosis",
+            "url": "https://www.youtube.com/embed/YlutDYzJvMY",
+            "id": ""
+          },
+          {
+            "title": "Care During Pregnancy",
+            "url": "https://www.youtube.com/embed/MRyN5ZLUtXs",
+            "id": ""
+          },
+          {
+            "title": "Range of Outcomes",
+            "url": "https://www.youtube.com/embed/NeVv8S4U5fE",
+            "id": ""
+          },
+          {
+            "title": "Complications of Spina Bifida",
+            "url": "https://www.youtube.com/embed/zXnfEAL5U3w",
+            "id": ""
+          },
+          {
+            "title": "Effects on the Developing Brain",
+            "url": "https://www.youtube.com/embed/wlhOjKlGCVY",
+            "id": ""
+          },
+          {
+            "title": "Fetal Surgery",
+            "url": "https://www.youtube.com/embed/W3uXiA18tpg",
+            "id": ""
+          },
+          {
+            "title": "Benefits of Fetal Surgery",
+            "url": "https://www.youtube.com/embed/hfyphZlau9o",
+            "id": ""
+          },
+          {
+            "title": "Monitoring Pregnancy After Surgery",
+            "url": "https://www.youtube.com/embed/iFrMz_XJQ8Y",
+            "id": ""
+          },
+          {
+            "title": "Delivery with Spina Bifida",
+            "url": "https://www.youtube.com/embed/OJAsvNtOvOE",
+            "id": ""
+          },
+          {
+            "title": "Treatment After Birth",
+            "url": "https://www.youtube.com/embed/EUyrj6LZLQs",
+            "id": ""
+          },
+          {
+            "title": "UCSF Spina Bifida Clinic",
+            "url": "https://www.youtube.com/embed/rR0p_QwCPnk",
+            "id": ""
+          },
+          {
+            "title": "Taking Your Child Home",
+            "url": "https://www.youtube.com/embed/MxnYdgJJ_kg",
+            "id": ""
+          },
+          {
+            "title": "Will My Child Need a VP Shunt?",
+            "url": "https://www.youtube.com/embed/EcFWbuZOy2k",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "type": "TRAP Sequence or Acardiac Twin",
+        "videolist": [
+          {
+            "title": "What is TRAP Sequence?",
+            "url": "https://www.youtube.com/embed/Jzb2vuyLrFM",
+            "id": ""
+          },
+          {
+            "title": "Range of Outcomes",
+            "url": "https://www.youtube.com/embed/FvM8Z-SWuEI",
+            "id": ""
+          },
+          {
+            "title": "Fetal Intervention",
+            "url": "https://www.youtube.com/embed/InU62Cy_jbk",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "type": "Twin Pregnancy Complications",
+        "videolist": [
+          {
+            "title": "Twin Pregnancy Complications",
+            "url": "https://www.youtube.com/embed/InU62Cy_jbk",
+            "id": ""
+          },
+          {
+            "title": "What is TTTS?",
+            "url": "https://www.youtube.com/embed/9ntesjaw98c",
+            "id": ""
+          },
+          {
+            "title": "What is TRAP Sequence?",
+            "url": "https://www.youtube.com/embed/Jzb2vuyLrFM",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "type": " Twin to Twin Transfusion Syndrome (TTTS)",
+        "videolist": [
+          {
+            "title": "What is TTTS?",
+            "url": "https://www.youtube.com/embed/9ntesjaw98c",
+            "id": ""
+          },
+          {
+            "title": "Range of Outcomes",
+            "url": "https://www.youtube.com/embed/zz_EbhABplE",
+            "id": ""
+          },
+          {
+            "title": "Diagnosis",
+            "url": "https://www.youtube.com/embed/MaYp6LALaPg",
+            "id": ""
+          },
+          {
+            "title": "Care During Pregnancy",
+            "url": "https://www.youtube.com/embed/wNBHSfJHq_4",
+            "id": ""
+          },
+          {
+            "title": "Is Treatment Before Birth Required?",
+            "url": "https://www.youtube.com/embed/3eztjfO3DI0",
+            "id": ""
+          },
+          {
+            "title": "Is Laser Surgery the Best Option?",
+            "url": "https://www.youtube.com/embed/I3zVieVFxVM",
+            "id": ""
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "type": "Unequal Placental Sharing",
+        "videolist": [
+          {
+            "title": "What is Unequal Placental Sharing?",
+            "url": "https://www.youtube.com/embed/6xzBIibyFXE",
+            "id": ""
+          },
+          {
+            "title": "Unequal Placental Sharing Presentation",
+            "url": "https://www.youtube.com/embed/xVFevyuBmN8",
+            "id": ""
+          },
+          {
+            "title": "Severity",
+            "url": "https://www.youtube.com/embed/i61rdomnaOc",
+            "id": ""
+          },
+          {
+            "title": "Treatment Options",
+            "url": "https://www.youtube.com/embed/rOH7urC9t2w",
+            "id": ""
+          }
+        ]
+      }
+    ]
+  },
+  "guidelines": {
+    "version": 0.3,
+    "list": [
+      {
+        "title": "Alpha Thalassemia Major (ATM)",
+        "intro": "Alpha-Thalassemia is a hereditary blood disorder caused by mutations in the alpha chain of hemoglobin that can present along a range of severity. It is an autosomal recessive disease, resulting from DNA sequence deletions on chromosome 16; the most common is the Southeast Asian deletion (-SEA). Since there are 4 alleles coding for the alpha-globin protein, the disease can present as a spectrum. The homozygous form (-/-), often referred to as Hb Bartâs or Alpha-Thalassemia Major, results in the absence of all alpha-globin production. Unaffected chains accumulate and form tetramers that are unable to transport oxygen, ultimately leading to hypoxia and non-immune fetal hydrops. In utero transfusion of red blood cells can be life saving for fetuses with this disease. ",
+        "guide": [
+          {
+            "content": "Associated with",
+            "children": [
+              {
+                "content": "Fetal anemia",
+                "children": []
+              },
+              {
+                "content": "Fetal cardiac failure",
+                "children": []
+              },
+              {
+                "content": "Non-immune fetal hydrops",
+                "children": []
+              },
+              {
+                "content": "Hypoxia-induced anomalies ",
+                "children": [
+                  {
+                    "content": "Hypospadias"
+                  },
+                  {
+                    "content": "Digit and limb anomalies"
+                  },
+                  {
+                    "content": "Microcephaly"
+                  },
+                  {
+                    "content": "Hydrocephaly"
+                  },
+                  {
+                    "content": "Lung hypoplasia"
+                  },
+                  {
+                    "content": "Cardiac defects"
+                  },
+                  {
+                    "content": "Neurocognitive injury"
+                  }
+                ]
+              },
+              {
+                "content": "Maternal hypertension",
+                "children": []
+              },
+              {
+                "content": "Preeclampsia",
+                "children": []
+              },
+              {
+                "content": "Mirror Syndrome",
+                "children": []
+              },
+              {
+                "content": "Preterm labor",
+                "children": []
+              },
+              {
+                "content": "Antepartum hemorrhage",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Fetal Ultrasound (US)",
+                "children": [
+                  {
+                    "content": "Middle Cerebral Artery (MCA) Doppler"
+                  },
+                  {
+                    "content": "Cardio-Thoracic Ratio (CTR)"
+                  }
+                ]
+              },
+              {
+                "content": "Fetal Echocardiogram",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              },
+              {
+                "content": "Amniocentesis or Chorionic Villus Sampling (CVS)",
+                "children": []
+              },
+              {
+                "content": "Carrier screening for at-risk parents",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "In Utero Transfusion (IUT)",
+                "children": [
+                  {
+                    "content": "IUT for ATM beginning at 18 weeksâ gestation. This treatment is repeated every few weeks until birth. "
+                  },
+                  {
+                    "content": "RBC transfusion volume will be determined based on standard publicized volumes for Rh alloimmunization, and may be modified for ATM given the hydropic state of the fetus."
+                  }
+                ]
+              },
+              {
+                "content": "The UCSF Fetal Treatment Center is applying for permission from the FDA to perform in utero hematopoietic stem cell transplantation to treat ATM in the future."
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "Lifelong serial RBC transfusions and iron chelation therapy.",
+                "children": []
+              },
+              {
+                "content": "Bone marrow transplantation (BMT)",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bowel Obstruction",
+        "intro": "Narrowing or obstruction in a portion of the fetal intestine. Most are caused by an atresia, or stenosis, at some point in the intestine. A bowel obstruction is named according to the location within the  intestine: duodenal atresia, jejunal atresia, ileal atresia, or colonic atresia.",
+        "guide": [
+          {
+            "content": "Associated with",
+            "children": [
+              {
+                "content": "Trisomy 21 (Down syndrome) (1/3 of cases with duodenal atresia)",
+                "children": []
+              },
+              {
+                "content": "Malrotation",
+                "children": []
+              },
+              {
+                "content": "Congenital heart disease",
+                "children": []
+              },
+              {
+                "content": "Cystic Fibrosis (10%)",
+                "children": []
+              },
+              {
+                "content": "Gastroschisis (jejunal-illeal atresias)",
+                "children": []
+              },
+              {
+                "content": "Maternal polyhydramnios",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype/Microarray (if aneuploidy suspected), or cell-free fetal DNA if patient is risk averse (can be done at any GA)",
+                "children": []
+              },
+              {
+                "content": "Ultrasound - Double bubble for duodenal atresia, multiple dilated loops of bowel for bowel atresia/stenosis",
+                "children": []
+              },
+              {
+                "content": "ECHO (if Down Syndrome suspected)",
+                "children": []
+              },
+              {
+                "content": "Parental cystic fibrosis testing",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "None",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "Monthly ultrasound",
+                "children": []
+              },
+              {
+                "content": "NST q week > 32 weeks",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Congenital Diaphragmatic Hernia",
+        "intro": "Malformation of the posterolateral diaphragm, through which the abdominal viscera migrate into the fetal chest impairing lung development. The result is varying degrees of pulmonary hypoplasia.",
+        "guide": [
+          {
+            "content": "Associated with",
+            "children": [
+              {
+                "content": "Chromosomal abnormalities",
+                "children": []
+              },
+              {
+                "content": "Cardiac defects",
+                "children": []
+              },
+              {
+                "content": "Syndromes such as Fryns, Cornelia de Lange, and Multiple Pterygium",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype/Microarray (or cell-free fetal DNA if patient is risk averse)",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Tracheal Balloon Occlusion (TBO) can be offered if patient meets criteria listed below. TBO is performed during 26-28 weeks gestation via u/s guided fetoscopy (fetal bronchoscopy) and again removed via a second fetoscopy (âunpluggingâ) between 32-34 weeks. Once the balloon has been successfully removed, delivery can be vaginal (usually planned induction) at 39 weeks if not in spontaneous labor earlier. If spontanious delivery occurs prior to removal of the balloon an EXIT procedure, a surgical delivery much like a caesarean section, may be required. During the ~6 weeks that the balloon is in situ, the patient must live in close proximity to a center that can delivery via EXIT procedure, and may need to relocate if she does not.",
+                "children": []
+              },
+              {
+                "content": "Criteria for tracheal balloon occlusion:",
+                "children": [
+                  {
+                    "content": "If liver up and the Lung to Head Ratio (LHR) during  24-28 weeks is  < 1.0 (LHR: the R lung area to head circumference ratio is calculated by a ratio of R lung area (in square millimeters) to head circumference (in millimeters) to minimize lung size differences owing to gestational age)",
+                    "children": []
+                  },
+                  {
+                    "content": "Normal Karyotype",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Follow-up (no intervention)",
+            "children": [
+              {
+                "content": "Monthly ultrasound for growth/ monitor amniotic fluid level",
+                "children": []
+              },
+              {
+                "content": "LHR checked on each US if liver up",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up (with tracheal balloon occlusion)",
+            "children": [
+              {
+                "content": "LHR weekly",
+                "children": []
+              },
+              {
+                "content": "MRI prior to unplugging",
+                "children": []
+              },
+              {
+                "content": "Steroids prior to unplugging",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cystic Hygroma",
+        "intro": "Cystic hygromas are congenital mulitloculated lesions that can range in presentation from increased nuchal translucency to thin-walled cystic masses that may become larger than the fetal head. The cysts may result from a lymphatic abnormality, possibly one caused by absent or inefficient connections between the lymphatic and venous systems.  These can arise anywhere in the body but are most often located in the neck and axilla.",
+        "guide": [
+          {
+            "content": "Associated with",
+            "children": [
+              {
+                "content": "Abnormal karyotype (50%)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype, Â± Microarray CGH (Cell-free fetal DNA if risk averse)",
+                "children": []
+              },
+              {
+                "content": "Consider Spinal Muscular Atrophy (SMA)",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "EXIT procedure if concerned about patency of airway for neck lesions",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "NST q week > 30 weeks",
+                "children": []
+              },
+              {
+                "content": "Ultrasound monitoring at least once per month for hygroma growth",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Gastroschisis",
+        "intro": "A small abdominal wall defect to the right of a normally positioned umbilical cord, which permits herniation of intestine (and sometimes other abdominal contents) to float-freely in the amniotic fluid.",
+        "guide": [
+          {
+            "content": "Associated with",
+            "children": [
+              {
+                "content": "Intestinal atresias thought to be secondary to a vascular accident affecting the blood supply to the intestine",
+                "children": []
+              },
+              {
+                "content": "Elevated maternal MSAFP",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype may be helpful if there are other associated anomalies or there is an unusual anatomical presentation of gastroschisis. ",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO is not required unless there is any other associated finding",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "None",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "Monthly ultrasound to monitor growth, bowel appearance and amniotic fluid level",
+                "children": [
+                  {
+                    "content": "IF IUGR or oligohydramnios develops, q14 day US for growth"
+                  }
+                ]
+              },
+              {
+                "content": "Antenatal Testing",
+                "children": [
+                  {
+                    "content": "NST q week > 32 weeks"
+                  },
+                  {
+                    "content": "NST 2x/week if IUGR"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Delivery Planning",
+            "children": [
+              {
+                "content": "Plan induction of labor at 37-38 weeks gestation if testing is reassuring otherwise? deliver as clinically indicated?",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hydrops: Immune",
+        "intro": "Immune Hydrops is a hemolytic disease resulting from isoimmunization of the mother to fetal antigens; this leads to fetal anemia and hydrops. Hydrops is specified as a fetus with abnormal accumulation of fluid in 2 or more fetal compartments, including ascites, pleural effusion, pericardial effusion, and skin edema. Hydrops may also be associated with polyhydramnios and placental edema. Hydrops is an end-stage process for numerous fetal diseases, and the exact mechanism is not always known. ",
+        "guide": [
+          {
+            "content": "Causes",
+            "children": [
+              {
+                "content": "Maternal Rh(D) alloimmunization",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Ultrasound with MCA PSV Dopplers",
+                "children": []
+              },
+              {
+                "content": "Bloodwork",
+                "children": [
+                  {
+                    "content": "Maternal blood type"
+                  },
+                  {
+                    "content": "Antibody screen and titer"
+                  },
+                  {
+                    "content": "Paternal blood type and genotype"
+                  }
+                ]
+              },
+              {
+                "content": "Viral Studies",
+                "children": []
+              },
+              {
+                "content": "Karyotype (if invasive testing, e.g. PUBS, is performed)",
+                "children": []
+              },
+              {
+                "content": "MRI (not needed)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Fetal Intervention should be considered if:",
+                "children": [
+                  {
+                    "content": "PUBS if MCA PSV >1.5 MoMs",
+                    "children": []
+                  },
+                  {
+                    "content": "IUT to treat anemia if hct <30%",
+                    "children": []
+                  },
+                  {
+                    "content": "Target hct is 40-50%",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "Ultrasound with MCA PSV Dopplers (usually weekly to every other week), limited US to rule out hydrops ",
+                "children": []
+              },
+              {
+                "content": "Weekly hydrops checks",
+                "children": []
+              },
+              {
+                "content": "Repeat IUT if necessary (higher MCA threshold after 1 IUT, usually >1.67 MoMs; MCA not reliable after 2 IUTs or after 35 weeksâ gestation â follow trend",
+                "children": []
+              },
+              {
+                "content": "Betamethasone administration if beyond viability and at risk for delivery",
+                "children": []
+              },
+              {
+                "content": "Deliver at 38-39 wks",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hydrops: Nonimmune",
+        "intro": "Nonimmune Hydrops identifies those cases in which the fetal disorder was caused by factors other than isoimmunization. Hydrops is specified as a fetus with abnormal accumulation of fluid in 2 or more fetal compartments, including ascites, pleural effusion, pericardial effusion, and skin edema. Hydrops may also be associated with polyhydramnios and placental edema. Hydrops is an end-stage process for numerous fetal diseases, and the exact mechanism is not always known. ",
+        "guide": [
+          {
+            "content": "Causes",
+            "children": [
+              {
+                "content": "Cardiovascular (fetal arrhythmias)",
+                "children": []
+              },
+              {
+                "content": "Genetic abnormalities (aneuploidy)",
+                "children": []
+              },
+              {
+                "content": "Intrathoracic malformations  (primary hydrothorax)",
+                "children": []
+              },
+              {
+                "content": "Hematological disorders (alpha thalassemia)",
+                "children": []
+              },
+              {
+                "content": "Infectious conditions",
+                "children": []
+              },
+              {
+                "content": "Idiopathic forms",
+                "children": []
+              },
+              {
+                "content": "Mono/di twin complications (stage IV TTTS, TRAP sequence)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Ultrasound with MCA PSV Dopplers",
+                "children": []
+              },
+              {
+                "content": "Bloodwork",
+                "children": [
+                  {
+                    "content": "Viral Studies: Parvovirus, CMV, Toxo, syphilis"
+                  },
+                  {
+                    "content": "Maternal blood type and antibody screen"
+                  },
+                  {
+                    "content": "MCV, consider DNA testing for alpha thalassemia if <80 fL"
+                  }
+                ]
+              },
+              {
+                "content": "Karyotype or cell free DNA screen (highest risk of non-immune causes includes aneuploidy)",
+                "children": []
+              },
+              {
+                "content": "Maternal testing for G6PD, pyruvate kinase deficiency, lysosomal storage diseases",
+                "children": []
+              },
+              {
+                "content": "Prolonged EFM if arrthymia suspected",
+                "children": []
+              },
+              {
+                "content": "MRI (not needed)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Treatment of underlying cause",
+                "children": []
+              },
+              {
+                "content": "IUT if Parvo suspected or if anemia detected, depending on cause/prognosis",
+                "children": []
+              },
+              {
+                "content": "Maternal medical management for fetal arrthymias (Digoxin, Sotalol, Flecainide)",
+                "children": []
+              },
+              {
+                "content": "Open fetal surgery for large, vascular tumors (SCT, cervical, pericardial)",
+                "children": []
+              },
+              {
+                "content": "Laser surgery for Stage IV TTTS",
+                "children": []
+              },
+              {
+                "content": "Radiofrequency ablation for TRAP",
+                "children": []
+              },
+              {
+                "content": "Thoracoamniotic shunt placement for primary hydrothorax",
+                "children": []
+              },
+              {
+                "content": "Betamethasone for CPAM (12mg q24h x 2)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "Ultrasound (follow hydrops, +/- Dopplers) up to 2x/week",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              },
+              {
+                "content": "Betamethasone administration if at viability and at risk for delivery",
+                "children": []
+              },
+              {
+                "content": "Observe for mirror syndrome",
+                "children": []
+              },
+              {
+                "content": "Mode and timing of delivery should be individualized",
+                "children": []
+              },
+              {
+                "content": "Most require delivery at tertiary center",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Lung Lesions: CPAM",
+        "intro": "Hamartomatous lesion characterized by a mass of interconnected and disorganized cysts. Involvement is usually unilobar, with a slight predilection for the lower lobes- left and right sides are affected equally. Multiple lesions are concerning for pleuro pulmonary blastoma (PPB), a rare childhood cancer.",
+        "guide": [
+          {
+            "content": "Types",
+            "children": [
+              {
+                "content": "Microcystic: solid appearing on US with increased echogenicity",
+                "children": []
+              },
+              {
+                "content": "Macrocystic: cysts visible on US",
+                "children": []
+              },
+              {
+                "content": "Mixed: lesions may be mixed with both microcystic and macrocystic elements",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype (not required)",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Shunt placement (or needle drainage) if macrocystic with evidence of effusion",
+                "children": []
+              },
+              {
+                "content": "Prenatal steroids if CVR (CCAM Volume Ratio)  > 1.6 CVR = (length x width x height x 0.52) divided by the head circumference (as this controls for gestational age)",
+                "children": []
+              },
+              {
+                "content": "Open resection if fetus hydropic, < 28 weeks (rare)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "If large lesion, ultrasound weekly for hydrops surveillance and lesion growth until 28 wks",
+                "children": [
+                  {
+                    "content": "Check CVR and MTR with each ultrasound"
+                  }
+                ]
+              },
+              {
+                "content": "NST q week 28-30 weeks (small lesions 32-34 weeks)",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Lung Lesions: Pulmonary Sequestration",
+        "intro": "Cystic bronchopulmonary forgut malformation. Well-defined echodense, homogeneous or microcystic mass in the lower chest or in the abdomen. Malformation receives its blood supply from an aberrant systemic arterial vessel off the aorta. There is no bronchial communication.",
+        "guide": [
+          {
+            "content": "Types",
+            "children": [
+              {
+                "content": "Intralobar: resides within the visceral pleura of the normal lung",
+                "children": []
+              },
+              {
+                "content": "Extralobar: contained by its own visceral pleura",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype (not required)",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Open resection if fetus hydropic, < 28 weeks",
+                "children": []
+              },
+              {
+                "content": "Shunt placement (or needle drainage) if large pleural effusion",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "If large lesion, ultrasound weekly until 28wks",
+                "children": [
+                  {
+                    "content": "Check CVR and MTR with each ultrasound"
+                  }
+                ]
+              },
+              {
+                "content": "Ultrasound prn after 28 weeks",
+                "children": []
+              },
+              {
+                "content": "NST q week > 30 weeks (small lesions â 32-34 weeks)",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Myelomeningocele (Spina Bifida)",
+        "intro": "A neural tube defect called myelomeningocele (MM) occurs when the spinal cord/neural elements are exposed through the opening of the spine. Myelomeningocele is the most severe form of spina bifida.  It is most common in lower portion of the spine from the upper lumbar to the upper sacral areas.  The result is varying degree of impairment in the central nervous system, the urologic system, and musculoskeletal system of the child.\t",
+        "guide": [
+          {
+            "content": "Associated with",
+            "children": [
+              {
+                "content": "Folic Acid deficiency",
+                "children": []
+              },
+              {
+                "content": "Elevated AFP",
+                "children": []
+              },
+              {
+                "content": "Certain anticonvulsant medications",
+                "children": []
+              },
+              {
+                "content": "Family History of NTD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype (required to be considered for open fetal surgery); cell-free fetal DNA not a substitute",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              },
+              {
+                "content": "MRI: if considering fetal intervention",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Most cases surgically repaired after birth",
+                "children": []
+              },
+              {
+                "content": "Prenatal repair inclusion criteria:",
+                "children": [
+                  {
+                    "content": "Myelomeningocele defect must start between T1-S1 (may extend below S1)"
+                  },
+                  {
+                    "content": "Chiari II malformation diagnosed by MRI"
+                  },
+                  {
+                    "content": "Normal fetal karyotype (amniocentesis)"
+                  },
+                  {
+                    "content": "Gestational age at referral between 19 to 26 weeks"
+                  }
+                ]
+              },
+              {
+                "content": "Prenatal repair exclusion criteria:",
+                "children": [
+                  {
+                    "content": "Multifetal pregnancy (twins, triplets, etc"
+                  },
+                  {
+                    "content": "Maternal contraindications to surgery or anesthesia"
+                  },
+                  {
+                    "content": "Body Mass Index > 35"
+                  },
+                  {
+                    "content": "Kyphosis (curve in the spine) in the fetus â¥ 30Âº"
+                  },
+                  {
+                    "content": "Other fetal problem not related to the spina bifida"
+                  },
+                  {
+                    "content": "Current or planned cerclage or documented history of incompetent cervix"
+                  },
+                  {
+                    "content": "Short cervix (< 20 mm)"
+                  },
+                  {
+                    "content": "Preterm labor in the current pregnancy"
+                  },
+                  {
+                    "content": "Placenta previa or placental abruption"
+                  },
+                  {
+                    "content": "Maternal-fetal isoimmuization"
+                  },
+                  {
+                    "content": "Uterine abnormality"
+                  },
+                  {
+                    "content": "Inability to comply with travel or follow-up requirements"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Follow-up with postnatal repair",
+            "children": [
+              {
+                "content": "Monthly ultrasound",
+                "children": []
+              },
+              {
+                "content": "Consult with Neurosurgery",
+                "children": []
+              },
+              {
+                "content": "Planned c-section delivery at 39 weeks ",
+                "children": []
+              },
+              {
+                "content": "NST weekly >32 weeks",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up with prenatal repair",
+            "children": [
+              {
+                "content": "2-3 weeks post-op stay at UCSF housing facility with outpatient follow up ",
+                "children": []
+              },
+              {
+                "content": "Once cleared to return home, weekly follow up at accepting MFM group",
+                "children": []
+              },
+              {
+                "content": "Refer to detailed post-op management guidelines following MMC repair upon discharge",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Omphalocele",
+        "intro": "A central abdominal wall defect that permits herniation of the abdominal viscera into the umbilical cord.  A membrane that is made out of Whartonâs jelly, covers the viscera. The defect can be small (<3cm) to large (extending from the xiphoid to the pubis). If there is  liver  herniation into the membrane , a c-section delivery may be necessary.",
+        "guide": [
+          {
+            "content": "Associated with",
+            "children": [
+              {
+                "content": "Elevated maternal MSAFP",
+                "children": []
+              },
+              {
+                "content": "Chromosomal abnormalities",
+                "children": []
+              },
+              {
+                "content": "Cardiac defects",
+                "children": []
+              },
+              {
+                "content": "Beckwith-Wiedemann syndrome",
+                "children": []
+              },
+              {
+                "content": "Genitourinary malformations",
+                "children": []
+              },
+              {
+                "content": "Pulmonary hypoplasia/hypertension",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype/microarray",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "None",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "Monthly ultrasound to monitor growth, lesion appearance and amniotic fluid level",
+                "children": []
+              },
+              {
+                "content": "Antenatal Testing",
+                "children": [
+                  {
+                    "content": "NST q week 28-32 weeks"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Delivery Planning",
+            "children": [
+              {
+                "content": "If liver in sac, plan c-section delivery",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "TRAP Sequence",
+        "intro": "Monochronic twin pregnancy with one normal twin and one abnormal twin including some or all of the following: Absent cardiac activity, Acardia (or a rudimentary heart), Absent head and upper limbs, Cystic hygroma, Diffuse lymphangectasia, Rudimentary limbs, Reversed arterial blood flow in the umbilical cord of the acardiac twin leading to output failure in the normal twin.",
+        "guide": [
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype (not required)",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              },
+              {
+                "content": "MRI (not required)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "If TRAP is large (50% size of normal fetus) or if normal fetus in high output state or hydropic: radiofrequency ablation procedure after 16 weeksâ gestation",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "If no surgical intervention, NST 2x/week > 30 weeks",
+                "children": []
+              },
+              {
+                "content": "BPP 2x/week 26-30 weeks",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Twin-Twin Transfusion Syndrome (TTTS)",
+        "intro": "TTTS is a serious, progressive disorder that affects up to 10% of monochorionic twins. The twins do not have malformations, but one transfuses the other through blood vessel connections (A-V) in the placenta. In this situation, an artery from the donor twin enters the placental substance to exchange oxygen and nutrients. Unfortunately, the corresponding vein returns \"by mistake\" to the other twin (the recipient) via this arterio-venous connection. ",
+        "guide": [
+          {
+            "content": "Severity Stages",
+            "children": [
+              {
+                "content": "Stage I. DVPâs <2cm and >8cm, visible bladder in donor",
+                "children": []
+              },
+              {
+                "content": "Stage II. DVPâs <2 and >8 no bladder in donor",
+                "children": []
+              },
+              {
+                "content": "Stage III. Echocardiographic or Doppler abnormalities in either fetus (exception: absent/reversed diastolic flow in UA Doppler in the presence of an AA clearly identified on ultrasound; follow ductus venosus instead for these cases)",
+                "children": []
+              },
+              {
+                "content": "Stage IV. Hydrops in either twin",
+                "children": []
+              },
+              {
+                "content": "Stage V. Fetal demise of either twin",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype (not required prior to intervention; recommend against invasive testing in close proximity to potential laser intervention)",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Consider laser ablation",
+                "children": [
+                  {
+                    "content": "< 26 weeks gestation"
+                  },
+                  {
+                    "content": "Stage II-IV"
+                  }
+                ]
+              },
+              {
+                "content": "Consider radiofrequency ablation (RFA)",
+                "children": [
+                  {
+                    "content": "< 24 weeks gestation"
+                  },
+                  {
+                    "content": "Particularly if structural anomalies seen "
+                  },
+                  {
+                    "content": " Severe growth discordance/early selective IUGR"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Follow-up for laser surgery",
+            "children": [
+              {
+                "content": "Ultrasound and ECHO before hospital discharge",
+                "children": []
+              },
+              {
+                "content": "Post-op follow up in 7-10 days",
+                "children": [
+                  {
+                    "content": "If stable, f/u q2 weeks (including growth, due to dichorionization) for remainder of pregnancy. "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Follow-up if does not meet criteria for laser surgery",
+            "children": [
+              {
+                "content": "Ultrasound follow-up w/Dopplers 1-2x/ week",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up for RFA",
+            "children": [
+              {
+                "content": "Ultrasound prior to discharge",
+                "children": []
+              },
+              {
+                "content": "Echo if any pump twin cardiac disease was seen preop",
+                "children": []
+              },
+              {
+                "content": "Utrasound on post-op day 7-10",
+                "children": []
+              },
+              {
+                "content": "Follow up in two weeks and then monthly for singleton growth",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Unequal Placental Sharing",
+        "intro": "Monochorionic twin pregnancies in which there is a difference in size of the twins and in the amniotic fluid levels. Both twins have visible bladders.  In this circumstance the twins do not have an equal share of the placenta. This can lead to the smaller twin having intrauterine growth retardation and abnormal dopplers.",
+        "guide": [
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype (not required)",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              },
+              {
+                "content": "MRI (not required)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Radiofrequency ablation",
+                "children": []
+              },
+              {
+                "content": "Laser surgery to separate circulations if parents do not desire RFA (may require amnioinfusion)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "If no surgical intervention, weekly ultrasound with Dopplers",
+                "children": []
+              },
+              {
+                "content": "NSTâs if abnormal dopplers or IUGR",
+                "children": []
+              },
+              {
+                "content": "Prenatal steroids if selective IUGR, worsening/severe growth discordance or newly abnormal Dopplers",
+                "children": []
+              },
+              {
+                "content": "Hospitalization for continuous monitoring in the setting of abnormal NSTâs",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Urinary Obstruction",
+        "intro": "Caused by a narrowing at some point in the urinary tract. This narrowing can slow down or stop the flow of urine, and in turn can interfere with the development of both the kidneys and the lungs.\nOutcome is related to the type of obstruction (location within the urinary tract), the severity of the obstruction, and the affect on renal function and amniotic fluid volume. \nFetuses with obstruction or abnormality of one kidney and  a normal remaining kidneywill do very well. One healthy kidney can support a normal life. \nSevere obstruction to both kidneys can be at the level of the bladder outlet (urethra), the bladder inlet (ureterovesical junction) or the kidney outlet (ureteropelvic junction). \nIf the obstruction prevents urine from draining  into the amniotic space around the fetus  oligohydramnios will occur leading to pulmonary hypoplasia. The resulting  small lungs may prove fatal  after birth. Urinaryobstruction also leads to kidney damage  and renal failure after birth.",
+        "guide": [
+          {
+            "content": "Workup",
+            "children": [
+              {
+                "content": "Karyotype",
+                "children": []
+              },
+              {
+                "content": "Ultrasound",
+                "children": []
+              },
+              {
+                "content": "ECHO",
+                "children": []
+              },
+              {
+                "content": "MRI (not required)",
+                "children": []
+              },
+              {
+                "content": "Urine Electrolytes: bladder taps x 3 (every other day)",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Fetal Intervention Options",
+            "children": [
+              {
+                "content": "Severe cases with evidence of progressive renal failure minimally invasive fetal surgery using a small (3-mm) fetoscope into the fetal bladder and disrupting the valves, opening the obstruction",
+                "children": []
+              }
+            ]
+          },
+          {
+            "content": "Follow-up",
+            "children": [
+              {
+                "content": "If normal amniotic fluid, non-dilated bladder monthly ultrasound",
+                "children": []
+              },
+              {
+                "content": "If low amniotic fluid, normal electrolytes, consider fetal bladder cystoscopy or vesicoamniotic shunt",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "team": {
+    "intro": "The Fetal Treatment Center combines the talents of specialists in pediatric surgery, genetics, obstetrics/perinatology, radiology, nursing, and neonatal medicine. Our team of doctors, nurses, and social workers work together to coordinate all aspects of care from diagnosis to postoperative recovery and long-term follow-up.",
+    "version": 0.1,
+    "list": [
+      {
+        "title": "Surgeons",
+        "intro": "Our physicians will speak with you at length about your fetus’s condition, the procedure, risks, possible benefits, and possible complications of fetal surgery. They will perform your surgery and manage your postoperative care together with other members of our fetal therapy team.",
+        "list": [
+          {
+            "name": "Hanmin Lee, M.D.",
+            "bio": "Dr. Hanmin Lee is Professor of Surgery, Surgeon in Chief of the UCSF Benioff Children's Hospital, Chief of UCSF Pediatric Surgery, and Director of the Fetal Treatment Center at UCSF. He is the second director in the 25+ year history of the Fetal Treatment Center, replacing Dr. Michael Harrison who continues to add his creative energies as Director Emeritus. Dr. Lee was an undergraduate at Johns Hopkins University who completed both medical school and general surgery residency at New York University. He did two years of postdoctoral research training under the mentorship of Dr. Jay Vacanti at Harvard Medical School, and two years of pediatric surgery fellowship at Emory University Medical Center before being recruited to a tenure-track faculty position in the Department of Surgery at UCSF in 2000.\nDr. Lee and his surgery associates confine their surgical practice exclusively to children. The group has a special interest in fetal surgery, in repair of complex defects involving the chest, lung, abdomen, bowel, and bladder, and surgical care of children from birth through adolescence. Dr. Lee and his associates, The Bay Area Pediatric Surgeons, do consultations and provide surgical care at Moffitt/Long Hospitals UCSF, California Pacific Medical Center, and Kaiser Permanente, San Francisco and Oakland.  They see patients regularly in their office hours and provide multidisciplinary clinics for fetal anomalies in their fetal treatment center. Additionally, they see patients with complex congenital anomalies that have been corrected by surgery in their Long-term Infant-to-adult Followup and Evaluation clinic (LIFE Clinic).\nDr. Lee's clinical interests include neonatal surgery, fetal surgery, minimally invasive surgery and biliary surgery. His basic science research interests include tissue engineering, proteomic assessment of fetal-maternal diseases, and integration of emerging technologies into clinical surgery. He has published numerous clinical and basic science articles in these fields. He is well-recognized as a leader in fetal surgery and pediatric minimally invasive surgery, having given numerous national and international talk. Additionally, he is on  the editorial board of the pediatric endoscopic journal and in teaching fetal surgery and  advanced pediatric laparoscopic courses. He has been a principal investigator or co-investigator on a number of fetal surgery and minimally invasive surgical trials, and is currently a co-investigator on a number of clinical trials including fetal surgery for myelomeningocele (spina bifida) and is leading a multi-institutional effort to investigate the role of maternal steroid administration for fetuses with large congenital cystic adenomatoid malformations.\nDr. Lee, his wife Barbara and their children, live in San Francisco and enjoy the multitude of outdoor activities and restaurants available in the Bay Area.",
+            "title": [
+              {
+                "content": "Surgeon in Chief, UCSF Benioff Children's Hospital"
+              },
+              {
+                "content": "Professor &amp; Chief, Division of Pediatric Surgery"
+              },
+              {
+                "content": "Vice-Chair, Department of Surgery"
+              },
+              {
+                "content": "Michael R. Harrison, MD, Endowed Chair in Fetal Surgery"
+              },
+              {
+                "content": "Director, Fetal Treatment Center"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

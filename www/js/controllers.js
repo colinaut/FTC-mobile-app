@@ -1,6 +1,6 @@
 app
 
-.controller('GuidelinesCtrl', function($scope, Data, $http) {
+.controller('GuidelinesCtrl', function($scope, Data) {
   Data.all("guidelines").then(function(response){
     $scope.guidelines = response;
   });
@@ -52,16 +52,16 @@ app
   });
 })
 
-.controller('TeamCtrl', function($scope, Data, $http) {
+.controller('TeamCtrl', function($scope, Data) {
   Data.all("team").then(function(response){
-    $scope.guidelines = response;
+    $scope.team = response;
   });
 
 })
 
-.controller('TeamCtrl', function($scope, $stateParams, Data) {
+.controller('TeamDetailCtrl', function($scope, $stateParams, Data) {
   Data.get("team",$stateParams.index).then(function(response){
-    $scope.guideline = response;
+    $scope.specialty = response;
   });
 
   $scope.toggleGroup = function(group) {
@@ -131,16 +131,15 @@ app
 
 	// Get data from JSON using cache if present
 	var newsData = function() {
-		var datatemp;
-		return $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys").then(
-			function(response){
-				datatemp = response.data.query.results.rss.channel;
-				return datatemp;
+	var datatemp;
+	return $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys").then(
+		function(response){
+			datatemp = response.data.query.results.rss.channel;
+			return datatemp;
 
-			}
-			)
-		};
-
+		}
+		)
+	};
 
 	return {
     all: function() {

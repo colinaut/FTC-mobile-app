@@ -1,0 +1,27 @@
+<ons-page ng-controller="TeamDetailCtrl" class="team-specialty">
+	<ons-toolbar>
+		<div class="left"><img src="img/ftc-logo.png" class="logo" height="44" width="210"/></div>
+	 	<div class="right">
+		 <a href="tel:18007933887" class="contact-btn"><i class="icon ion-ios-telephone button"></i><span class="phone-number">1-800-RX-FETUS</span></a>
+		</div>
+	</ons-toolbar>
+	<header class="page-header">
+		<ons-toolbar-button class="toolbar-button--quiet back-button" ui-sref="^">
+			<ons-icon class="ion-ios-arrow-back ons-back-button__icon"></ons-icon>Back
+		</ons-toolbar-button>
+		<h1>{{specialty.title}}</h1>
+	</header>
+	<div class="intro">
+  	<p>{{specialty.intro}}</p>
+	</div>
+  <ons-list>
+		<ons-list-item class="item" ng-repeat="member in specialty.list">
+
+				<header>
+					<span class="item-title">{{member.name}}</span>
+				</header>
+
+
+		</ons-list-item>
+	</ons-list>
+</ons-page>

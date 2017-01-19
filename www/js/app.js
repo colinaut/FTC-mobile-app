@@ -93,6 +93,15 @@ app
     })
 
     // List of Team
+    .state('navigator.team.specialty', {
+      parent: 'navigator',
+      url: '/team/:index',
+      onEnter: ['$rootScope', function($rootScope) {
+        $rootScope.myNavigator.resetToPage('html/team-specialty.html');
+      }]
+    })
+
+    // List of Team specialty
     .state('navigator.team', {
       parent: 'navigator',
       url: '/team',
