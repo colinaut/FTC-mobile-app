@@ -92,6 +92,15 @@ app
 			}
     })
 
+    // List of Team
+    .state('navigator.team', {
+      parent: 'navigator',
+      url: '/team',
+      onEnter: ['$rootScope', function($rootScope) {
+        $rootScope.myNavigator.resetToPage('html/team.html');
+      }]
+    })
+
     // Contact page
     .state('navigator.contact', {
 			parent: 'navigator',
@@ -104,4 +113,19 @@ app
 
 	;
 
-});
+})
+
+.config(function (CacheFactoryProvider) {
+  angular.extend(CacheFactoryProvider.defaults, {
+    //maxAge: 3600000,
+    maxAge: 1000,
+    deleteOnExpire: 'aggressive',
+    onExpire: function (key, value) {
+      var _this = this; // "this" is the cache in which the item expired
+      angular.injector(['ng']).get('$http').get(key).success(function (data) {
+        _this.put(key, data);
+      });
+    }
+  });
+})
+;

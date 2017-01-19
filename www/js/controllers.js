@@ -80,13 +80,12 @@ app
 
 .factory('Videogroups', function($http, CacheFactory) {
 
-  // Set up cache is there isn't one.
-  if (!CacheFactory.get('videosCache')) {
-    CacheFactory.createCache('videosCache', {});
-  }
+	var videoCache;
 
-  // Load cache
-  var videosCache = CacheFactory.get('videosCache');
+  // Check to make sure the cache doesn't already exist
+  if (!CacheFactory.get('videoCache')) {
+    videoCache = CacheFactory('videoCache');
+  }
 
   // Get data from JSON using cache if present
   var videosData = function() {
@@ -96,13 +95,13 @@ app
   }
 	var videosData = function() {
 		var datatemp;
-		return $http.get('https://jsonblob.com/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(
+		return $http.get('https://jsonblob.com/api/jsonBlob/aa9b57f0-dde7-11e6-90ab-eded01532e70', {cache:false}).then(
 			function(response){
 				datatemp = response.data.videos.list;
 				return datatemp;
 			},
 			function(response) {
-				return $http.get('data/data.json').then(function(response){
+				return $http.get('data/data.json', {cache:false}).then(function(response){
 					datatemp = response.data.videos.list;
 					return datatemp;
 				}
@@ -123,42 +122,6 @@ app
   };
 
 })
-.factory('Guidelines-old', function($http, CacheFactory) {
-
-  // Create cache if there isn't one.
-  if (!CacheFactory.get('guidelinesCache')) {
-    // or CacheFactory('bookCache', { ... });
-    CacheFactory.createCache('guidelinesCache', {});
-  }
-  // Get cache
-  var guidelinesCache = CacheFactory.get('guidelinesCache');
-
-  // Get data from JSON using cache if present
-	var guidelinesData = function() {
-		return $http.get('data/data.json', { cache: guidelinesCache }).then(function(response){
-      return response.data.guidelines.list;
-    });
-	}
-
-  return {
-    all: function() {
-      return guidelinesData();
-    },
-
-    get: function(guidelinesId) {
-      var guidelines
-
-      return guidelinesData().then(function(response){
-				return response[parseInt(guidelinesId)];
-      });
-
-      return null;
-
-    }
-
-  }
-
-})
 
 .factory('Guidelines', function($http, CacheFactory) {
 
@@ -173,7 +136,7 @@ app
 	// Get data from JSON using cache if present
 	var guidelinesData = function() {
 		var datatemp;
-		return $http.get('https://jsonblob.com/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(
+		return $http.get('http://jsonblob.com/api/jsonBlob/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(
 			function(response){
 				datatemp = response.data.guidelines.list;
 				return datatemp;
@@ -207,7 +170,6 @@ app
 
 })
 
-
 .factory('News', function($http, CacheFactory) {
 
 	// Create cache if there isn't one.
@@ -223,10 +185,7 @@ app
 		var datatemp;
 		return $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys").then(
 			function(response){
-				console.log(response);
 				datatemp = response.data.query.results.rss.channel;
-				console.log("hi");
-
 				return datatemp;
 
 			}
