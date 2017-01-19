@@ -397,13 +397,14 @@ ons-toolbar + .page__background + .page__content {
   padding-right: 10px;
 }
 .member-content {
-  padding: 0.5rem;
+  padding: 10px 10px 0;
   margin-top: 3px;
   font-size: 14px;
   line-height: 140%;
   border: 1px solid #ddd;
-  border-radius: 2px 2px 2px 0px;
+  border-radius: 2px 2px 0px 0px;
   background: #f4f6f8;
+  overflow: hidden;
 }
 .member-content figure {
   float: left;
@@ -415,10 +416,6 @@ ons-toolbar + .page__background + .page__content {
   width: 100%;
   height: auto;
   display: block;
-}
-.member-content.less {
-  height: 90px;
-  overflow: hidden;
 }
 .list.titles {
   border: 0;
@@ -439,11 +436,15 @@ ons-toolbar + .page__background + .page__content {
 .bio p {
   margin: 8px 0;
 }
+.less .bio {
+  display: none;
+}
 .view-more {
   background: #999999;
   color: #fff;
   padding: 1px 6px 2px ;
-  float: left;
+  display: block;
+  text-align: center;
   margin: 0 0 10px;
   border-radius: 0 0 3px 3px;
   text-transform: uppercase;

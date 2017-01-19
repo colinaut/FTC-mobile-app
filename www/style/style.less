@@ -447,13 +447,14 @@ ons-toolbar + .page__background + .page__content {
 }
 
 .member-content {
-  padding: 0.5rem;
+  padding: 10px 10px 0;
   margin-top: 3px;
   font-size: 14px;
   line-height: 140%;
   border: 1px solid #ddd;
-  border-radius: 2px 2px 2px 0px;
+  border-radius: 2px 2px 0px 0px;
   background: #f4f6f8;
+  overflow: hidden;
   figure {
     float: left;
     width: 25%;
@@ -464,10 +465,6 @@ ons-toolbar + .page__background + .page__content {
       height: auto;
       display: block;
     }
-  }
-  &.less {
-    height: 90px;
-    overflow: hidden;
   }
 }
 .list.titles {
@@ -488,12 +485,16 @@ ons-toolbar + .page__background + .page__content {
   p {
     margin: 8px 0;
   }
+  .less & {
+    display: none;
+  }
 }
 .view-more {
   background: @color0;
   color: #fff;
   padding: 1px 6px 2px ;
-  float: left;
+  display: block;
+  text-align: center;
   margin: 0 0 10px;
   border-radius: 0 0 3px 3px;
   text-transform: uppercase;
