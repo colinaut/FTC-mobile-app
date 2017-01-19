@@ -1,35 +1,16 @@
 app
 
-.controller('MasterController', function($scope, $data) {
-	$scope.items = $data.items;
-})
-
-.controller('DetailController', function($scope, $data) {
-	$scope.item = $data.items[$scope.myNavigator.getCurrentPage().options.index];
-})
-
-.controller('GuidelinesCtrl', function($scope, Guidelines, $http) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-  Guidelines.all().then(function(response){
+.controller('GuidelinesCtrl', function($scope, Data, $http) {
+  Data.all("guidelines").then(function(response){
     $scope.guidelines = response;
   });
-
 })
 
-.controller('GuidelineDetailCtrl', function($scope, $stateParams, Guidelines) {
-  Guidelines.get($stateParams.index).then(function(response){
+.controller('GuidelineDetailCtrl', function($scope, $stateParams, Data) {
+  Data.get("guidelines",$stateParams.index).then(function(response){
     $scope.guideline = response;
   });
-  /*
-   * if given group is the selected group, deselect it
-   * else, select the given group
-   */
+
   $scope.toggleGroup = function(group) {
     if ($scope.isGroupShown(group)) {
       $scope.shownGroup = null;
@@ -50,100 +31,72 @@ app
 		$scope.entries = response.item;
   });
 
-
-
-
-		$scope.readmore = function(entry,event) {
-			window.open(entry.link, '_blank');
-		}
+	$scope.readmore = function(entry,event) {
+		window.open(entry.link, '_blank');
+	}
 
 })
 
-.controller('VideosCtrl', function($scope, Videogroups) {
-  /*$scope.videogroups = Videolist.all(); */
-
-
-  Videogroups.all().then(function(response){
+.controller('VideosCtrl', function($scope, Data) {
+  Data.all("videos").then(function(response){
     $scope.videogroups = response;
   });
-
 })
-.controller('VideosDetailCtrl', function($scope, $stateParams, Videogroups) {
-  Videogroups.get($stateParams.index).then(function(response){
+
+.controller('VideosDetailCtrl', function($scope, $stateParams, Data) {
+  Data.get("videos", $stateParams.index).then(function(response){
     $scope.videogroup = response;
 		$scope.playVideo = function(vidid) {
-			//alert("hi: " + vidid);
 			YoutubeVideoPlayer.openVideo(vidid);
 		}
   });
 })
 
-.factory('Videogroups', function($http, CacheFactory) {
-
-	var videoCache;
-
-  // Check to make sure the cache doesn't already exist
-  if (!CacheFactory.get('videoCache')) {
-    videoCache = CacheFactory('videoCache');
-  }
-
-  // Get data from JSON using cache if present
-  var videosData = function() {
-		return $http.get('data/data.json').then(function(response){
-      return response.data.videos.list;
-    });
-  }
-	var videosData = function() {
-		var datatemp;
-		return $http.get('https://jsonblob.com/api/jsonBlob/aa9b57f0-dde7-11e6-90ab-eded01532e70', {cache:false}).then(
-			function(response){
-				datatemp = response.data.videos.list;
-				return datatemp;
-			},
-			function(response) {
-				return $http.get('data/data.json', {cache:false}).then(function(response){
-					datatemp = response.data.videos.list;
-					return datatemp;
-				}
-			);
-		});
-	}
-
-  return {
-    all: function() {
-      return videosData();
-    },
-    get: function(videogroupsId) {
-      return videosData().then(function(response){
-        return response[parseInt(videogroupsId)];
-      });
-      return null;
-    }
-  };
+.controller('TeamCtrl', function($scope, Data, $http) {
+  Data.all("team").then(function(response){
+    $scope.guidelines = response;
+  });
 
 })
 
-.factory('Guidelines', function($http, CacheFactory) {
+.controller('TeamCtrl', function($scope, $stateParams, Data) {
+  Data.get("team",$stateParams.index).then(function(response){
+    $scope.guideline = response;
+  });
+
+  $scope.toggleGroup = function(group) {
+    if ($scope.isGroupShown(group)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+  };
+  $scope.isGroupShown = function(group) {
+    return $scope.shownGroup === group;
+  };
+})
+
+.factory('Data', function($http, CacheFactory) {
 
 	// Create cache if there isn't one.
-	if (!CacheFactory.get('guidelinesCache')) {
+	if (!CacheFactory.get('dataCache')) {
 		// or CacheFactory('bookCache', { ... });
-		CacheFactory.createCache('guidelinesCache', {});
+		CacheFactory.createCache('dataCache', {});
 	}
 	// Get cache
-	var guidelinesCache = CacheFactory.get('guidelinesCache');
+	var dataCache = CacheFactory.get('dataCache');
 
 	// Get data from JSON using cache if present
-	var guidelinesData = function() {
+	var jsonData = function() {
 		var datatemp;
 		return $http.get('http://jsonblob.com/api/jsonBlob/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(
 			function(response){
-				datatemp = response.data.guidelines.list;
+				datatemp = response.data;
 				return datatemp;
 			},
 			function(response) {
 				return $http.get('data/data.json').then(function(response){
-					datatemp = response.data.guidelines.list;
+					datatemp = response.data;
 					return datatemp;
 				}
 			);
@@ -151,21 +104,17 @@ app
 	}
 
 	return {
-    all: function() {
-			return guidelinesData();
-    },
-
-    get: function(guidelinesId) {
-      var guidelines
-
-      return guidelinesData().then(function(response){
-				return response[parseInt(guidelinesId)];
-      });
-
-      return null;
-
-    }
-
+		all: function(section) {
+			return jsonData().then(function(response){
+				return response[section].list;
+			});
+		},
+		get: function(section,id) {
+			return jsonData().then(function(response){
+				return response[section].list[parseInt(id)];
+			});
+			return null;
+		}
   }
 
 })
