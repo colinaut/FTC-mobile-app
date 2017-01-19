@@ -244,6 +244,7 @@ ons-toolbar + .page__background + .page__content {
   background: #158FA0;
   border-top: 2px solid #057F90;
   position: relative;
+  min-height: 19px;
 }
 .page-header h1 {
   font-size: 16px;

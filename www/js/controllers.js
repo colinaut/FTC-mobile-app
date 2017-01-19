@@ -2,7 +2,7 @@ app
 
 .controller('GuidelinesCtrl', function($scope, Data) {
   Data.all("guidelines").then(function(response){
-    $scope.guidelines = response;
+    $scope.guidelines = response.list;
   });
 })
 
@@ -39,7 +39,7 @@ app
 
 .controller('VideosCtrl', function($scope, Data) {
   Data.all("videos").then(function(response){
-    $scope.videogroups = response;
+    $scope.videogroups = response.list;
   });
 })
 
@@ -54,7 +54,8 @@ app
 
 .controller('TeamCtrl', function($scope, Data) {
   Data.all("team").then(function(response){
-    $scope.team = response;
+    $scope.team = response.list;
+		$scope.intro = response.intro;
   });
 
 })
@@ -106,7 +107,7 @@ app
 	return {
 		all: function(section) {
 			return jsonData().then(function(response){
-				return response[section].list;
+				return response[section];
 			});
 		},
 		get: function(section,id) {

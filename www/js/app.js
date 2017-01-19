@@ -93,15 +93,6 @@ app
     })
 
     // List of Team
-    .state('navigator.team.specialty', {
-      parent: 'navigator',
-      url: '/team/:index',
-      onEnter: ['$rootScope', function($rootScope) {
-        $rootScope.myNavigator.resetToPage('html/team-specialty.html');
-      }]
-    })
-
-    // List of Team specialty
     .state('navigator.team', {
       parent: 'navigator',
       url: '/team',
@@ -109,6 +100,18 @@ app
         $rootScope.myNavigator.resetToPage('html/team.html');
       }]
     })
+
+    // List of Team members in specialty
+		.state('navigator.team.specialty', {
+			parent: 'navigator.team',
+			url: '/team/:index',
+			onEnter: ['$rootScope','$stateParams', function($rootScope,$stateParams) {
+				$rootScope.myNavigator.pushPage('html/team-specialty.html', {'index': $stateParams.index});
+			}],
+			onExit: function($rootScope) {
+				$rootScope.myNavigator.popPage();
+			}
+		})
 
     // Contact page
     .state('navigator.contact', {
