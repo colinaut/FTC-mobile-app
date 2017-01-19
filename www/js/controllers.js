@@ -86,123 +86,121 @@ app
   });
 })
 
-	.factory('Videogroups', function($http, CacheFactory) {
+.factory('Videogroups', function($http, CacheFactory) {
 
-	  // Set up cache is there isn't one.
-	  if (!CacheFactory.get('videosCache')) {
-	    CacheFactory.createCache('videosCache', {});
-	  }
+  // Set up cache is there isn't one.
+  if (!CacheFactory.get('videosCache')) {
+    CacheFactory.createCache('videosCache', {});
+  }
 
-	  // Load cache
-	  var videosCache = CacheFactory.get('videosCache');
+  // Load cache
+  var videosCache = CacheFactory.get('videosCache');
 
-	  // Get data from JSON using cache if present
-	  var videosData = function() {
-	    return $http.get('data/videos.json', { cache: videosCache }).then(function(response){
-	      return response.data.videos;
-	    });
-	  }
+  // Get data from JSON using cache if present
+  var videosData = function() {
+		return $http.get('data/data.json').then(function(response){
+      return response.data.videos.list;
+    });
+  }
 
-	  return {
-	    all: function() {
-	      return videosData();
-	    },
-	    get: function(videogroupsId) {
-	      return videosData().then(function(response){
-	        return response[parseInt(videogroupsId)];
-	      });
-	      return null;
-	    }
-	  };
+  return {
+    all: function() {
+      return videosData();
+    },
+    get: function(videogroupsId) {
+      return videosData().then(function(response){
+        return response[parseInt(videogroupsId)];
+      });
+      return null;
+    }
+  };
 
-	})
-	.factory('Guidelines-', function($http, CacheFactory) {
+})
+.factory('Guidelines-', function($http, CacheFactory) {
 
-	  // Create cache if there isn't one.
-	  if (!CacheFactory.get('guidelinesCache')) {
-	    // or CacheFactory('bookCache', { ... });
-	    CacheFactory.createCache('guidelinesCache', {});
-	  }
-	  // Get cache
-	  var guidelinesCache = CacheFactory.get('guidelinesCache');
+  // Create cache if there isn't one.
+  if (!CacheFactory.get('guidelinesCache')) {
+    // or CacheFactory('bookCache', { ... });
+    CacheFactory.createCache('guidelinesCache', {});
+  }
+  // Get cache
+  var guidelinesCache = CacheFactory.get('guidelinesCache');
 
-	  // Get data from JSON using cache if present
-	  var guidelinesData = function() {
-	    return $http.get('data/guidelines.json', { cache: guidelinesCache }).then(function(response){
-	      return response.data.guidelines;
-	    });
-	  }
+  // Get data from JSON using cache if present
+  var guidelinesData = function() {
+    return $http.get('data/guidelines.json', { cache: guidelinesCache }).then(function(response){
+      return response.data.guidelines;
+    });
+  }
 
-		var guidelinesSiteData = function() {
-			return $http.get('http://colinaut.com/test/guidelines.json').then(function(response){
-	      console.log("sitedata: " + response.data.version);
-				return response.data.guidelines;
+	var guidelinesSiteData = function() {
+		return $http.get('data/data.json', { cache: guidelinesCache }).then(function(response){
+      return response.data.guidelines.list;
+    });
+	}
 
-	    });
-		}
+  return {
+    all: function() {
+      return guidelinesSiteData();
+    },
 
-	  return {
-	    all: function() {
-	      return guidelinesSiteData();
-	    },
+    get: function(guidelinesId) {
+      var guidelines
 
-	    get: function(guidelinesId) {
-	      var guidelines
+      return guidelinesSiteData().then(function(response){
+				return response[parseInt(guidelinesId)];
+      });
 
-	      return guidelinesSiteData().then(function(response){
-					return response[parseInt(guidelinesId)];
-	      });
+      return null;
 
-	      return null;
+    }
 
-	    }
+  }
 
-	  }
+})
 
-	})
+.factory('Guidelines', function($http, CacheFactory) {
 
-	.factory('Guidelines', function($http, CacheFactory) {
+	// Create cache if there isn't one.
+	if (!CacheFactory.get('guidelinesCache')) {
+		// or CacheFactory('bookCache', { ... });
+		CacheFactory.createCache('guidelinesCache', {});
+	}
+	// Get cache
+	var guidelinesCache = CacheFactory.get('guidelinesCache');
 
-		// Create cache if there isn't one.
-		if (!CacheFactory.get('guidelinesCache')) {
-			// or CacheFactory('bookCache', { ... });
-			CacheFactory.createCache('guidelinesCache', {});
-		}
-		// Get cache
-		var guidelinesCache = CacheFactory.get('guidelinesCache');
-
-		// Get data from JSON using cache if present
-		var guidelinesData = function() {
-			var datatemp;
-			return $http.get('http://colinaut.com/test/guidelines.json').then(function(response){
+	// Get data from JSON using cache if present
+	var guidelinesData = function() {
+		var datatemp;
+		return $http.get('http://colinaut.com/test/guidelines.json').then(function(response){
+			datatemp = response.data.guidelines;
+			return datatemp;
+		}, function(response) {
+			return $http.get('data/guidelines.json').then(function(response){
 				datatemp = response.data.guidelines;
 				return datatemp;
-			}, function(response) {
-				return $http.get('data/guidelines.json').then(function(response){
-					datatemp = response.data.guidelines;
-					return datatemp;
-				});
 			});
+		});
 
-		}
+	}
 
-		return {
-	    all: function() {
-				return guidelinesData();
-	    },
+	return {
+    all: function() {
+			return guidelinesData();
+    },
 
-	    get: function(guidelinesId) {
-	      var guidelines
+    get: function(guidelinesId) {
+      var guidelines
 
-	      return guidelinesData().then(function(response){
-					return response[parseInt(guidelinesId)];
-	      });
+      return guidelinesData().then(function(response){
+				return response[parseInt(guidelinesId)];
+      });
 
-	      return null;
+      return null;
 
-	    }
+    }
 
-	  }
+  }
 
-	})
-	;
+})
+;
