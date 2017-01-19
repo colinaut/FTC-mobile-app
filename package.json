@@ -1,8 +1,8 @@
 {
-  "name":"Fetal Treatment Center Mobile App",
+  "name":"ftcmobileapp",
   "version":"1.0.1",
   "private":true,
-  "description":"",
+  "description":"Fetal Treatment Center Mobile App",
   "scripts":{},
   "author":"Colin Fahrion",
   "license":"MIT",
