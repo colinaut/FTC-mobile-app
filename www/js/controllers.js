@@ -127,13 +127,7 @@ app
   var guidelinesCache = CacheFactory.get('guidelinesCache');
 
   // Get data from JSON using cache if present
-  var guidelinesData = function() {
-    return $http.get('data/guidelines.json', { cache: guidelinesCache }).then(function(response){
-      return response.data.guidelines;
-    });
-  }
-
-	var guidelinesSiteData = function() {
+	var guidelinesData = function() {
 		return $http.get('data/data.json', { cache: guidelinesCache }).then(function(response){
       return response.data.guidelines.list;
     });
@@ -141,13 +135,13 @@ app
 
   return {
     all: function() {
-      return guidelinesSiteData();
+      return guidelinesData();
     },
 
     get: function(guidelinesId) {
       var guidelines
 
-      return guidelinesSiteData().then(function(response){
+      return guidelinesData().then(function(response){
 				return response[parseInt(guidelinesId)];
       });
 
