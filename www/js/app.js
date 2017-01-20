@@ -142,7 +142,7 @@ app
 .config(function (CacheFactoryProvider) {
   angular.extend(CacheFactoryProvider.defaults, {
     //maxAge: 3600000,
-    maxAge: 1000,
+    maxAge: 36000000,
     deleteOnExpire: 'aggressive',
     onExpire: function (key, value) {
       var _this = this; // "this" is the cache in which the item expired
@@ -151,5 +151,39 @@ app
       });
     }
   });
+})
+
+.service('Cacher', function ($q, $http, CacheFactory) {
+
+  CacheFactory('dataCache', {
+    maxAge: 15 * 60 * 1000, // Items added to this cache expire after 15 minutes
+    cacheFlushInterval: 60 * 60 * 1000, // This cache will clear itself every hour
+    deleteOnExpire: 'aggressive' // Items will be deleted from this cache when they expire
+  });
+
+  return {
+    getData: function (url,backup) {
+      var deferred = $q.defer();
+      var start = new Date().getTime();
+
+      $http.get(url, {
+        cache: CacheFactory.get('dataCache')
+      }).then(function (data) { //success
+        console.log('time taken for request: ' + (new Date().getTime() - start) + 'ms');
+        deferred.resolve(data);
+      }, function () { //error
+        if (backup) {
+          $http.get(backup, {
+            cache: CacheFactory.get('dataCache')
+          }).then(function (data) { //success
+            console.log('BACKUP: time taken for request: ' + (new Date().getTime() - start) + 'ms');
+            deferred.resolve(data);
+          });
+        }
+      }
+      );
+      return deferred.promise;
+    }
+  };
 })
 ;

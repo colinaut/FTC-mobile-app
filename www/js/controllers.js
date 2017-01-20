@@ -68,26 +68,17 @@ app
 	//$scope.hidden = true;
 })
 
-.factory('Data', function($http, CacheFactory) {
+.factory('Data', function($http, Cacher) {
 
-	// Create cache if there isn't one.
-	if (!CacheFactory.get('dataCache')) {
-		// or CacheFactory('bookCache', { ... });
-		CacheFactory.createCache('dataCache', {});
-	}
-	// Get cache
-	var dataCache = CacheFactory.get('dataCache');
 
 	// Get data from JSON using cache if present
   var gist = 'https://gist.githubusercontent.com/colinaut/c2c2f95d259158edd6b261d68c69e427/raw/data.json';
-  var jsonBlob = 'http://jsonblob.com/api/jsonBlob/717acca1-dec7-11e6-90ab-015a10bb4e55' ;
+  var backup = 'data.json';
 
 	var jsonData = function() {
-		var datatemp;
-		return $http.get(gist).then(
+		return Cacher.getData(gist,backup).then(
 			function(response){
-				datatemp = response.data;
-				return datatemp;
+				return response.data;
 			}
     );
 	}
