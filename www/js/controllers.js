@@ -71,7 +71,7 @@ app
 .factory('Data', function($http, Cacher) {
 
   var gist = 'https://gist.githubusercontent.com/colinaut/c2c2f95d259158edd6b261d68c69e427/raw/data.json';
-  var backup = 'data.json';
+  var backup = 'data/data.json';
 
 	var jsonData = function() {
 		return Cacher.getData(gist,backup).then(
