@@ -52,16 +52,16 @@ app
   });
 })
 
-.controller('TeamCtrl', function($scope, Team) {
-  Team.all("team").then(function(response){
+.controller('TeamCtrl', function($scope, Data) {
+  Data.all("team").then(function(response){
     $scope.team = response.list;
 		$scope.intro = response.intro;
   });
 
 })
 
-.controller('TeamDetailCtrl', function($scope, $stateParams, Team) {
-  Team.get("team",$stateParams.index).then(function(response){
+.controller('TeamDetailCtrl', function($scope, $stateParams, Data) {
+  Data.get("team",$stateParams.index).then(function(response){
     $scope.specialty = response;
   });
 
@@ -81,56 +81,13 @@ app
 	// Get data from JSON using cache if present
 	var jsonData = function() {
 		var datatemp;
-		return $http.get('http://jsonblob.com/api/jsonBlob/aa9b57f0-dde7-11e6-90ab-eded01532e70').then(
+		return $http.get('https://quarkbackend.com/getfile/colin-fahrion/data-json').then(
 			function(response){
 				datatemp = response.data;
 				return datatemp;
 			},
 			function(response) {
 				return $http.get('data/data.json').then(function(response){
-					datatemp = response.data;
-					return datatemp;
-				}
-			);
-		});
-	}
-
-	return {
-		all: function(section) {
-			return jsonData().then(function(response){
-				return response[section];
-			});
-		},
-		get: function(section,id) {
-			return jsonData().then(function(response){
-				return response[section].list[parseInt(id)];
-			});
-			return null;
-		}
-  }
-
-})
-
-.factory('Team', function($http, CacheFactory) {
-
-	// Create cache if there isn't one.
-	if (!CacheFactory.get('teamCache')) {
-		// or CacheFactory('bookCache', { ... });
-		CacheFactory.createCache('teamCache', {});
-	}
-	// Get cache
-	var teamCache = CacheFactory.get('teamCache');
-
-	// Get data from JSON using cache if present
-	var jsonData = function() {
-		var datatemp;
-		return $http.get('http://jsonblob.com/api/jsonBlob/862a19bb-de4e-11e6-90ab-eb926cec4d2b').then(
-			function(response){
-				datatemp = response.data;
-				return datatemp;
-			},
-			function(response) {
-				return $http.get('data/team.json').then(function(response){
 					datatemp = response.data;
 					return datatemp;
 				}
