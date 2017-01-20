@@ -1,5 +1,5 @@
 
-var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache', 'ngSanitize']);
+var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache', 'ngSanitize']);5
 
 app
 .filter('trusted', ['$sce', function ($sce) {
