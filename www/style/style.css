@@ -393,18 +393,34 @@ ons-toolbar + .page__background + .page__content {
   color: #888;
 }
 /* Team page */
+.team-specialty .list__item,
+.team-specialty .list {
+  border: 0 !important;
+}
+.team-specialty .list__item {
+  padding-bottom: 0px;
+}
 .member {
   padding-right: 10px;
 }
+.member .wrapper:hover .view-more {
+  background: #326297;
+}
+.member .wrapper:hover .member-content {
+  border-color: #326297;
+}
 .member-content {
-  padding: 10px 10px 0;
-  margin-top: 3px;
+  padding: 5px 10px 0;
   font-size: 14px;
   line-height: 140%;
   border: 1px solid #ddd;
   border-radius: 2px 2px 0px 0px;
-  background: #f4f6f8;
+  background: #fdfdfe;
   overflow: hidden;
+}
+.member-content header {
+  color: #234469;
+  margin-bottom: 7px;
 }
 .member-content figure {
   float: left;
@@ -419,7 +435,7 @@ ons-toolbar + .page__background + .page__content {
 }
 .list.titles {
   border: 0;
-  font-size: 13px;
+  font-size: 14px;
   background: none;
 }
 .list.titles .list__item {
@@ -429,7 +445,7 @@ ons-toolbar + .page__background + .page__content {
   background: none;
 }
 .bio {
-  font-size: 13px;
+  font-size: 14px;
   border-top: 1px solid #ddd;
   clear: both;
 }
@@ -440,7 +456,7 @@ ons-toolbar + .page__background + .page__content {
   display: none;
 }
 .view-more {
-  background: #999999;
+  background: #ccc;
   color: #fff;
   padding: 1px 6px 2px ;
   display: block;

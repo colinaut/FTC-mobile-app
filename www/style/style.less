@@ -5,6 +5,8 @@
 @ftc-teal: #158FA0;
 @ftc-navy: #326297;
 @ftc-light-blue: rgba(212,235,255,1);
+@dark-blue: #234469;
+@offwhite: #fdfdfe;
 
 // Width variables (appears count calculates by raw css)
 @width0: 16px; // Appears 2 times
@@ -442,19 +444,40 @@ ons-toolbar + .page__background + .page__content {
 
 /* Team page */
 
+.team-specialty .list__item, .team-specialty .list {
+  border: 0 !important;
+}
+
+.team-specialty .list__item {
+  padding-bottom: 0px;
+}
+
 .member {
   padding-right: 10px;
+  .wrapper {
+    &:hover {
+      .view-more {
+        background: @ftc-navy;
+      }
+      .member-content {
+        border-color: @ftc-navy;
+      }
+    }
+  }
 }
 
 .member-content {
-  padding: 10px 10px 0;
-  margin-top: 3px;
+  padding: 5px 10px 0;
   font-size: 14px;
   line-height: 140%;
   border: 1px solid #ddd;
   border-radius: 2px 2px 0px 0px;
-  background: #f4f6f8;
+  background: @offwhite;
   overflow: hidden;
+  header {
+    color: @dark-blue;
+    margin-bottom: 7px;
+  }
   figure {
     float: left;
     width: 25%;
@@ -469,7 +492,7 @@ ons-toolbar + .page__background + .page__content {
 }
 .list.titles {
   border: 0;
-  font-size: 13px;
+  font-size: 14px;
   background: none;
   .list__item {
     border: 0;
@@ -479,7 +502,7 @@ ons-toolbar + .page__background + .page__content {
   }
 }
 .bio {
-  font-size: 13px;
+  font-size: 14px;
   border-top: 1px solid #ddd;
   clear: both;
   p {
@@ -490,7 +513,7 @@ ons-toolbar + .page__background + .page__content {
   }
 }
 .view-more {
-  background: @color0;
+  background: #ccc;
   color: #fff;
   padding: 1px 6px 2px ;
   display: block;

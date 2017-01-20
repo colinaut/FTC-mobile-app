@@ -155,34 +155,51 @@ app
 
 .service('Cacher', function ($q, $http, CacheFactory) {
 
-  CacheFactory('dataCache', {
-    maxAge: 15 * 60 * 1000, // Items added to this cache expire after 15 minutes
-    cacheFlushInterval: 60 * 60 * 1000, // This cache will clear itself every hour
+  CacheFactory('shallowCache', {
+    maxAge: 60 * 60 * 1000, // Items added to this cache expire after an hour
     deleteOnExpire: 'aggressive' // Items will be deleted from this cache when they expire
+  });
+
+  CacheFactory('deepCache', {
+    storageMode: 'localStorage' // This cache will use `localStorage`
   });
 
   return {
     getData: function (url,backup) {
       var deferred = $q.defer();
       var start = new Date().getTime();
+      var shallowCache = CacheFactory.get('shallowCache');
+      var deepCache = CacheFactory.get('deepCache');
 
-      $http.get(url, {
-        cache: CacheFactory.get('dataCache')
-      }).then(function (data) { //success
-        console.log('time taken for request: ' + (new Date().getTime() - start) + 'ms');
-        deferred.resolve(data);
-      }, function () { //error
-        if (backup) {
-          $http.get(backup, {
-            cache: CacheFactory.get('dataCache')
-          }).then(function (data) { //success
-            console.log('BACKUP: time taken for request: ' + (new Date().getTime() - start) + 'ms');
-            deferred.resolve(data);
-          });
-        }
+      if (shallowCache.get(url)) {
+        deferred.resolve(shallowCache.get(url));
+      } else if (deepCache.get(url)) {
+        deferred.resolve(deepCache.get(url));
+        $http.get(url).then(function (data) {
+          console.log('DEEP Found get new time taken for request: ' + (new Date().getTime() - start) + 'ms');
+          shallowCache.put(url, data);
+          deepCache.put(url, data);
+        });
+      } else {
+        $http.get(url).then(function (data) { //success
+          console.log('None found: time taken for request: ' + (new Date().getTime() - start) + 'ms');
+          shallowCache.put(url, data);
+          deepCache.put(url, data);
+          deferred.resolve(data);
+        }, function () { //if there is no cache and you can't get the online JSON then use the stored backup
+          if (backup) {
+            $http.get(backup).then(function (data) {
+              console.log('BACKUP: time taken for request: ' + (new Date().getTime() - start) + 'ms');
+              shallowCache.put(url, data);
+              deepCache.put(url, data);
+              deferred.resolve(data);
+            });
+          }
+        });
       }
-      );
+
       return deferred.promise;
+
     }
   };
 })

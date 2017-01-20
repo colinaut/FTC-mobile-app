@@ -70,8 +70,6 @@ app
 
 .factory('Data', function($http, Cacher) {
 
-
-	// Get data from JSON using cache if present
   var gist = 'https://gist.githubusercontent.com/colinaut/c2c2f95d259158edd6b261d68c69e427/raw/data.json';
   var backup = 'data.json';
 
@@ -99,25 +97,14 @@ app
 
 })
 
-.factory('News', function($http, CacheFactory) {
+.factory('News', function($http, Cacher) {
 
-	// Create cache if there isn't one.
-	if (!CacheFactory.get('newsCache')) {
-		// or CacheFactory('bookCache', { ... });
-		CacheFactory.createCache('newsCache', {});
-	}
-	// Get cache
-	var newsCache = CacheFactory.get('newsCache');
-
-	// Get data from JSON using cache if present
 	var newsData = function() {
-	var datatemp;
-	return $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys").then(
-		function(response){
-			datatemp = response.data.query.results.rss.channel;
-			return datatemp;
-
-		}
+	  var rssJSON = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
+    return Cacher.getData(rssJSON).then(
+	    function(response){
+  			return response.data.query.results.rss.channel;
+  		}
 		)
 	};
 
