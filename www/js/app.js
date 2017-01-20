@@ -1,11 +1,6 @@
 
 var app = angular.module('myApp', ['onsen', 'ui.router', 'angular-cache', 'ngSanitize']);
 
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    ImgCache.$init();
-}
-
 app
 .filter('trusted', ['$sce', function ($sce) {
     return function(url) {
@@ -165,36 +160,45 @@ app
   });
 
   return {
-    getData: function (url,backup) {
+    getData: function (url, backup) {
       var deferred = $q.defer();
       var start = new Date().getTime();
       var shallowCache = CacheFactory.get('shallowCache');
       var deepCache = CacheFactory.get('deepCache');
 
-      if (shallowCache.get(url)) {
+      if (shallowCache.get(url)) { //check first for local session cache
         deferred.resolve(shallowCache.get(url));
-      } else if (deepCache.get(url)) {
+
+      } else if (deepCache.get(url)) { //if can't find session cache then search for the localStorage cache
         deferred.resolve(deepCache.get(url));
-        $http.get(url).then(function (data) {
-          console.log('DEEP Found get new time taken for request: ' + (new Date().getTime() - start) + 'ms');
-          shallowCache.put(url, data);
-          deepCache.put(url, data);
+
+        $http.get(url).then(function (data) { //check for new version on the server
+          console.log('DEEP Found, get new time taken for request: ' + (new Date().getTime() - start) + 'ms');
+          shallowCache.put(url, data); //put in session storage
+          deepCache.put(url, data); //put in localStorage
         });
-      } else {
+
+      } else if (backup) { // if neither session or local exist then use permenant backup
+
+        $http.get(backup).then(function (data) {
+          console.log('BACKUP: time taken for request: ' + (new Date().getTime() - start) + 'ms');
+          deferred.resolve(data); //use this for now
+
+          $http.get(url).then(function (data) { //try to grab new version and put in cache
+            console.log('Try for new after backup: time taken for request: ' + (new Date().getTime() - start) + 'ms');
+            shallowCache.put(url, data);
+            deepCache.put(url, data);
+          });
+        });
+      } else { //if all else fails try to grab online version
+
         $http.get(url).then(function (data) { //success
           console.log('None found: time taken for request: ' + (new Date().getTime() - start) + 'ms');
           shallowCache.put(url, data);
           deepCache.put(url, data);
           deferred.resolve(data);
-        }, function () { //if there is no cache and you can't get the online JSON then use the stored backup
-          if (backup) {
-            $http.get(backup).then(function (data) {
-              console.log('BACKUP: time taken for request: ' + (new Date().getTime() - start) + 'ms');
-              shallowCache.put(url, data);
-              deepCache.put(url, data);
-              deferred.resolve(data);
-            });
-          }
+        }, function () { //if there is no cache and you can't get the online JSON
+
         });
       }
 
