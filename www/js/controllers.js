@@ -79,20 +79,17 @@ app
 	var dataCache = CacheFactory.get('dataCache');
 
 	// Get data from JSON using cache if present
+  var gist = 'https://gist.githubusercontent.com/colinaut/c2c2f95d259158edd6b261d68c69e427/raw/data.json';
+  var jsonBlob = 'http://jsonblob.com/api/jsonBlob/717acca1-dec7-11e6-90ab-015a10bb4e55' ;
+
 	var jsonData = function() {
 		var datatemp;
-		return $http.get('https://quarkbackend.com/getfile/colin-fahrion/data-json').then(
+		return $http.get(gist).then(
 			function(response){
 				datatemp = response.data;
 				return datatemp;
-			},
-			function(response) {
-				return $http.get('data/data.json').then(function(response){
-					datatemp = response.data;
-					return datatemp;
-				}
-			);
-		});
+			}
+    );
 	}
 
 	return {
