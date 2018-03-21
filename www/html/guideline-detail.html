@@ -24,8 +24,7 @@
         		<ons-list-item class="item" ng-repeat="list in group.children" class="item-accordion" ng-show="isGroupShown(group)">
         		    {{list.content}}
                 <ons-list modifier="inset">
-              		<ons-list-item ng-repeat="sublist in list.children" class="item-sublist item">
-              		    {{sublist.content}}
+              		<ons-list-item ng-bind-html="sublist.content" ng-repeat="sublist in list.children" class="item-sublist item">
               		</ons-list-item>
                 </ons-list>
         		</ons-list-item>
