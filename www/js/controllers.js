@@ -70,7 +70,7 @@ app
 
 .factory('Data', function($http, Cacher) {
 
-  var gist = 'https://gist.githubusercontent.com/colinaut/c2c2f95d259158edd6b261d68c69e427/raw/data2.json';
+  var gist = 'https://gist.githubusercontent.com/colinaut/c3939bfa19da779e0cf8feb672a3922a/raw/52f48ad9ba57e549e5d50aeaeec1b312b526abb4/FTC-data.json';
   var backup = 'data/data.json';
 
 	var jsonData = function() {

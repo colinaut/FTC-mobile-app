@@ -11,7 +11,7 @@
 		</ons-toolbar-button>
 		<h1>{{specialty.title}}</h1>
 	</header>
-	<div class="intro" ng-bind-html="specialty.intro | nl2p"></div>
+	<div class="intro" ng-bind-html="specialty.intro | nl2p" updatelinks></div>
   <ons-list>
 		<ons-list-item class="item member" ng-repeat="member in specialty.list" ng-init="hide=true">
 
@@ -29,7 +29,7 @@
 								{{title}}
 							</ons-list-item>
 						</ons-list>
-						<div class="bio" ng-bind-html="member.bio | nl2p">
+						<div class="bio" ng-bind-html="member.bio | nl2p" updatelinks>
 						</div>
 					</div>
 					<a class="view-more" ng-click="hide = !hide">{{hide ? 'View Full Bio' : 'View Less'}}</a>

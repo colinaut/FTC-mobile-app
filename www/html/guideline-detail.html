@@ -13,7 +13,7 @@
 		<h1>{{guideline.title}}</h1>
 	</header>
 
-	<div class="intro" ng-bind-html="guideline.intro | nl2p"></div>
+	<div class="intro" ng-bind-html="guideline.intro | nl2p" updatelinks></div>
 	<ons-list modifier="inset" style="margin-top: 10px">
 		<ons-list-item class="item" ng-repeat="group in guideline.guide" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
 					<header>
@@ -22,9 +22,9 @@
 					</header>
           <ons-list modifier="inset">
         		<ons-list-item class="item" ng-repeat="list in group.children" class="item-accordion" ng-show="isGroupShown(group)">
-        		    {{list.content}}
+					<div class="intro" ng-bind-html="list.content" updatelinks></div>
                 <ons-list modifier="inset">
-              		<ons-list-item ng-bind-html="sublist.content" ng-repeat="sublist in list.children" class="item-sublist item">
+              		<ons-list-item ng-bind-html="sublist.content" ng-repeat="sublist in list.children" class="item-sublist item" updatelinks>
               		</ons-list-item>
                 </ons-list>
         		</ons-list-item>

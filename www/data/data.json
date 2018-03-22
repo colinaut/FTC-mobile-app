@@ -1,5 +1,5 @@
 {
-    "version" : 0.9,
+    "version" : 1.0,
     "videos" : {
       "version" : 0.4,
       "list" : [
@@ -2159,7 +2159,7 @@
     },
     "team" : {
       "intro" : "The Fetal Treatment Center combines the talents of specialists in pediatric surgery, genetics, obstetrics/perinatology, radiology, nursing, and neonatal medicine. Our team of doctors, nurses, and social workers work together to coordinate all aspects of care from diagnosis to postoperative recovery and long-term follow-up.",
-      "version_Copy" : 0.4,
+      "version_Copy" : 0.5,
       "list" : [
         {
           "title" : "Surgeons",
@@ -2250,15 +2250,6 @@
           "intro" : "Our FTC radiologists specialize in obstetrical sonography and MRI. They will perform a complete ultrasound and possibly an echocardiogram and MRI which provides information on the specific details of your baby's birth defect. The radiologist also provides ultrasound guidance during the actual surgery. After fetal surgery, the radiologists will perform further ultrasound and echocardiography studies to monitor your baby's well-being.\nUltrasonography and echocardiography services are provided by the Department of Radiology.",
           "list" : [
             {
-              "name" : "Roy A. Filly, M.D.",
-              "image" : "img/team/roy-filly.jpg",
-              "title" : [
-                "Professor",
-                "Cofounder, Fetal Treatment Center"
-              ],
-              "bio" : "Dr. Roy A. Filly is Emeritus Professor Radiology, Surgery, and Obstetrics, Gynecology and Reproductive Sciences at UCSF where he served as Chief of the Section of Diagnostic Sonography for nearly 29 years before stepping down in 2004. He is Cofounder of the UCSF Fetal Treatment Program.\nDr. Filly received his medical degree from the Ohio State University College of Medicine, summa cum laude. Upon completion of his medical training he received the highest score on the Ohio State Medical Board Examination. He received the Alumni Achievement Award from the Ohio State University in 1980, only 10 years after his graduation. He completed his residency in Diagnostic Radiology at Stanford University where he served as Chief Resident, and received the Robert Reid Newell Award as outstanding resident. Dr. Filly has won numerous other awards, including the prestigious Joseph H. Holmes Clinical Pioneer Award and the Fry Memorial Award of the American Institute of Ultrasound in Medicine (the highest award for a North American Ultrasonologist).\nDr. Filly is an honorary member of numerous national and international societies, and is a Past President of the Society of Radiologists in Ultrasound. Dr. Filly holds fellowships in the Society of Radiologists in Ultrasound and the American Institute of Ultrasound in Medicine. Dr. Filly has published more than 450 scientific manuscripts, and is co-author of two textbooks, and an interactive teaching CD-ROM.\nDr. Filly has received many teaching awards including Teacher of the Year Award in the Department of Radiology (1978), the Chief Residents Teaching Award in the Department of Obstetrics, Gynecology and Reproductive Medicine (1981), a Special Commendation for Excellence in Teaching from the Chief Residents in Obstetrics and Gynecology Award (1982), and a Special Commendation for Teaching from the Residents in Diagnostic Radiology (1982). Dr. Filly has appeared regularly in the publication Best Doctors in America since it was originally published."
-            },
-            {
               "name" : "Peter Callen, M.D.",
               "image" : "img/team/p-callen.jpg",
               "title" : [
@@ -2291,16 +2282,6 @@
                 "Professor, Department Radiology, Neuroradiology Section"
               ],
               "bio" : "Dr. Orit Glenn is a radiologist, specializing in pediatric neuroradiology, at UCSF Medical Center and UCSF Benioff Children's Hospital. She specializes in using advanced magnetic resonance (MR) technologies to diagnose fetal and pediatric brain disorders. She interprets MR images of fetuses and newborns. In her research, she works closely with MR scientists to develop and apply new techniques to better evaluate conditions of the brain.\nGlenn earned a bachelor's degree at the Massachusetts Institute of Technology and a medical degree at the University of California, San Francisco. She completed a radiology residency and a neuroradiology fellowship, with a focus on pediatric neuroimaging, both at UCSF, before joining the UCSF medical staff in 2001."
-            },
-            {
-              "name" : "Lan Vu, M.D.",
-              "image" : "img/team/lan-vu.jpg",
-              "title" : [
-                "Assistant Professor of Surgery",
-                "Division of Pediatric Surgery",
-                "Fetal Treatment Center"
-              ],
-              "bio" : "Dr. Lan Vu is a pediatric surgeon at UCSF Benioff Children's Hospital. Her research interests include studying outcomes for children with surgically-correctable birth defects. Her interest in global health includes establishing sustainable collaborations with countries in Southeast Asia. She is an assistant professor in the UCSF Department of Surgery.\nBorn in Vietnam, Dr. Vu immigrated to the United States in 1981.  She holds a bachelor's degree in Biochemistry from UC Berkeley (1998) and graduated from UCSF Medical School in 2003.  During her time as a medical student, she spent a year as a research assistant with Dr. Hanmin Lee in the Division of Pediatric Surgery at UCSF and worked as a domestic violence counselor in the Asian Women's Shelter in San Francisco.\nDr. Vu finished her general surgery residency at UCSF in 2010. During her residency, she completed a two-year pediatric surgery research fellowship and received a master's degree in Clinical Research at UCSF. She returns to UCSF after completing her pediatric surgery training at Texas Children's Hospital in Houston, Texas."
             },
             {
               "name" : "Ruth Goldstein, M.D.",
@@ -2371,10 +2352,33 @@
               "image" : "img/team/chetty_s.jpg",
               "title" : [
                 "Assistant Clinical Professor",
-                "Maternal and fetal medicine specialist"
+                "Maternal and Fetal Medicine Specialist"
               ],
               "bio" : "Dr. Shilpa P. Chetty is an obstetrician and gynecologist who specializes in high-risk pregnancy and perinatal genetics. She has a special interest in prenatal diagnosis, fetal anomalies and the management of pregnancy complicated by medical and genetic disorders.\nChetty completed a medical degree at Loma Linda University, School of Medicine, followed by an internship and residency in obstetrics and gynecology at Washington Hospital Center in Washington, D.C. Subsequently, she completed a fellowship in Clinical Genetics at the National Institutes of Health in Bethesda, Maryland, followed by an additional fellowship in maternal-fetal medicine at Stanford University. She is board certified in both obstetrics and gynecology and medical genetics."
             },
+            {
+                "name" : "Jacquelyn Chyu, M.D.",
+                "image" : "img/team/Jacquelyn-Chyu.jpg",
+                "title" : [
+                  "Professor",
+                  "Maternal and Fetal Medicine Specialist"
+                ]
+            },
+            {
+                "name" : "Katherine Connolly, M.D.",
+                "image" : "img/team/Katherine-Connolly.JPG",
+                "title" : [
+                  "Assistant Professor"
+                ]
+            },
+            {
+                "name" : "Neda Ghaffari, M.D.",
+                "image" : "img/team/Neda-Ghaffari.jpg",
+                "title" : [
+                  "Assistant Clinical Professor"
+                ],
+                "bio" : "Dr. Neda Ghaffari has an interest in both maternal medicine and fetal medicine; extensive experience in managing medically complicated pregnancies, especially in patients with cardiac disease, malignancies in pregnancy, and congenital anomalies; skilled in fetal echocardiogram, an NTQR-certified provider, and California State Prenatal Screening Program certified for amniocentesis; patient safety and comprehensive outpatient care for patients with obesity and diabetes."
+              },
             {
               "name" : "Juan Gonzalez-Velez , M.D.",
               "image" : "img/team/j-gonzalez.jpg",
@@ -2402,25 +2406,13 @@
               "bio" : "Dr. Mary Norton is a Maternal Fetal Medicine specialist as well as a clinical geneticist. She specializes in the care of women at high risk for having a baby with a birth defect or genetic disorder. She oversees the prenatal diagnosis program at UCSF, and is an expert in high-risk obstetrical ultrasound and prenatal diagnosis procedures such as amniocentesis and CVS. Her research interests include the use of new genetic technologies for fetal testing, and she is a national expert in the use of cell free DNA testing. She also has a particular interest in patient attitudes and preferences regarding prenatal testing."
             },
             {
-              "name" : "Patricia Robertson, M.D.",
-              "image" : "img/team/robertson_p.jpg",
-              "title" : [
-                "Professor",
-                "Director, Medical Student Education, Dept of Ob/Gyn",
-                "Founder, \"Twins and More\" program",
-                "Co-Director, Lesbian Health Research",
-                "Medical Director, Perinatal Mental Health Assessment Clinic"
-              ],
-              "bio" : "Dr. Patricia Robertson is a perinatologist in UCSF Women's Health at Parnassus where she focuses on high-risk pregnancy. She also is a member of the Fetal Treatment Center at UCSF Benioff Children's Hospital. Her special interests include the prevention of preterm birth as well as lesbian health issues.\nRobertson received her undergraduate degree in biological sciences at Mount Holyoke College. She attended medical school at the University of Texas Health Sciences Center in San Antonio and completed her residency at the University of California, San Francisco. After spending five years in private practice in Santa Monica, she returned to UCSF as a member of the faculty and completed a fellowship in maternal-fetal medicine.\nRobertson wrote \"The Premature Labor Handbook: Successfully Sustaining Your High-Risk Pregnancy,\" which is the first comprehensive book to specifically address preterm labor and many of the issues confronting women, their partners and their families. She is board certified in obstetrics and gynecology as well as in maternal-fetal medicine."
-            },
-            {
-              "name" : "Kirsten E. Salmeen, M.D.",
-              "image" : "img/team/salmeen_k.jpg",
-              "title" : [
-                "Assistant Professor",
-                "Clinical Instructor"
-              ],
-              "bio" : "Dr. Kirsten Salmeen specializes in medically complicated pregnancies and deliveries, diabetes in pregnancy and contraception and family planning. She is also interested in patient education, health literacy and shared decision making.\nSalmeen completed her medical degree and residency in obstetrics and gynecology at the University of Michigan Medical School, where she was awarded Resident of the Year for Medical Student Teaching. Subsequently, she completed a fellowship in maternal-fetal medicine at UCSF, where she earned the Outstanding Resident Teaching Award and was named the Most Outstanding Fellow. Salmeen is an assistant professor at UCSF."
+                "name" : "Teresa Sparks",
+                "image" : "img/team/Teresa-Sparks.jpg",
+                "title" : [
+                  "Assistant Professor",
+                  "Maternal Fetal Medicine and Clinical Genetics"
+                ],
+                "bio" : "Dr. Teresa Sparks is an obstetrician and gynecologist who specializes in high-risk pregnancies and perinatal genetics. She has particular interests in fetal anomalies, management of pregnancies affected by maternal or fetal genetic conditions, and prenatal diagnosis. Dr. Sparks has research interests focused on the genetic etiologies underlying non-immune hydrops fetalis, as well as on prenatal diagnosis of fetal genetic conditions and perinatal management of these pregnancies.\nDr. Sparks completed her medical degree at the University of California, San Francisco School of Medicine. She completed her internship and residency in the combined Obstetrics and Gynecology program at Brigham & Women's Hospital and Massachusetts General Hospital. She then returned to UCSF to complete a dual fellowship in Maternal-Fetal Medicine and Clinical Genetics, after which she joined the faculty at UCSF in Maternal-Fetal Medicine and Clinical Genetics.\nDr. Sparks is board certified in both Obstetrics & Gynecology and Clinical Genetics."
             },
             {
               "name" : "Mari-Paule Thiet, M.D.",
@@ -2448,16 +2440,7 @@
           "title" : "Neonatologists",
           "intro" : "Neonatologists are pediatricians with special expertise in caring for sick or premature infants. Our neonatologists are world leaders in caring for babies requiring intensive care after birth. Babies who undergo fetal surgery are cared for in a special surgical unit in the Intensive Care Nursery.",
           "list" : [
-            {
-              "name" : "David H. Rowitch, M.D., Ph.D.",
-              "image" : "img/team/david-rowitch.jpg",
-              "title" : [
-                "Professor of Pediatrics and Neurological Surgery",
-                "Chief of Neonatology",
-                "Howard Hughes Medical Institute Investigator"
-              ],
-              "bio" : "Dr. David Rowitch is chief of neonatology at UCSF. Rowitch earned his medical degree from the University of California, Los Angeles and doctorate in biochemistry from the University of Cambridge in England. Subsequently, he completed an internship and residency in pediatrics and fellowship in newborn medicine at Children's Hospital in Boston. Rowitch was a postdoctoral fellow at Harvard College in the laboratory of Andrew P. McMahon. He began his own laboratory at Dana-Farber Cancer Institute in Boston and was a Harvard Medical School faculty member an Attending Neonatologist at Children?s Hospital, Boston, from 1996-2006.\nResearch Overview\nBy applying principles of basic brain development, we may be able to better understand the neurological problems faced by premature infants as well as others central nervous system disorders such as multiple sclerosis and brain cancer. Dr. Rowitch leads a laboratory in the UCSF Institute for Regeneration Medicine that investigates genetic factors that determine cellular development in neural stem cells of the brain and the response to injury. His work in the field of neurobiology has earned him numerous awards, including the National Institute of Health Clinical Investigator Award, Basil O'Connor Starter Scholar Award from the March of Dimes Foundation, Kimmel Foundation Scholar Award and the James S. McDonnell Foundation Research Award. He was appointed a Howard Hughes Medical Institute Investigator in 2008."
-            },
+            
             {
               "name" : "Yao Sun, M.D., Ph.D.",
               "image" : "img/team/yao-sun.jpg",
@@ -2483,27 +2466,7 @@
                 "Assistant Adjunct Professor of Pediatrics"
               ],
               "bio" : "Dr. Trevor D. Burt is a neonatologist, specializing in the care of critically ill newborns, including premature infants and newborns requiring intensive care such as those with birth and cardiac defects, surgical issues and genetic syndromes. He also treats babies who have difficulty or trauma before or during birth and those who require extracorporeal membranous oxygenation (ECMO) for cardiac and respiratory support.\nIn his research, he focuses on the immune system and its role in HIV and other chronic infections, as well as the development of immune systems and how they influence response to infection. Burt earned a medical degree at Harvard Medical School. He completed a combined internship and residency in pediatrics at Children's Hospital Boston and Boston Medical Center and a fellowship in neonatal-perinatal medicine at UCSF. He is a fellow of the American Academy of Pediatrics and a member of the California Thoracic Society. At UCSF, he is an assistant adjunct professor of pediatrics in the School of Medicine."
-            },
-            {
-              "name" : "Gavin Henderson, M.D., Ph.D.",
-              "image" : "img/team/Gavin-Henderson.jpg",
-              "title" : [
-                "Assistant Clinical Professor of Pediatrics"
-              ],
-              "bio" : "Dr. Gavin Henderson is a neonatologist, specializing in the treatment of critically ill newborns and premature infants. His research is centered in the UCSF High Risk Infant Follow-Up Clinic, where he evaluates the neurodevelopmental outcomes of the most critically ill infants cared for in the UCSF Intensive Care Nursery. These evaluations are an important component of continuing care for our sickest patients and their families. They also provide essential information about outcomes for clinical trials which many of these patients participate in.\nHenderson earned a medical degree and Ph.D. at the University of North Carolina, Chapel Hill though the Medical Scientist Training Program. Subsequently, he completed an internship and residency in pediatrics at UNC Chapel Hill before joining UCSF as a neonatology fellow. After completing his fellowship, Henderson became an assistant clinical professor of pediatrics."
-            },
-            {
-              "name" : "Patricia Robertson, M.D.",
-              "image" : "img/team/robertson_p.jpg",
-              "title" : [
-                "Professor",
-                "Director, Medical Student Education, Dept of Ob/Gyn",
-                "Founder, \"Twins and More\" program",
-                "Co-Director, Lesbian Health Research",
-                "Medical Director, Perinatal Mental Health Assessment Clinic"
-              ],
-              "bio" : "Dr. Patricia Robertson is a perinatologist in UCSF Women's Health at Parnassus where she focuses on high-risk pregnancy. She also is a member of the Fetal Treatment Center at UCSF Benioff Children's Hospital. Her special interests include the prevention of preterm birth as well as lesbian health issues.\nRobertson received her undergraduate degree in biological sciences at Mount Holyoke College. She attended medical school at the University of Texas Health Sciences Center in San Antonio and completed her residency at the University of California, San Francisco. After spending five years in private practice in Santa Monica, she returned to UCSF as a member of the faculty and completed a fellowship in maternal-fetal medicine.\nRobertson wrote \"The Premature Labor Handbook: Successfully Sustaining Your High-Risk Pregnancy,\" which is the first comprehensive book to specifically address preterm labor and many of the issues confronting women, their partners and their families. She is board certified in obstetrics and gynecology as well as in maternal-fetal medicine."
-            },
+            }
             {
               "name" : "Luke Judge, M.D.",
               "image" : "img/team/Luke-Judge.jpg",
@@ -2511,15 +2474,7 @@
                 "Clinical Instructor, Department of Pediatrics, Division of Neonatology"
               ],
               "bio" : "Dr. Judge completed his MD and PhD at University of Washington School of Medicine in Seattle, WA as a part of the Medical Scientist Training Program.  His graduate work was performed through the interdisciplinary Molecular and Cellular Biology program in the laboratory of Dr. Jeffrey Chamberlain, where he focused on dystrophin protein function and therapeutic gene replacement for Duchenne Muscular Dystrophy.  He joined UCSF in 2008 as a fellow in the Molecular Medicine Training Program, where he completed his clinical training in Pediatrics and Neonatology.  His fellowship research was supported by a Clinical Scholar award from the California Institute of Regenerative Medicine, with Dr. Bruce Conklin at the Gladstone Institute of Cardiovascular Disease as his mentor."
-            },
-            {
-              "name" : "Leslie Lusk, MD",
-              "image" : "img/team/Leslie-Lusk-MD.png",
-              "title" : [
-                "Assistant Professor of Pediatrics"
-              ],
-              "bio" : "Leslie Lusk is an Assistant Professor of Pediatrics in the Division of Neonatology at UCSF Benioff Children’s Hospital. She obtained her undergraduate degree at the University of Pennsylvania and her medical degree at the University of California San Francisco School of Medicine.  She completed a Pediatrics Residency at UCSF after which she spent a year as Chief Resident at San Francisco General Hospital. She returned to UCSF to complete her training in Neonatal-Perinatal Medicine and joined the UCSF Neonatology Faculty in 2015.\nResearch Overview\nDr. Lusk’s research focuses on infants with congenital anomalies, particularly in infants with congenital diaphragmatic hernia and gastroschisis. She works closely with the UCSF Fetal Treatment Center and the University of California Fetal Consortium in an effort to assess predictors of outcomes in infants with gastroschisis as well as standardize care and improve outcomes in this population."
-            },
+            }
             {
               "name" : "Emin Maltepe, M.D., Ph.D.",
               "image" : "img/team/Emin-Maltepe.jpg",
@@ -2554,14 +2509,6 @@
                 "Fellowship Director, Neonatal-Perinatal Medicine"
               ],
               "bio" : "Dr. Thomas Shimotake currently serves as Associate Director of Clinical Programs in Neonatology at UCSF. Dr. Shimotake earned his medical degree from the University of Illinois at Chicago in 1997. He had previously completed a two-year research assistantship at the National Institute of Mental Health, in the Division of Neuroscience, studying the pharmacokinetics of neuroleptic agents. He then completed his Pediatric internship, residency and sub-specialty fellowship training in Neonatal-Perinatal Medicine at the University of Chicago Children’s Hospital. During this time, Dr. Shimotake investigated the mechanisms of airway inflammation from tracheal aspirates of premature infants on mechanical ventilation, under the mentorship of Dr. Marc Hershenson. He also received multiple awards from residents and students in recognition of excellence in teaching.\nHe joined the faculty as an Instructor in the Department of Pediatrics at the University of California San Francisco in 2003, researching the role of surfactant proteins in neonatal lung homeostasis, under the mentorship of Dr. Sam Hawgood. His current appointment is as HS Assistant Clinical Professor of Pediatrics and he has continued to play an active role in both resident and fellow education. In 2007, he was named Fellowship Director for the Neonatal-Perinatal Medicine Training Program at UCSF. In 2008, Dr. Shimotake also began serving as Co-Director of the UCSF Neuro-Intensive Care Nursery, which is the first unit of it’s kind in the world.\nDr. Shimotake is a Fellow of the American Academy of Pediatrics and holds memberships in a number of other medical societies and associations. He has played an active role in efforts at both Outreach education and in developing standards for the implementation of therapeutic hypothermia (cooling) after birth asphyxia. He has made numerous presentations to regional hospitals and organizations overseeing the care and transport of Neonates at risk for injury after birth asphyxia.\nResearch Overview\nDr Shimotake is interested in the physiologic processes and lung components that support and protect normal newborn pulmonary function, as well as the clinical abnormalities that can develop when those processes are deranged. Under the mentorship of Dr. Sam Hawgood, he has studied the role that certain lung surfactant proteins (SP-A and SP-D) play in maintaining alveolar surfactant homeostasis. He has presented his results at numerous local and national conferences including the Annual National Meetings of the Pediatric Academic Society (PAS), the Federation of American Societies for Experimental Biology (FASEB) Summer Research Conference on Lung Surfactants, and the UCSF Pulmonary Retreat."
-            },
-            {
-              "name" : "Cindy Tran, M.D.",
-              "image" : "img/team/Cindy-Tran.jpg",
-              "title" : [
-                "Assistant Adjunct Professor"
-              ],
-              "bio" : "Dr. Cindy Tran is currently a junior faculty member in the Division of Neonatology, where her research focuses on biofilm formation of Pseudomonas aeruginosa at the epithelial barrier.  Dr. Tran graduated magna cum laude from Harvard University with an A.B. in Chemistry in 1997.  She then earned her M.D. from Columbia University, College of Physicians & Surgeons, in 2003.  After medical school, she migrated to the West Coast to complete her pediatric residency and then a fellowship in Neonatology at the University of California San Francisco.  Her research has been funded by the Pediatric Scientist Development Program and is currently supported by an NICHD Child Health Career Development award."
             }
           ]
         },
@@ -2607,13 +2554,46 @@
               "bio" : "Dr. Phillip Moore, director of the Pediatric Cardiac Catheterization Laboratory at UCSF Benioff Children's Hospital, specializes in the treatment of congenital heart disease and is active in developing and testing new catheter-based devices and procedures.\nHe is internationally known for his work on patent ductus arteriosus and atrial septal defect device closure as well as the new field of magnetic resonance image (MRI) guidance of catheter-based treatment of congenital heart disease."
             },
             {
+                "name" : "Hythem Nawaytou, M.D.",
+                "image" : "img/team/Hythem-Nawaytou.jpg",
+                "title" : [
+                  "Assistant Professor ",
+                  "Pediatric Cardiologist"
+                ]
+            },
+            {
               "name" : "Shabnam Peyvandi, M.D.",
               "image" : "img/team/s-peyvandi.jpg",
               "title" : [
                 "Assistant Professor of Pediatrics",
-                "Pediatric cardiologist"
+                "Pediatric Cardiologist"
               ],
               "bio" : "Dr. Shabnam Peyvandi is an assistant professor in the division of pediatric cardiology at UCSF. Her clinical interests include fetal diagnosis and management of congenital heart disease in addition to transthoracic and transesophageal echocardiography. She also heads the pediatric cardiovascular genetics program at UCSF, specializing in cardiac genetic issues from fetal development to adulthood. She collaborates with the UCSF Fetal Treatment Center to help coordinate care for fetuses diagnosed with heart problems.\nDr. Peyvandi received her medical degree from New York Medical College and completed her pediatrics residency at Children’s Hospital of Los Angeles. She then completed a cardiology fellowship and an advanced echocardiography and fetal cardiology fellowship at The Children’s Hospital of Philadelphia before joining UCSF in the fall of 2013. Dr. Peyvandi’s primary research interests include cardiovascular genetics and fetal markers of neurodevelopmental outcomes in patients with congenital heart disease."
+            },
+            {
+                "name" : "Emilio Quezada, M.D.",
+                "image" : "img/team/Emilio-Quezada.jpg",
+                "title" : [
+                  "Assistant Professor of Pediatrics",
+                  "Pediatric Cardiologist"
+                ],
+                "bio" : "Dr. Emilio Quezada is an assistant clinical professor in the division of pediatric cardiology at UCSF. He is trained in pediatric cardiology and advanced imaging including transthoracic, transesophageal and fetal echocardiography. His main focus is outpatient prenatal diagnosis with fetal echocardiography and management of congenital heart disease in the pediatric population. He sees patients in the Fetal Treatment Center and the Monterey outreach prenatal diagnostic center. \nDr. Quezada's priority is to provide compassionate and respectful care to families facing new diagnoses of fetal heart disease. His goal is that families feel informed and empowered while navigating such challenging periods. \nDr. Quezada earned his medical degree from Francisco Marroquin University in Guatemala city. He completed general pediatrics at the University of South Florida and pediatric cardiology at OHSU in Portland, Oregon. He completed a year of advanced non-invasive imaging at UCSF and joined the program in 2016. His research background includes studies of the aorta in Turner syndrome. "
+            },
+            {
+                "name" : "Norman H. Silverman, M.D.",
+                "image" : "img/team/Norman-Silverman.jpg",
+                "title" : [
+                  "Professor of Pediatrics"
+                ]
+            },
+            {
+                "name" : "Nicole Cresalia, M.D.",
+                "image" : "img/team/Nicole-Cresalia.jpg",
+                "title" : [
+                  "Assistant Professor of Pediatrics",
+                  "Pediatric Cardiologist"
+                ],
+                "bio" : "Dr. Nicole Cresalia is a pediatric cardiologist with expertise in pediatric, fetal and transesophageal echocardiography, which uses sound waves to create moving images of the heart. In addition to treating infants and children as outpatients in the clinic, she cares for hospitalized pediatric patients with heart disease or following cardiac surgery.\nCresalia belongs to the American Society of Echocardiography, Society of Pediatric Echocardiography and Fetal Heart Society. In 2010, she received the Jessie L. Ternberg, Award, given for determination, perseverance and dedication to patients. She has also volunteered at an overnight camp for children with congenital heart defects. She is an assistant clinical professor at UCSF."
             },
             {
               "name" : "Leanne Duong, NP",
@@ -2648,6 +2628,15 @@
                 "Director, Program in Genetic and Genomic Prenatal Medicine"
               ],
               "bio" : "Dr. Mary Norton is a Maternal Fetal Medicine specialist as well as a clinical geneticist. She specializes in the care of women at high risk for having a baby with a birth defect or genetic disorder. She oversees the prenatal diagnosis program at UCSF, and is an expert in high-risk obstetrical ultrasound and prenatal diagnosis procedures such as amniocentesis and CVS. Her research interests include the use of new genetic technologies for fetal testing, and she is a national expert in the use of cell free DNA testing. She also has a particular interest in patient attitudes and preferences regarding prenatal testing."
+            },
+            {
+                "name" : "Teresa Sparks",
+                "image" : "img/team/Teresa-Sparks.jpg",
+                "title" : [
+                  "Assistant Professor",
+                  "Maternal Fetal Medicine and Clinical Genetics"
+                ],
+                "bio" : "Dr. Teresa Sparks is an obstetrician and gynecologist who specializes in high-risk pregnancies and perinatal genetics. She has particular interests in fetal anomalies, management of pregnancies affected by maternal or fetal genetic conditions, and prenatal diagnosis. Dr. Sparks has research interests focused on the genetic etiologies underlying non-immune hydrops fetalis, as well as on prenatal diagnosis of fetal genetic conditions and perinatal management of these pregnancies.\nDr. Sparks completed her medical degree at the University of California, San Francisco School of Medicine. She completed her internship and residency in the combined Obstetrics and Gynecology program at Brigham & Women's Hospital and Massachusetts General Hospital. She then returned to UCSF to complete a dual fellowship in Maternal-Fetal Medicine and Clinical Genetics, after which she joined the faculty at UCSF in Maternal-Fetal Medicine and Clinical Genetics.\nDr. Sparks is board certified in both Obstetrics & Gynecology and Clinical Genetics."
             },
             {
               "name" : "Kathryn Drexler",
@@ -2712,34 +2701,13 @@
           "intro" : "The anesthesiologist will meet with you before surgery to discuss your medical history and previous anesthetic history. He will administer anesthesia during your surgery and monitor you and your baby throughout the surgical procedure. After the operation, he will be responsible for your pain management.",
           "list" : [
             {
-              "name" : "Charles Cauldwell, M.D.",
-              "image" : "img/team/c-cauldwell.jpg",
+              "name" : "Marla B. Ferschl, M.D.",
+              "image" : "img/team/m-ferschl.jpg",
               "title" : [
-                "Clinical Professor of Anesthesiology and Perioperative Care",
+                "Assistant Clinical Professor",
                 "Pediatric Anesthesiologist"
               ],
-              "bio" : "Dr. Charles Caldwell is a pediatric anesthesiologist. He came to UCSF Medical Center from the Children's Hospital of Michigan where he was Chairman of the Anesthesia Department. He is a member of the Fetal Treatment Center and delivers anesthesia for fetal surgery. He trained in pediatrics in Seattle and Vancouver, Canada, anesthesia at UCSF and pediatric anesthesia at the Children's Hospital of Philadelphia. He is board certified in both pediatrics and anesthesiology. Dr. Cauldwell is a Clinical Professor of Anesthesiology and Perioperative Care at UCSF."
-            },
-            {
-              "name" : "Mari-Paule Thiet, M.D.",
-              "image" : "img/team/thiet_mp.jpg",
-              "title" : [
-                "Chief of Obstetrics, UCSF",
-                "Director, Division of Maternal Fetal Medicine",
-                "Chief of Obstetrics, Medical Director of Labor & Delivery",
-                "Vice Chair, Patient Safety and Quality Assurance",
-                "Russell K. Laros, Jr., MD Endowed Chair in Obstetrics, Gynecology and Reproductive Sciences"
-              ],
-              "bio" : "Dr. Mari-Paule Thiet, a perinatologist, is director of Maternal-Fetal Medicine at UCSF Medical Center, where she specializes in the medical and surgical complications of pregnancy. She cares for patients at UCSF Medical Center in San Francisco.\nThiet graduated from the University of Texas Southwestern Medical School in 1985 and completed her residency in obstetrics and gynecology at the Parkland Memorial Hospital in 1989. She completed a fellowship in maternal and fetal medicine at the George Washington University Hospital in 1991. She is an associate clinical professor in the Department of Obstetrics, Gynecology and Reproductive Sciences at the UCSF School of Medicine."
-            },
-            {
-              "name" : "Errol Lobo, M.D., Ph.D.",
-              "image" : "img/team/e-lobo.jpg",
-              "title" : [
-                "Professor",
-                "Anesthesia"
-              ],
-              "bio" : "Dr. Errol Lobo is an Assistant Professor of Anesthesia at UCSF. He received his undergraduate education at the University of San Francisco and his Doctorate in Medicine at the University of California San Francisco School of Medicine. Dr. Lobo also holds a Doctorate in Philosophy from the University of California San Francisco. Dr. Lobo is a former University of California President's Fellow and Robert Wood Johnson Foundation Fellow.\nDr. Lobo's anesthesia practice is focused primarily on obstetrical anesthesia and on anesthesia for vascular surgery.\nDr. Lobo's research interests include the regulation of calcium signaling pathways in cells stimulated by proteins that cause blood vessels to constrict. The protein he is primarily interested in is endothelin. Endothelin is thought to play a role in the pathogenesis of hypertension. In the fetus, endothelin is intimately involved in renal development."
+              "bio" : "Dr. Marla Ferschl is a pediatric anesthesiologist who treats children requiring sedation or anesthesia for procedures, radiologic studies or surgery. She has a special research interest in preoperative evaluations and quality assurance."
             },
             {
               "name" : "Jennifer Lucero, M.D.",
@@ -2750,15 +2718,6 @@
                 "Obstetrics, Gynecology and Reproductive Sciences"
               ],
               "bio" : "Dr. Jennifer Lucero is a physician-scientist who received her medical degree at Yale School of Medicine and then completed training in both Obstetrics/Gynecology and Anesthesia at UCSF. After her anesthesia training, she spent two years completing both an obstetric anesthesia and NIH research fellowship.\nShe is both a member of the Obstetric Anesthesia and Fetal Anesthesia team and is actively investigating the maternal end-organ effects of preeclampsia. Given Dr. Lucero's training she has been involved in fetal surgeries and management as both an obstetrician and anesthesiologist."
-            },
-            {
-              "name" : "Mark Rollins, M.D., Ph.D.",
-              "image" : "img/team/m-rollins.jpg",
-              "title" : [
-                "Associate Professor",
-                "Anesthesia"
-              ],
-              "bio" : "Dr. Mark Rollins investigates means of improving oxygen delivery both to acute wounds (e.g., maintaining normothermia and administering 100 percent oxygen intraoperatively) and to chronic wounds (e.g., sympathetic blockade, local warming and hyperbaric oxygen therapy). This involves studies in animal models, human volunteers, and patients, along with developing better oxygen measuring techniques."
             }
           ]
         },
@@ -2783,6 +2742,15 @@
               ],
               "bio" : "Ms. Duong, a native of the Bay Area, joined the Fetal Heart Center in 2015.  She spent the last 13 years as a nurse in the Neonatal Intensive Care Unit at UCLA. She is a graduate of UCSF, where she earned her MS in Acute Care Pediatrics and Nurse Practitioner license. Her focus on becoming an Acute Care Pediatric Nurse Practitioner was to develop an expertise in the clinical management of acutely and critically ill infants, children and adolescents with congenital heart disease.  "
             },
+            {
+                "name" : "Ayanna Fritton, RN",
+                "image" : "img/team/Ayanna-Fritton.jpg",
+                "title" : [
+                  "Clinical Coordinator",
+                  "Fetal Treatment Center"
+                ],
+                "bio" : "Ms. Fritton joined the Fetal Treatment Center in 2016. She spent the last 14 years as a nurse in the Intensive Care Nursery. The majority of her career has been in the UCSF Intensive Care Nursery, aside from 4 years that she worked as a traveling nurse in several Neonatal Intensive Care Units across the country. Ayanna has a wide range of experience in caring for many types of babies from the smallest preterm infants to babies born with defects that may also require surgery."
+              },
             {
               "name" : "Kristen Gosnell, RN, MS",
               "image" : "img/team/k_gosnell.jpg",
