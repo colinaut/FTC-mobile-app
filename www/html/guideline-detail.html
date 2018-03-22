@@ -1,5 +1,5 @@
 <ons-page ng-controller="GuidelineDetailCtrl" class="guideline-detail">
-	<ons-toolbar>
+    <ons-toolbar>
 		<div class="left"><img src="img/ftc-logo.png" class="logo" height="44" width="210"/></div>
 	 	<div class="right">
 		 <a href="tel:18007933887" class="contact-btn"><i class="icon ion-ios-telephone button"></i><span class="phone-number">1-800-RX-FETUS</span></a>
@@ -13,7 +13,7 @@
 		<h1>{{guideline.title}}</h1>
 	</header>
 
-	<div class="intro" ng-bind-html="guideline.intro | nl2p"></div>
+	<div class="intro" ng-bind-html="guideline.intro | nl2p" updatelinks></div>
 	<ons-list modifier="inset" style="margin-top: 10px">
 		<ons-list-item class="item" ng-repeat="group in guideline.guide" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
 					<header>
@@ -21,8 +21,8 @@
 						<strong>{{group.content}}</strong>
 					</header>
           <ons-list modifier="inset">
-        		<ons-list-item class="item" ng-repeat="list in group.children" class="item-accordion" ng-show="isGroupShown(group)" updatelinks>
-        		    <div ng-bind-html="list.content" updatelinks></div>
+        		<ons-list-item class="item" ng-repeat="list in group.children" class="item-accordion" ng-show="isGroupShown(group)">
+					<div class="intro" ng-bind-html="list.content" updatelinks></div>
                 <ons-list modifier="inset">
               		<ons-list-item ng-bind-html="sublist.content" ng-repeat="sublist in list.children" class="item-sublist item" updatelinks>
               		</ons-list-item>
