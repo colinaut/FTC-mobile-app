@@ -21,18 +21,18 @@
 						<header>
 							<span class="item-title">{{member.name}}</span>
 						</header>
-						<figure>
-							<img ng-src="{{member.image}}" />
+						<figure ng-if='member.image !== undefined'>
+							<img ng-if='member.image !== undefined' ng-src="{{member.image}}" />
 						</figure>
 						<ons-list class="titles">
 							<ons-list-item ng-repeat="title in member.title">
 								{{title}}
 							</ons-list-item>
 						</ons-list>
-						<div class="bio" ng-bind-html="member.bio | nl2p" updatelinks>
+						<div class="bio" ng-if='member.bio !== undefined' ng-bind-html="member.bio | nl2p" updatelinks>
 						</div>
 					</div>
-					<a class="view-more" ng-click="hide = !hide">{{hide ? 'View Full Bio' : 'View Less'}}</a>
+					<a class="view-more" ng-if='member.bio !== undefined' ng-click="hide = !hide">{{hide ? 'View Full Bio' : 'View Less'}}</a>
 				</div>
 
 		</ons-list-item>
