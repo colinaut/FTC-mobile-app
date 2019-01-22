@@ -163,7 +163,6 @@ app
     getData: function (url, backup) {
       //localStorage.clear();
       
-
       var deferred = $q.defer();
       var start = new Date().getTime();
       var shallowCache = CacheFactory.get('shallowCache');

@@ -25,10 +25,10 @@ app
 
 .controller("NewsCtrl", function($http, News, $scope) {
 	News.all().then(function(response){
-		$scope.rssTitle = response.title;
+		$scope.rssTitle = response.feed.title;
 		$scope.rssUrl = "http://fetus.ucsfmedicalcenter.org/feed";
-		$scope.rssSiteUrl = response.link;
-		$scope.entries = response.item;
+		$scope.rssSiteUrl = response.feed.link;
+		$scope.entries = response.items;
   });
 
 	$scope.readmore = function(entry,event) {
@@ -99,12 +99,14 @@ app
 .factory('News', function($http, Cacher) {
 
 	var newsData = function() {
-	  var rssJSON = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
+	  var rssJSON = "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed&api_key=h8xcjiadozh0i4utu3hrfhe7io7mcplm8zlfoegn";
+    return rssJSON
     return Cacher.getData(rssJSON).then(
 	    function(response){
-  			return response.data.query.results.rss.channel;
+        console.log(response.data.query.results);
+  			return response.data.query.results;
   		}
-		)
+		) 
 	};
 
 	return {
