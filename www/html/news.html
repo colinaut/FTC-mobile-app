@@ -6,11 +6,19 @@
 		</div>
 	</ons-toolbar>
 	<header class="page-header"><h1>Updates</h1></header>
+	<ons-list ng-controller="TrialsCtrl">
+		<ons-list-header ng-hide="header">Clinical Trials</ons-list-header>
+		<ons-list-item class="item" ng-repeat="trial in trials"  >
+			<h2 class="trial-title">{{trial.title}}</h2>
+			<div class="trial-description" ng-bind-html="trial.description" updatelinks></div>
+			<div class="trial-read-more">More info: <a ng-href="{{trial.link}}" target="_system" href ng-bind-html="trial.linktext"></a></div>
+		</ons-list-item>
+	</ons-list>
 	<ons-list ng-controller="NewsCtrl">
+		<ons-list-header>FTC in the News</ons-list-header>
 		<ons-list-item class="item" ng-repeat="entry in entries"  >
 			<h2 class="item-title">{{entry.title}}</h2>
-			<div class="entry-content" ng-bind-html="entry.description" updatelinks></div>
-			<!--<div class="read-more-link"><a href="#" ng-click="readmore(entry,event)">Read More</a></div>-->
+			<div class="entry-content" ng-bind-html="entry.description" updatelinks></div>	
 		</ons-list-item>
 	</ons-list>
 </ons-page>

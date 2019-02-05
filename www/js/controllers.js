@@ -37,6 +37,15 @@ app
 
 })
 
+.controller("TrialsCtrl", function($scope, Data) {
+	Data.all("trials").then(function(response){
+		$scope.trials = response.list;
+  });
+	$scope.openurl = function(url){
+    window.open(url, '_blank'); // may alse try $window
+	} 
+})
+
 .controller('VideosCtrl', function($scope, Data) {
   Data.all("videos").then(function(response){
     $scope.videogroups = response.list;
@@ -82,11 +91,13 @@ app
 
 	return {
 		all: function(section) {
+			//console.log("all: " + section);
 			return jsonData().then(function(response){
 				return response[section];
 			});
 		},
 		get: function(section,id) {
+			//console.log("get: " + section);
 			return jsonData().then(function(response){
 				return response[section].list[parseInt(id)];
 			});
@@ -100,13 +111,11 @@ app
 
 	var newsData = function() {
 	  var rssJSON = "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffetus.ucsfmedicalcenter.org%2Ffeed&api_key=h8xcjiadozh0i4utu3hrfhe7io7mcplm8zlfoegn";
-    return rssJSON
     return Cacher.getData(rssJSON).then(
 	    function(response){
-        console.log(response.data.query.results);
-  			return response.data.query.results;
+  			return response.data;
   		}
-		) 
+		)
 	};
 
 	return {

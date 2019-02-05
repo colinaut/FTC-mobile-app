@@ -152,7 +152,8 @@ app
 
   CacheFactory('shallowCache', {
     maxAge: 60 * 60 * 1000, // Items added to this cache expire after an hour
-    deleteOnExpire: 'aggressive' // Items will be deleted from this cache when they expire
+    deleteOnExpire: 'aggressive', // Items will be deleted from this cache when they expire
+    storageMode: 'sessionStorage' // This cache will use session cache
   });
 
   CacheFactory('deepCache', {
