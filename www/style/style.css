@@ -249,6 +249,9 @@ ons-toolbar + .page__background + .page__content {
 .guideline-detail .list__item.active header {
   color: #326297;
 }
+.guideline-detail .list__item p {
+  margin: 0 0 5px;
+}
 /* Additions */
 .page-header {
   padding: 6px 60px;

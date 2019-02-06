@@ -11,7 +11,7 @@
 		<ons-list-item class="item" ng-repeat="trial in trials"  >
 			<h2 class="trial-title">{{trial.title}}</h2>
 			<div class="trial-description" ng-bind-html="trial.description" updatelinks></div>
-			<div class="trial-read-more">More info: <a ng-href="{{trial.link}}" target="_system" href ng-bind-html="trial.linktext"></a></div>
+			<div class="trial-read-more">More info: <a ng-href="{{trial.link}}" ng-bind-html="trial.linktext" updatelinks></a></div>
 		</ons-list-item>
 	</ons-list>
 	<ons-list ng-controller="NewsCtrl">

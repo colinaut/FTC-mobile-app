@@ -22,9 +22,9 @@
 					</header>
           <ons-list modifier="inset">
         		<ons-list-item class="item" ng-repeat="list in group.children" class="item-accordion" ng-show="isGroupShown(group)">
-					<div class="intro" ng-bind-html="list.content" updatelinks></div>
+					<div ng-bind-html="list.content | nl2p" updatelinks></div>
                 <ons-list modifier="inset">
-              		<ons-list-item ng-bind-html="sublist.content" ng-repeat="sublist in list.children" class="item-sublist item" updatelinks>
+              		<ons-list-item ng-bind-html="sublist.content | nl2p" ng-repeat="sublist in list.children" class="item-sublist item" updatelinks>
               		</ons-list-item>
                 </ons-list>
         		</ons-list-item>

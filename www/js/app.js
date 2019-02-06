@@ -19,11 +19,19 @@ app
     return {
         link: function(scope, element) {
             $timeout(function() {
-                element.find('a[href^="https://www.youtube.com"]').remove();
-                element.find('a').on("click", function(e){
-                  window.open(angular.element(this).attr("href"), '_blank');
-                  e.preventDefault();
-                });
+                if (element[0].tagName=="A") {
+                  element.on('click', function(e){
+                    cordova.InAppBrowser.open(angular.element(this).attr('href'), '_system');
+                    e.preventDefault();
+                  });
+                } else {
+                  element.find('a[href^="https://www.youtube.com"]').remove();
+                  element.find('a').on('click', function(e){
+                    cordova.InAppBrowser.open(angular.element(this).attr('href'), '_system');
+                    e.preventDefault();
+                  });
+                }
+                
             });
         }
     };
@@ -150,6 +158,8 @@ app
 
 .service('Cacher', function ($q, $http, CacheFactory) {
 
+  var testing = false;
+
   CacheFactory('shallowCache', {
     maxAge: 60 * 60 * 1000, // Items added to this cache expire after an hour
     deleteOnExpire: 'aggressive', // Items will be deleted from this cache when they expire
@@ -169,11 +179,11 @@ app
       var shallowCache = CacheFactory.get('shallowCache');
       var deepCache = CacheFactory.get('deepCache');
 
-      if (shallowCache.get(url)) { //check first for local session cache
+      if (shallowCache.get(url) && !testing) { //check first for local session cache
         console.log('SHALLOW cache');
         deferred.resolve(shallowCache.get(url));
 
-      } else if (deepCache.get(url)) { //if can't find session cache then search for the localStorage cache
+      } else if (deepCache.get(url) && !testing) { //if can't find session cache then search for the localStorage cache
         deferred.resolve(deepCache.get(url));
         console.log('DEEP cache');
         $http.get(url).then(function (data) { //check for new version on the server

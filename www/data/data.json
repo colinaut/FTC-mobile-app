@@ -1,5 +1,5 @@
 {
-    "version": 1.4,
+    "version": 1.5,
     "videos": {
         "version": 0.6,
         "list": [
@@ -721,7 +721,7 @@
         ]
     },
     "guidelines": {
-        "version": 0.8,
+        "version": 0.9,
         "list": [
             {
                 "title": "Alpha Thalassemia Major (ATM)",
@@ -1348,37 +1348,41 @@
             },
             {
                 "title": "Hydrops: Nonimmune",
-                "intro": "Nonimmune Hydrops identifies those cases in which the fetal disorder was caused by factors other than isoimmunization. Hydrops is specified as a fetus with abnormal accumulation of fluid in 2 or more fetal compartments, including ascites, pleural effusion, pericardial effusion, and skin edema. Hydrops may also be associated with polyhydramnios and placental edema. Hydrops is an end-stage process for numerous fetal diseases, and the exact mechanism is not always known. ",
+                "intro": "Non-immune hydrops is caused by a variety of factors other than alloimmunization. It is diagnosed on routine prenatal ultrasound when two or more abnormal fluid collections are seen in the fetus, including pericardial effusion, pleural effusion, ascites, or skin edema. Polyhydramnios and placentomegaly may also been seen with non-immune hydrops, although are not part of the formal diagnostic criteria. \r Non-immune hydrops is associated with significant risks of morbidity and mortality, including preterm birth, stilbirth, maternal mirror syndrome, and neonatal death. A wide variety of underlying causes can lead to non-immune hydrops, ranging from congenital anomalies to single gene disorders and infections. Diagnosing the underlying cause is essential, in order to effectively manage the pregnancy, inform expectant families about prognosis and recurrence risk, and anticipate neonatal needs. \r Our team is focused on developing a precision-based approach to the diagnosis and management of non-immune hydrops. We are starting with a broad approach to evaluation to determine the underlying cause, with the ultimate goal of developing novel in utero treatment approaches specific to the underlying cause.",
                 "guide": [
                     {
                         "content": "Causes",
                         "children": [
                             {
-                                "content": "Cardiovascular (fetal arrhythmias)",
+                                "content": "Congenital anomalies (such as major cardiac defects, congenital diaphragmatic hernia, and congenital pulmonary airway malformation)",
                                 "children": []
                             },
                             {
-                                "content": "Genetic abnormalities (aneuploidy)",
+                                "content": "Aneuploidy or other chromosome imbalance",
                                 "children": []
                             },
                             {
-                                "content": "Intrathoracic malformations  (primary hydrothorax)",
+                                "content": "Single gene disorders (such as lysosomal storage disorders and RASopathies)",
                                 "children": []
                             },
                             {
-                                "content": "Hematological disorders (alpha thalassemia)",
+                                "content": "Hematologic and lymphatic disorders (such as alpha thalassemia and lymphatic dysplasia)",
                                 "children": []
                             },
                             {
-                                "content": "Infectious conditions",
+                                "content": "Infectious causes",
                                 "children": []
                             },
                             {
-                                "content": "Idiopathic forms",
+                                "content": "Fetal arrythmias",
                                 "children": []
                             },
                             {
-                                "content": "Mono/di twin complications (stage IV TTTS, TRAP sequence)",
+                                "content": "Monochorionic twin complications (such as twin twin transfusion syndrome and TRAP sequence)",
+                                "children": []
+                            },
+                            {
+                                "content": "Fetal tumors (such as sacrococcygeal teratomas)",
                                 "children": []
                             }
                         ]
@@ -1387,37 +1391,35 @@
                         "content": "Workup",
                         "children": [
                             {
-                                "content": "Ultrasound with MCA PSV Dopplers",
+                                "content": "Maternal blood type and antibody screen",
                                 "children": []
                             },
                             {
-                                "content": "Bloodwork",
-                                "children": [
-                                    {
-                                        "content": "Viral Studies: Parvovirus, CMV, Toxo, syphilis"
-                                    },
-                                    {
-                                        "content": "Maternal blood type and antibody screen"
-                                    },
-                                    {
-                                        "content": "MCV, consider DNA testing for alpha thalassemia if <80 fL"
-                                    }
-                                ]
-                            },
-                            {
-                                "content": "Karyotype or cell free DNA screen (highest risk of non-immune causes includes aneuploidy)",
+                                "content": "MCV of parents",
                                 "children": []
                             },
                             {
-                                "content": "Maternal testing for G6PD, pyruvate kinase deficiency, lysosomal storage diseases",
+                                "content": "Obstetric ultrasound with MCA Dopplers",
                                 "children": []
                             },
                             {
-                                "content": "Prolonged EFM if arrthymia suspected",
+                                "content": "Fetal echocardiogram",
                                 "children": []
                             },
                             {
-                                "content": "MRI (not needed)",
+                                "content": "Fetal karyotype and/or chromosomal microarray",
+                                "children": []
+                            },
+                            {
+                                "content": "Viral PCR from amniotic fluid (CMV, toxoplasmosis, +/- parvovirus)",
+                                "children": []
+                            },
+                            {
+                                "content": "Consider more targeted genetic testing if suspicion (such as RASopathy panel)",
+                                "children": []
+                            },
+                            {
+                                "content": "Consider more broad genetic testing if normal work up and non-specific phenotype (such as whole exome sequencing)",
                                 "children": []
                             }
                         ]
@@ -1430,60 +1432,36 @@
                                 "children": []
                             },
                             {
-                                "content": "IUT if Parvo suspected or if anemia detected, depending on cause/prognosis",
+                                "content": "IUT if evidence of fetal anemia",
                                 "children": []
                             },
                             {
-                                "content": "Maternal medical management for fetal arrthymias (Digoxin, Sotalol, Flecainide)",
+                                "content": "Betamethasone for large congenital pulmonary airway malformations",
                                 "children": []
                             },
                             {
-                                "content": "Open fetal surgery for large, vascular tumors (SCT, cervical, pericardial)",
+                                "content": "Maternal medical management for fetal arrhythmias",
                                 "children": []
                             },
                             {
-                                "content": "Laser surgery for Stage IV TTTS",
+                                "content": "Thoracoamniotic shunt for hydrothorax",
                                 "children": []
                             },
                             {
-                                "content": "Radiofrequency ablation for TRAP",
+                                "content": "Laser surgery or radiofrequency ablation for monochorionic twin complications",
                                 "children": []
                             },
                             {
-                                "content": "Thoracoamniotic shunt placement for primary hydrothorax",
-                                "children": []
-                            },
-                            {
-                                "content": "Betamethasone for CPAM (12mg q24h x 2)",
+                                "content": "Open fetal surgery for large fetal tumors (such as sacrococcygeal teratomas)",
                                 "children": []
                             }
                         ]
                     },
                     {
-                        "content": "Follow-up",
+                        "content": "Ongoing Research",
                         "children": [
                             {
-                                "content": "Ultrasound (follow hydrops, +/- Dopplers) up to 2x/week",
-                                "children": []
-                            },
-                            {
-                                "content": "ECHO",
-                                "children": []
-                            },
-                            {
-                                "content": "Betamethasone administration if at viability and at risk for delivery",
-                                "children": []
-                            },
-                            {
-                                "content": "Observe for mirror syndrome",
-                                "children": []
-                            },
-                            {
-                                "content": "Mode and timing of delivery should be individualized",
-                                "children": []
-                            },
-                            {
-                                "content": "Most require delivery at tertiary center",
+                                "content": "Our team is focused on developing a precision-based approach to the diagnosis and management of non-immune hydrops. We are starting with a broad approach to evaluation to determine the underlying cause, with the ultimate goal of developing novel in utero treatment approaches specific to the underlying cause. \r We are actively enrolling cases of non-immune hydrops in our ongoing study at UCSF. Clinical data is collected for each case, and whole exome sequencing is performed in addition to the standard of care evaluations. The whole exome sequencing is performed at UCSF, and results are returned to the patient and the ordering provider. We are expanding enrollment to the other four sites of the UC Fetal Maternal Consortium as well (UC Davis, UC Irvine, UC Los Angeles, and UC San Diego). \r The team of researchers leading this study are Dr. Teresa Sparks, Dr. Mary Norton, Billie Lianoglou, Dr. Tippi MacKenzie, Dr. Renata Gallagher, and Dr. Stephen Sanders. For more information or to discuss a case of non-immune hydrops, please call 1-800-RX-FETUS, or email our hydrops study team at hydrops@ucsf.edu.",
                                 "children": []
                             }
                         ]
@@ -2814,6 +2792,7 @@
         ]
     },
     "trials": {
+        "version": 0.1,
         "list": [
             {	
 				"title": "Phase 1 Clinical Trial: In Utero Hematopoietic Stem Cell Transplantation for Alpha-thalassemia Major (ATM)",

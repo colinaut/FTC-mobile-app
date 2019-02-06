@@ -27,10 +27,16 @@
     },
     "cordova": {
         "plugins": {
-            "cordova-custom-config": {}
-        }
+            "cordova-custom-config": {},
+            "cordova-plugin-inappbrowser": {}
+        },
+        "platforms": [
+            "ios"
+        ]
     },
     "dependencies": {
-        "cordova-custom-config": "5.0.2"
+        "cordova-custom-config": "^5.0.3",
+        "cordova-ios": "^4.5.5",
+        "cordova-plugin-inappbrowser": "^3.0.0"
     }
 }
