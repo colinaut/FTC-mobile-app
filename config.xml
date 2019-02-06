@@ -90,7 +90,7 @@
     <access origin="*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="EnableViewportScale" value="false" />
+    <engine name="ios" spec="^4.5.5" />
     <plugin name="cordova-custom-config" spec="^5.0.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
-    <engine name="ios" spec="^4.5.5" />
 </widget>

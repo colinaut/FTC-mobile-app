@@ -1,7 +1,6 @@
-Onsen UI Quick Startup Guide
-====
+# Fetal Treatment Center Mobile App
 
-This document describes the minimum information required to develop an app using Onsen UI.
+Uses Onsen and AngularJS. Mainly for providers
 
 ## Requirement
 
