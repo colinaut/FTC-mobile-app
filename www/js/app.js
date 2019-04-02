@@ -180,39 +180,38 @@ app
       var deepCache = CacheFactory.get('deepCache');
 
       if (shallowCache.get(url) && !testing) { //check first for local session cache
-        console.log('SHALLOW cache');
+        //console.log('SHALLOW cache');
         deferred.resolve(shallowCache.get(url));
 
       } else if (deepCache.get(url) && !testing) { //if can't find session cache then search for the localStorage cache
         deferred.resolve(deepCache.get(url));
-        console.log('DEEP cache');
+        //console.log('DEEP cache');
         $http.get(url).then(function (data) { //check for new version on the server
           shallowCache.put(url, data); //put in session storage
-          console.log('new SHALLOW cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
+          //console.log('new SHALLOW cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
           deepCache.put(url, data); //put in localStorage
-          console.log('new DEEP cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
+          //console.log('new DEEP cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
         });
 
       } else if (backup) { // if neither session or local exist then use permenant backup
 
         $http.get(backup).then(function (data) {
-          console.log('BACKUP cache');
+          //console.log('BACKUP cache');
           deferred.resolve(data); //use this for now
 
           $http.get(url).then(function (data) { //try to grab new version and put in cache
-            shallowCache.put(url, data);
-            console.log('new SHALLOW cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
+            //console.log('new SHALLOW cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
             deepCache.put(url, data);
-            console.log('new DEEP cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
+            //console.log('new DEEP cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
           });
         });
       } else { //if all else fails try to grab online version
-        console.log('No cache of backup found');
+        //console.log('No cache of backup found');
         $http.get(url).then(function (data) { //success
           shallowCache.put(url, data);
-          console.log('new SHALLOW cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
+          //console.log('new SHALLOW cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
           deepCache.put(url, data);
-          console.log('new DEEP cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
+          //console.log('new DEEP cache stored with online data. Time taken for request: ' + (new Date().getTime() - start) + 'ms');
           deferred.resolve(data);
         }, function () { //if there is no cache and you can't get the online JSON
           // I have no solution here. If everything fails then I don't know.
