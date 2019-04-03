@@ -177,6 +177,8 @@
 }
 .navigation-bar .logo {
   margin: 0 0 0 5px;
+  height: 60px;
+  width: auto;
 }
 .navigation-bar .contact-btn {
   text-decoration: none;
@@ -205,9 +207,9 @@
   margin-left: -1px;
 }
 /* Resize top bar */
-.navigation-bar {
+.navigation-bar,
+.platform-cordova.platform-ios .navigation-bar {
   height: 60px;
-  padding-top: 8px;
 }
 .page__status-bar-fill + .page__background + .page__content {
   padding-top: 20px;
@@ -263,7 +265,7 @@ ons-toolbar + .page__background + .page__content {
 .page-header h1 {
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   margin: 0;
   text-align: center;
   color: #FFF;
@@ -411,10 +413,6 @@ ons-toolbar + .page__background + .page__content {
   text-transform: uppercase;
 }
 /* Contact Page */
-.ucsf-benioff-logo {
-  margin: 0.8em 5px 0.2em;
-  display: block;
-}
 .address,
 .contact-info {
   padding: 0 5px 10px;

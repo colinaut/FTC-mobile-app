@@ -203,7 +203,7 @@
   border-bottom: 1px solid @ftc-navy;
   .logo {
     margin: 0 0 0 5px;
-    height: 44px;
+    height: 60px;
     width: auto;
   }
 	.contact-btn {
@@ -238,9 +238,10 @@
 @navbar-height: 60px; //original is 44px
 @navbar-padding: 8px;
 
-.navigation-bar {
+.navigation-bar,
+.platform-cordova.platform-ios .navigation-bar {
   height: @navbar-height;
-  padding-top: @navbar-padding;
+  //padding-top: @navbar-padding;
 }
 
 .page__status-bar-fill + .page__background + .page__content {
@@ -468,10 +469,6 @@ ons-toolbar + .page__background + .page__content {
 
 /* Contact Page */
 
-.ucsf-benioff-logo {
-  margin: 0.8em 5px 0.2em;
-  display: block;
-}
 .address, .contact-info {
   padding: 0 5px 10px;
   h3 {
