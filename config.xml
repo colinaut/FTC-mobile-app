@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="edu.ucsf.fetus.ftcmobileapp" version="1.4" xmlns="http://www.w3.org/ns/widgets">
-    <name>FetalTreatmentCenter</name>
-    <description>Made with Monaca (http://monaca.mobi)</description>
+    <name>FetalTreatment</name>
+    <description>Mobile App for the UCSF Fetal Treatment Center</description>
     <author />
     <content src="index.html" />
     <allow-navigation href="*" />

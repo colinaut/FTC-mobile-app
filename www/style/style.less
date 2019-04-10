@@ -20,6 +20,8 @@
     font-style: normal;
 }
 
+/* other stuff */
+
 .page__content img {
   max-width: 100%;
   height: auto;
@@ -197,19 +199,55 @@
 
 /* Header */
 
+@navbar-height: 55px; //original is 44px
+@navbar-padding-top: 8px;
+@navbar-padding-bottom: 8px;
+
+/* Top bar height including status bar space */
+
+.navigation-bar {
+  padding-top: @navbar-padding-top; /* Base padding fallback */
+  padding-top: env(safe-area-inset-top); 
+  padding-bottom: @navbar-padding-bottom;
+  box-sizing: content-box; /* Using content box so that height can vary */
+  height: @navbar-height;
+  > div {
+    height: @navbar-height;
+  }
+}
+
+@supports(padding-top: calc(0px)) {
+  .navigation-bar {
+      padding-top: calc(@navbar-padding-top + env(safe-area-inset-top));
+  }
+}
+
+ons-toolbar + .page__background + .page__content {
+  margin-top: -1px;
+  padding-top: env(safe-area-inset-top); /* Adds space for status bar */
+  top: @navbar-height + @navbar-padding-bottom;
+}
+
+@supports(padding-top: calc(0px)) {
+  ons-toolbar + .page__background + .page__content {
+      padding-top: calc(@navbar-padding-top + env(safe-area-inset-top));
+  }
+}
+
 .navigation-bar {
   background: -webkit-linear-gradient(left, @ftc-light-blue 0%, rgba(255,255,255,1) 100%);
   background: linear-gradient(to right, @ftc-light-blue 0%, rgba(255,255,255,1) 100%);
   border-bottom: 1px solid @ftc-navy;
   .logo {
-    margin: 0 0 0 5px;
-    height: 60px;
+    margin: 0 0 0 10px;
+    height: @navbar-height;
     width: auto;
   }
 	.contact-btn {
 		text-decoration: none;
 		display: block;
-		text-align: center;
+    text-align: center;
+    margin: 4px 4px 0 0;
 	}
   .phone-number {
     color: @orange;
@@ -233,60 +271,16 @@
     }
   }
 }
-/* Resize top bar */
 
-@navbar-height: 60px; //original is 44px
-@navbar-padding: 8px;
 
-.navigation-bar,
-.platform-cordova.platform-ios .navigation-bar {
-  height: @navbar-height;
-  //padding-top: @navbar-padding;
+
+
+/* Footer */
+
+.ons-tab-bar__footer {
+  margin-bottom: constant(safe-area-inset-bottom);
+  margin-bottom: env(safe-area-inset-bottom);
 }
-
-.page__status-bar-fill + .page__background + .page__content {
-  padding-top: 20px;
-}
-
-ons-toolbar + .page__background + .page__content {
-  margin-top: -1px;
-  top: @navbar-height;
-}
-
-.navigation-bar--material + .page__background + .page__content {
-  top: 56px;
-}
-
-.page__status-bar-fill + ons-toolbar { //this should be when there is a status bar
-  height: @navbar-height + 20px;
-}
-
-.page__status-bar-fill + ons-toolbar[modifier~="material"] { //not sure what this is
-  height: 76px;
-}
-
-.page__status-bar-fill + ons-toolbar > .center,
-.page__status-bar-fill + ons-toolbar > .left,
-.page__status-bar-fill + ons-toolbar > .right {
-  padding-top: 20px;
-}
-
-.page__status-bar-fill + ons-toolbar[modifier~="material"] > .center,
-.page__status-bar-fill + ons-toolbar[modifier~="material"] > .left,
-.page__status-bar-fill + ons-toolbar[modifier~="material"] > .right {
-  height: 76px;
-}
-
-
-.page__status-bar-fill + ons-toolbar + .page__background + .page__content {
-  top: @navbar-height + 20px;
-  padding-top: 0px;
-}
-
-.page__status-bar-fill + ons-toolbar[modifier~="material"] + .page__background + .page__content {
-  top: 76px;
-}
-
 
 
 /* Guidelines */
